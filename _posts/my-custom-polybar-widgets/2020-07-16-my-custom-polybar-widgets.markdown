@@ -26,10 +26,10 @@ Although this scripts are extremely useful, a skilled programmer could spot a ma
 # My custom polybar modules, written in Rust
 Now, here is some eye candy to recover from those cursed, interpreted, slow scripts.
 1. [mocPolyWidget](https://github.com/Ferryistaken/mocPolyWidgetRust) - Music on Console Polybar Widget <br>
-This is a [~102LoC](https://github.com/Ferryistaken/mocPolyWidgetRust/blob/master/src/main.rs) program which gives me information about the currently playing song in [MOC](https://github.com/jonsafari/mocp), a terminal-based music player, which I used to use before fully switching to spotify(more on that on a future post). The code isn't that bad considering that it's pure String manipulation in rust, which is comparable to having to paint a portrait using a toothbrush and a bit of toothpaste. You can find the installation instructions and more pictures on the [github page](https://github.com/Ferryistaken/mocPolyWidgetRust). <br>
+This is a [~102LoC](https://github.com/Ferryistaken/mocPolyWidgetRust/blob/master/src/main.rs) program which gives me information about the currently playing song in [MOC](https://github.com/jonsafari/mocp), a terminal-based music player, which I used to use before fully switching to spotify(more on that on a future post). The code isn't that bad considering that it's pure String manipulation in rust, which is comparable to having to paint a portrait using a stick and some toothpaste. You can find the installation instructions and more pictures on the [github page](https://github.com/Ferryistaken/mocPolyWidgetRust). <br>
 Here is what it looks like: <br>
 [![moc widget](/assets/posts/my-custom-polybar-widgets/mocWidget.jpg)](/assets/posts/my-custom-polybar-widgets/mocWidget.jpg) <br>
-As you can see it displays some useful info, such as the name of the artis, the name of the track, if it's playing or not, and even has a little graphic which tells me where I am in the song <br>
+As you can see it displays some useful info, such as the name of the artist, the name of the track, if it's playing or not, and it even has a little graphic which tells me where I am in the song <br>
 2. [nmPolyWidget](https://github.com/Ferryistaken/nmPolyWidget) - Network Manager Polybar Widget <br>
 This is a [~140LoC](https://github.com/Ferryistaken/nmPolyWidget/blob/master/src/main.rs) program which tells me the network status(using [NetworkManager](https://wiki.archlinux.org/index.php/NetworkManager)), and my internal IP Address. <br>
 The [code](https://github.com/Ferryistaken/nmPolyWidget/blob/master/src/main.rs) is *waaaay* cleaner than the other program, I *even* have a custom IP address struct. <br>
@@ -38,9 +38,9 @@ Here is what this one looks like: <br>
 Here it's telling me the name of the WiFi network that I'm connected to (ORBI80), the signal strenght, and my internal IP address <br>
 
 # Other modules which are not written in rust, but still useful
-I know that I promised you only perfect, memory safe, rust code, but you might want to take a look at this other modules aswell.
+I know that I promised you only perfect, memory safe, rust code, but you might want to take a look at this other modules too.
 1. Uptime module <br>
-This module tells me for how much time my pc has been on without a restart, which is useful for when I get angry at my pc for using 2 gbs of ram more than usual, but then I find out that it's been on for 3 days in a row. <br>
+This module tells me for how much time my pc has been on without a restart, which is useful for when I get angry at my pc for using 2 GBs of ram more than usual, but then I find out that it's been on for 3 days in a row. <br>
 Here is what it looks like: <br>
 [![uptime widget](/assets/posts/my-custom-polybar-widgets/uptimeWidget.png)](/assets/posts/my-custom-polybar-widgets/uptimeWidget.png) <br>
 Getting this up and running is *extremely* simple, all you have to do is put this lines of code inside of your polybar config file: <br>
