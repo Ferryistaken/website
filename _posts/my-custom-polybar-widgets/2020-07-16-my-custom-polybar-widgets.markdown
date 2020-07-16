@@ -11,7 +11,7 @@ In order to practice [Rust](https://www.rust-lang.org/) development, and to [ric
 # Context:
 Polybar is one of the most popular(and expandable) status bars for unix desktops. It is often used with a window manager, because desktop environments tend to have their own status bar. *See: [difference between WM and DE](https://askubuntu.com/questions/18078/what-is-the-difference-between-a-desktop-environment-and-a-window-manager).* <br>
 Because it's so popular you'd think that there are plenty of modules(a module is basically a widget, for example the clock or the current playing song) freely available. Well, you'd be wrong. I managed to find surprisingly few modules on the internet, and I think that it is because making one is super simple. <br>
-Here is my current bar(you have to click on it, having a 21:9 monitor is *hard* ok): [![my bar](/assets/posts/my-custom-polybar-widgets/fullBar.png)](/assets/posts/my-custom-polybar-widgets/fullBar.png)
+Here is my current bar(you have to click on it and ***ZOOM*** if you want to see anything, having a 21:9 monitor is *hard* ok): [![my bar](/assets/posts/my-custom-polybar-widgets/fullBar.png)](/assets/posts/my-custom-polybar-widgets/fullBar.png)
 
 # What does it take to make a Polybar module?
 Short answer: any program that outputs text to [stdout](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)). Or, in simpler terms: any program that would normally output text to the terminal.
