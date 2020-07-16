@@ -77,7 +77,7 @@ format-underline = #4bffdc
 interval = 2
 ```
 
-### Hope you liked the modules, feel free to use them, they are [free software](https://en.wikipedia.org/wiki/The_Free_Software_Definition).
+##### Hope you liked the modules, feel free to use them, they are [free software](https://en.wikipedia.org/wiki/The_Free_Software_Definition).
 
 
 [jekyll-docs]: https://jekyllrb.com/docs/home

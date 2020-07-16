@@ -1,18 +1,18 @@
 ---
-title: Colophon
+title: About me
 permalink: /about/
 layout: page
-excerpt: Hello peeps, I'm student of computer science from Banyuwangi, living in Jogjakarta. This blog for documentation about my programming journey, running on jekyll, hosting on netlify and using my own simple theme.
+excerpt: Just an italian guy who likes tech.
 comments: false
 ---
+I'm just a guy who likes not being spied on by microsoft, google or else. So I forced myself to use linux, which forced me to learn how to code, which made me more aware of what is going on on my operating system, which forced me to install archlinux, which forced me to learn how to code better, etc. <br>
+*(Didn't quite go like that, I start by printing "Hello World" in python on my father's mac)* <br>
 
-He's a student from Banyuwangi, living in Jogjakarta. the blog for documentation about his programming 🎒 journey, running on jekyll, hosting on [now.sh](http://now.sh) and using his own theme, he name it <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">klisé</a>, he also loves to learning web technology; but he often forgot, that a reason why him doing the writing.
+If you have a question about this site or anything I made, send me an email.
 
-If you have a question about him or else, just send a letter to him.
+You can [report](https://github.com/Ferryistaken/blog/issues/new) if there is an broken link(s) or somethings else.
 
-You can [report](http://github.com/piharpi/jekyll-klise/issues/new) if there is an broken link(s) or somethings else.
-
-##### may u needs ✨
+##### Contact me:✨
 
 - {{ site.author.email }}
 - github.com/{{ site.author.github }}
