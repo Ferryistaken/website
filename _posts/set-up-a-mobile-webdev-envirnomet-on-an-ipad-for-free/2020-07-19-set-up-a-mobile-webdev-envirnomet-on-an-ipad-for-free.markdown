@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to set up your IPad to be a mobile workstation for web development(and more) for free
-date: “2020-07-19 16:22:34 -0400”
+date: “2020-07-19 12:22:34 -0400”
 tags: [blog, mobile, webdev, git, ide, coding, ipad]
 description: In this article I will tell you how to set up a fully working IDE for web development on any mobile device for free
 ---
@@ -9,7 +9,7 @@ This article is about how you can turn your boring IPad(or any mobile device), i
 
 # Why?
 Sometimes you have(or want) to work in places where spaces is extremely limited, or maybe you just don't want to carry an heavy laptop around all the time. <br>
-*My personal reason is that I bought a massive **gaming** laptop and I really don't want to carry 5+ pounds of plastic and silicon everywhere I go. Kids, for the love of god, buy small and light laptops.*
+>*My personal reason is that I bought a massive gaming laptop and I really don't want to carry 5+ pounds of plastic and silicon everywhere I go. Kids, for the love of god, buy small and light laptops.*
 
 # Requirements
 1. A mobile device <br>
@@ -27,12 +27,14 @@ The main flaw with Working Copy is that you cannot execute any code, so we need 
 To actually deploy the changes that you made you have to set up some sort of [CI/CD](https://en.wikipedia.org/wiki/CI/CD) system, so that as soon as you push you code your website updates. <br>
 
 ## My configuration
+![my setup](/assets/posts/set-up-a-mobile-webdev-envirnomet-on-an-ipad-for-free/setup.jpg)
 ### Hardware
 As I said before I am using a 2017 IPad, paired with the [Anne Pro 2](https://annepro2.com/products/kailh-box-switchobins-anne-pro-2-60-nkro-bluetooth-4-0-type-c-rgb-mechanical-gaming-keyboard?variant=28863929057357). A lot of people have reported issues with the bluetooth but I found that if the device that it's paired with is only a couple of inches away(like in our case) it works perfectly. I have the one with brown switches, because I think that they are the best "mainstream" ones. The fact that the keyboard is a 60% really helps with the portability of the whole setup. <br>
 
 ### Software
 I use Working Copy as my IDE because of the perfect git integration(it is more of a git client with an IDE built around of it than an IDE with some git features). The syntax highilighting works very well and it supports a lot of file formats. <br>
-In order to deploy my articles as soon as I push them I had to set up [Netlify](https://www.netlify.com/) so that it builds my jekill site every time that the master branch is updated, which basically means that as soon as I change my code, the site gets updated in a matter of minutes, so that I can publish new articles even without the use of a pc.
+In order to deploy my articles as soon as I push them I set up [Netlify](https://www.netlify.com/) so that it builds my jekill site every time that the master branch is updated, which basically means that as soon as I change my code, the site gets updated in a matter of seconds, so that I can publish new articles even without the use of a pc. <br>
+The main flaw of this setup is that I cannot push entire directories, so the folder structure that I usually keep of */_posts/<post-name>/post.markdown* gets messed up, which is a major inconvenience, because I then have to create new directories for any new post that I created without my pc, as soon as I get back to my pc.
 <br>
 
 This is what I have been using for a few months now, ***and what this article is being written on***. Of course, this doesn't replace a *real* computer, but it surely helps with mobile development. I find this setup extremely useful on planes or in trips where I would bring my IPad(to watch movies) anyways.
