@@ -1,7 +1,7 @@
 ---
 layout: post
 title: “How to set up your IPad to be a mobile workstation for web development(and more) for free”
-date: “2020-07-17 16:22:34 -0400”
+date: “2020-07-19 16:22:34 -0400”
 tags: [blog, mobile, webdev, git, ide, coding, ipad]
 description: In this article I will tell you how to set up a fully working IDE for web development on any mobile device for free
 ---
