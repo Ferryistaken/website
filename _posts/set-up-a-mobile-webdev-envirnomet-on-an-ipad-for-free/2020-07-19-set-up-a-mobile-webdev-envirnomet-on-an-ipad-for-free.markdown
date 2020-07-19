@@ -9,7 +9,7 @@ This article is about how you can turn your boring IPad(or any mobile device), i
 
 # Why?
 Sometimes you have(or want) to work in places where spaces is extremely limited, or maybe you just don't want to carry an heavy laptop around all the time. <br>
-*My personal reason is that I bought a massive ***gaming*** laptop and I really don't want to carry 5+ pounds of plastic and silicon everywhere I go. Kids, for the love of god, buy small and light laptops.*
+*My personal reason is that I bought a massive **gaming** laptop and I really don't want to carry 5+ pounds of plastic and silicon everywhere I go. Kids, for the love of god, buy small and light laptops.*
 
 # Requirements
 1. A mobile device <br>
@@ -22,7 +22,7 @@ This technically isn't *needed*, but realistically you aren't going to be able t
 If you have an internet connection, the best ide has to be repl. It supports basically any language and, even though it's cloud based, it's quite fast. It has syntax highlighting, git integration, code execution, and you can even see changes to the code in real time(just like google docs). If you choose this option you will also be able to execute your code inside of the IDE, which is pretty useful. This all sounds great, and it is, but the main reason why you would want to use an IPad to code is to able to use it virtually anywhere, often in situations where laptops would occupy too much space, for example in planes where you *don't* have an internet connection. Because of this repl doesn't really fit in a truly mobile setup, because the absence of the internet would stop you from writing any code, *and we don't want that* <br>
 2. Option 2: [Working Copy](https://workingcopyapp.com/) <br>
 If you don't want to depend on having an internet connection, Working Copy is the best IDE, because it has a free version, it has seamless git integration, syntax highlighting and most importantly, you can continue to edit your files without a connection. <br>
-If you want to push the changes to the remote branch you will need the paid version to Working Copy, *and I promised a ***free*** way of coding on an ipad, but then again, in the last post I promised only rust widgets,*. In order to push the changes I just go on the github page and push them "manually". <br>
+If you want to push the changes to the remote branch you will need the paid version to Working Copy, *and I promised a **free** way of coding on an ipad, but then again, in the last post I promised only rust widgets,*. In order to push the changes I just go on the github page and push them "manually". <br>
 The main flaw with Working Copy is that you cannot execute any code, so we need to use another app to do that. The best one that I found so far is [LibTerm](https://libterm.app/), which can be used to execute pyton code, and even *compile c code*. It also gives you a "shell", but of course it's limited to the application container. <br>
 To actually deploy the changes that you made you have to set up some sort of [CI/CD](https://en.wikipedia.org/wiki/CI/CD) system, so that as soon as you push you code your website updates. <br>
 
