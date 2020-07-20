@@ -5,12 +5,13 @@ date: "2020-07-19 19:51:55 -0400"
 tags: [blog, ricing, unix, linux, os]
 description: This is a description of my current arch linux setup that I've been using everyday for the past 6 months
 ---
-About a year ago, when I still didn't even know about the existence of [Rust](https://www.rust-lang.org/) (I know, *dark times*), I was browsing reddit, when I laid my eyes on a comment under a screenshot of an [OpenBSD](https://www.openbsd.org/) desktop. The content of that comment isn't that important, all I remember is that he was saying that [OP](https://www.lifewire.com/what-does-o-p-stand-for-2483372) should post his screenshot on another [subreddit](https://www.reddit.com/r/help/comments/37shum/what_is_a_subreddit/): [r/unixporn](https://www.reddit.com/r/unixporn/). <br>
+About a year ago, when I still didn't even know about the existence of [Rust](https://www.rust-lang.org/) (I know, *dark times*), I was browsing reddit, when I laid my eyes on a comment under a screenshot of an [OpenBSD](https://www.openbsd.org/) desktop. <br>
+The content of that comment isn't that important, all I remember is that the commenter was saying that [OP](https://www.lifewire.com/what-does-o-p-stand-for-2483372) should post his screenshot on another [subreddit](https://www.reddit.com/r/help/comments/37shum/what_is_a_subreddit/): [r/unixporn](https://www.reddit.com/r/unixporn/). <br>
 I was intrigued by the name, so I decided to take a look at it. ***My life hasn't been the same since***. <br>
 > *If you have no idea what that sub is about, click on [this link](https://www.reddit.com/r/unixporn/top/?t=all), trust me, you will not regret it.*   <br>
 
-[Unixporn](https://reddit.com/r/unixporn), *as the name suggests*, is a subreddit about the customization, and [ricing]() of \*nix operating systems. *(Linux, Unix, Bsd, MacOS, and everything [Unix-like](https://en.wikipedia.org/wiki/Unix-like))*. <br>
-Some of them are [awesome](https://www.reddit.com/r/unixporn/comments/hpakeu/awesome_afternoon_in_a_perfect_world/), *pun intended*, some of them will burn your eyes, [*but they are different, so they still get 3k upvotes*](https://www.reddit.com/r/unixporn/comments/cskb33/oc_i_wrote_a_script_that_periodically_sets_your/). <br>
+[Unixporn](https://reddit.com/r/unixporn), *as the name suggests*, is a subreddit about the customization, and ricing of \*nix operating systems. *(Linux, Unix, Bsd, MacOS, and everything [Unix-like](https://en.wikipedia.org/wiki/Unix-like))*. <br>
+Some of them are [awesome](https://www.reddit.com/r/unixporn/comments/hpakeu/awesome_afternoon_in_a_perfect_world/), *pun intended*, some of them will burn your eyes, [*but are different, so they still get 3k+ upvotes*](https://www.reddit.com/r/unixporn/comments/cskb33/oc_i_wrote_a_script_that_periodically_sets_your/). <br>
 Of course, the customization [doesn't stop on the desktop](https://www.reddit.com/r/unixporn/comments/hgba3b/i3_razer_blade_stealth_highlighting_shortcuts_and/), and sometimes people share [entirely new tools that they coded themselves](https://www.reddit.com/r/unixporn/comments/ha9q9q/oc_audio_visualizer_that_pulses_the_background_of/). <br> <br>
 [![unixporn](/assets/posts/my-archlinux-bspwm-setup/unixporn.png)](/assets/posts/my-archlinux-bspwm-setup/unixporn.png) <br> <br>
 After spending all night watching other people's rices, I decided to nuke my *lame* [Manjaro-KDE](https://manjaro.org/download/#kde-plasma) setup, and install *glorious **[ArchLinux](https://www.archlinux.org/)***. I started by installing [I3WM](https://i3wm.org/), like some *normie*. After about a month of being an [i3 scrub](https://www.youtube.com/watch?v=B5r47Q1cn_o), I decided to switch to [bspwm](https://github.com/baskerville/bspwm), because it's based on a [binary tree](https://en.wikipedia.org/wiki/Binary_tree)(which makes it more rational then i3, which is based on a normal tree), and because the keybinds are completely handled by another program, [sxhkd](https://github.com/baskerville/sxhkd), which I was already using because it's *waaaay* better than the default i3 keybinds. <br>
@@ -38,7 +39,7 @@ I use bspwm, a [tiling window manager](https://en.wikipedia.org/wiki/Tiling_wind
 I use sxhkd to manage keybinds. It works very well and it's highly configurable. It was created by the same creator of bspwm, [baskerville](https://github.com/baskerville), and he recommends to use it with bspwm. <br>
 
 ## The bar
-I use [polybar]() as my bar, it's highly configurable and very lightweight. I have a whole [article](https://www.ferrry.tk/my-custom-polybar-widgets/) on some of my *custom* polybar widgets. <br>
+I use [polybar](https://polybar.github.io/) as my bar, it's highly configurable and very lightweight. I have a whole [article](https://www.ferrry.tk/my-custom-polybar-widgets/) on some of my *custom* polybar widgets. <br>
 [![myBar](/assets/posts/my-archlinux-bspwm-setup/bar1.png)](/assets/posts/my-archlinux-bspwm-setup/bar1.png)
 [![myBar](/assets/posts/my-archlinux-bspwm-setup/bar2.png)](/assets/posts/my-archlinux-bspwm-setup/bar2.png)
 <br>
@@ -84,7 +85,7 @@ I also put `pfetch` and `fortune` in my zsh, so that I get cool graphics every t
 
 
 ## My text editor
-As you may have grasped by my obsession to have vim keybinds everywhere that I can, I am a [Vim](https://www.vim.org/) user(actually [NeoVim](https://neovim.io/), but they are basically the same thing). Simply because, if you are willing to learn the keybinds, it's the **best text editor**, without exceptions. I tried [Emacs](), but it's just too slow, and I have a 12 core 3900x and 64 GBs of ram. When I need to edit some text, I don't want to wait a minute for my text editor to start up. <br>
+As you may have grasped by my obsession to have vim keybinds everywhere that I can, I am a [Vim](https://www.vim.org/) user(actually [NeoVim](https://neovim.io/), but they are basically the same thing). Simply because, if you are willing to learn the keybinds, it's the **best text editor**, without exceptions. I tried [Emacs](https://www.gnu.org/software/emacs/), but it's just too slow, and I have a 12 core 3900x and 64 GBs of ram. When I need to edit some text, I don't want to wait a minute for my text editor to start up. <br>
 I will be making another article only on my NeoVim setup, because it really revolutionized the way that I code. <br>
 Here is what it looks like now: <br>
 [![vimsetup](/assets/posts/my-archlinux-bspwm-setup/vimSetup.png)](/assets/posts/my-archlinux-bspwm-setup/vimSetup.png) <br>
