@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set Up A Mobile Webdev Environment On An Ipad For Free
-date: “2020-07-19 12:22:34 -0400”
+date: “2020-07-18 12:22:34 -0400”
 tags: [blog, mobile, webdev, git, ide, coding, ipad]
 description: In this article I will tell you how to set up a fully working IDE for web development on any mobile device for free
 ---
