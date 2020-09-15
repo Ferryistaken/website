@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Custom GTK(3) Theme for each linux application"
-date: "2020-09-10 17:09:13 +0200"
+date: "2020-09-15 17:09:13 +0200"
 tags: [unix, linux, os, ricing]
 description: Guide on how to change the gtk theme of a certain application under unix/linux(X)
 ---
