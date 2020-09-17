@@ -6,4 +6,7 @@ excerpt: Big notes
 comments: false
 ---
 
-You shouldn't be looking here, the site isn't finished yet
+# Things that you should Keep in mind while browsing this site:
+- I am completely open to criticism regarding everything that I post/say(contact me [here](https://www.ferrry.tk/about/#contact-me)). Keep in mind, I am open to criticism, _not insults_, but if you have some really good insults still [email](https://www.ferrry.tk/about/#contact-me) them to me.
+- This blog is not for posting things that I think people could useful, it's more of a `/var/log` of what I do, and it casually happens to be open to the internet, so you might find blogs regarding many topics, not just technology.
+- **Don't take what I say as the truth**. I have no real title of study in the IT field, everything I know amounts to what I learned over the years on the internet(formus, guides, doumentation, IRC, etc.). I am not responsible if you mess something up while following a guide/everything else on this blog it's not my fault.
