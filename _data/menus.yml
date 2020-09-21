@@ -3,16 +3,13 @@
   external: false
 
 - title: philosophy
-  url: /philosophy
-  external: false
+  url: /philosophy/
+  external: false # set true if you using external link, see bellow
 
 - title: about
   url: /about/
   external: false
 
-- title: notes
-  url: /notes/
-  external: false # set true if you using external link, see bellow
 
 # Example:
 # - title: github
