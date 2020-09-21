@@ -25,16 +25,16 @@ The general process is:
 > For reference, VsCodium is the libre version of VsCode, with no telemetry or anything microsoft-related, **you should really switch to it if you are already using vscode and like not being spied on**
 
 1. Copy the desktop entry from `/usr/share/applications/vscodium-bin.desktop`
-```
+```bash
 $ cp /usr/share/applications/vscodium-bin.desktop $HOME/.local/share/applications
 ```
 2. Open the file in vim
-```
+```bash
 $ vim $HOME/.local/share/applications/vscodium-bin.desktop
 ```
 ➜ It should look something like this:
 
-```
+```bash
 [Desktop Entry]
 Name=VSCodium
 Comment=Code Editing. Redefined.
@@ -56,7 +56,7 @@ Icon=vscodium
 ```
 3. Edit what's after `Exec:` to make it look like this:
 
-```
+```bash
 [Desktop Entry]
 Name=VSCodium
 Comment=Code Editing. Redefined.

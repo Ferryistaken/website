@@ -44,7 +44,7 @@ This module tells me for how much time my pc has been on without a restart, whic
 Here is what it looks like: <br>
 [![uptime widget](/assets/posts/my-custom-polybar-widgets/uptimeWidget.png)](/assets/posts/my-custom-polybar-widgets/uptimeWidget.png) <br>
 Getting this up and running is *extremely* simple, all you have to do is put this lines of code inside of your polybar config file: <br>
-```
+```bash
 [module/uptime]
 type = custom/script
 exec = awk '{printf("%dd : %02dh : %02dm\n",($1/60/60/24),($1/60/60%24),($1/60%60),($1%60))}' /proc/uptime
@@ -57,7 +57,7 @@ This is completely useless, and is purely for looks, because *even on archlinux*
 *But hey, it looks cool.* <br>
 [![kernel widget](/assets/posts/my-custom-polybar-widgets/kernelWidget.png)](/assets/posts/my-custom-polybar-widgets/kernelWidget.png) <br>
 To achieve it put this in you config:
-```
+```bash
 [module/kernel]
 type = custom/script
 exec = "uname -r"
@@ -69,7 +69,7 @@ This displays the memory used in megabytes, out of all the ram on your system, a
 Here it is: <br>
 [![ram widget](/assets/posts/my-custom-polybar-widgets/ramWidget.png)](/assets/posts/my-custom-polybar-widgets/ramWidget.png) <br>
 I don't even remember writing this, it's very ugly, please don't bully me:
-```
+```bash
 [module/myMemory]
 type = custom/script
 exec = "vmstat -s | sed -n '2p' | sed 's/[[:space:]]//g' | sed 's/K*//' | sed -E 's/(Kusedmemory)+$//' | cut -c 1-4"

@@ -14,5 +14,5 @@ You can [report here](https://github.com/Ferryistaken/blog/issues/new) if there 
 
 ##### Contact me:✨
 
-- {{ site.author.email }}
-- github.com/{{ site.author.github }}
+- <{{ site.author.email }}>
+- <https://github.com/{{ site.author.github }}>

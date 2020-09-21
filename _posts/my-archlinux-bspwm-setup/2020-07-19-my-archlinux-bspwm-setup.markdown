@@ -67,7 +67,7 @@ It also supports tabs and a ["visual mode"](https://wiki.archlinux.org/index.php
 ### Shell
 I use [ZSh](https://www.zsh.org/) as my shell, because of the awesome plugins, such as [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) and [autosuggestions](https://github.com/zsh-users/zsh-autosuggestions). <br>
 I also have this: <br>
-```
+```bash
 # vi mode
 bindkey -v
 export KEYTIMEOUT=1
