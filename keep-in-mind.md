@@ -6,7 +6,7 @@ excerpt: Always remember that you are on the internet
 comments: false
 ---
 
-Thanks to the archlinux wiki, and Luke Smith
+> Thanks to the archlinux wiki, and Luke Smith
 
 # Things that you should Keep in mind while browsing this site:
 - I am completely open to criticism regarding everything that I post/say(you can contact me [here](https://www.ferrry.tk/about/#contact-me)). Keep in mind, I am open to criticism, _not insults_, but if you have some really good insults still [email](https://www.ferrry.tk/about/#contact-me) them to me.
