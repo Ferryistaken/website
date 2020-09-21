@@ -2,6 +2,10 @@
   url: /
   external: false
 
+- title: philosophy
+  url: /philosophy
+  external: false
+
 - title: about
   url: /about/
   external: false
@@ -11,6 +15,8 @@
   external: false # set true if you using external link, see bellow
 
 # Example:
-#- title: github
-#url: https://github.com/Ferryistaken?tab=repositories
-#external: true
+# - title: github
+#   url: https://github.com/Ferryistaken?tab=repositories
+#   external: true
+
+# need to add links tab
