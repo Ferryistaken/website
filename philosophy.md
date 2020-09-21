@@ -1,5 +1,5 @@
 ---
-title: What I Think About Things
+title: My thoughts about things that happen
 permalink: /philosophy/
 layout: page
 excerpt: My Philosphy
@@ -21,4 +21,7 @@ comments: false
     - While the "[4 essential freedoms](https://www.gnu.org/philosophy/free-sw.html#the-four-essential-freedoms)" don't directly specify that the software must be free, they do specify that anyone should have _"The freedom to redistribute copies so you can help others (freedom 2)."_. Which could create a grey area regarding paid/subscription based software, where in some cases redistributing the software to anyone could be a problem. This doesn't apply to all paid/subscription based software, for example, Netlix could make the desktop/mobile client Open Source, while still keeping a subscription model, since in order to actually watch the content you need an account.
 
 # Hardware
-- I don't believe that hardware should be open source, **IF** every piece of software running on it _is_, else the company behind the hardware should make the project/schematics freely available, **so that the community can come up with open source alternatives to the proprietary software** without doing/doing less reverse engineering, **which would be legal in some cases**, since 
+- I don't believe that hardware should be open source, **IF** every piece of software running on it _is_, else the company behind the hardware should make the project/schematics freely available, **so that the community can come up with open source alternatives to the proprietary software** without doing/doing less reverse engineering, **which would be legal in some cases**(for example [reverse engineering to guarantee interoperability within computer programs](https://www.law.cornell.edu/uscode/text/17/1201)).
+
+> In the U.S., Section 103(f) of the Digital Millennium Copyright Act (DMCA) (17 USC § 1201 (f) - Reverse Engineering) specifically states that it is legal to reverse engineer and circumvent the protection to achieve interoperability between computer programs (such as information transfer between applications). Interoperability is defined in paragraph 4 of Section 103(f).  
+> \- JMcAfreak on Stack Exchange

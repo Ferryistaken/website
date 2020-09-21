@@ -1,5 +1,5 @@
 ---
-title: Pub Notes
+title: Keep in mind
 permalink: /notes/
 layout: page
 excerpt: Big notes
