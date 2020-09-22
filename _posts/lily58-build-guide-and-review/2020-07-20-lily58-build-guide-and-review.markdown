@@ -24,7 +24,7 @@ As you could probably tell by the pictures (and [one of my recent articles](http
 I chose this over the Ducky One 2 Mini because the latter lacked software, while the AP2 has software for both windows and linux, and because, thanks to [Open Anne Pro](https://openannepro.github.io/) I can run [QMK](https://qmk.fm/), which is an *open source* firmware for keyboards. Which means that everything running on that keyboard(apart from the [bootloader](https://www.cs.tau.ac.il/telux/lin-club_files/linux-boot/slide0002.htm)) is open source, and [some of it](https://github.com/OpenAnnePro/AnnePro2-Tools) is ***even written in Rust***. <br>
 
 ## The Anne Pro 2
-I found the Anne Pro 2 a very good keyboard. I tested it on Mobile, Windows, and even Linux, and apart from some bluetooth problems [here and there](https://www.reddit.com/r/AnnePro/search?q=bluetooth%20issues&restrict_sr=1), the keyboard worked flawlessy. <br>
+I found the Anne Pro 2 a very good keyboard. I tested it on Mobile, Windows, and even Linux, and apart from some bluetooth problems [here and there](https://www.reddit.com/r/AnnePro/search?q=bluetooth%20issues&restrict_sr=1), the keyboard worked flawlessly. <br>
 The software is also pretty good, the led customization is ok, but not great, and the macro system allows you to program your keyboard to do anything. The guys at obins even tried to mimic some QMK features, such as [tap](https://beta.docs.qmk.fm/using-qmk/advanced-keycodes/mod_tap), and they work pretty well. <br>
 My only complaint is that on linux the keyboard goes in "sleep mode" every 15 minutes or so, and to wake it up I have to unplug it and plug it back in, which is a major hassle. A quick fix for this is leaving the Software Open on the "Layout" tab. <br>
 But then again, if you choose to use the custom qmk firmware it will work just fine. <br>
@@ -49,7 +49,7 @@ Normally using hotswap sockets would have no drawbacks, but my keyboard case had
 #### The switches
 I didn't really have that much experience with switches since before buying this keyboard I had only tried [Gateron Browns](https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=1271) and [Romer G Tactiles](https://www.logitechg.com/en-us/innovation/mechanical-switches.html). I really like the browns because even if they are very light, they have a pretty good tactile bump. I didn't like the Romer Gs that much because they feel like a mushy Blue switch. <br>
 But this time I wanted something different. I wanted something which was way heavier that browns, and that gave me a bigger tactile bump, while having a deeper sound. And the [NovelKeys x Kailh BOX Heavy Burnt Orange](https://novelkeys.xyz/products/novelkeys-x-kailh-box-heavy-switches?variant=3747939975208) switch gave me all that, *and more*. <br>
-Seriously, for now, they are my endgame, mainly becaue of how heavy and smooth they are, and because the tactile bump is very satisfying and at the very top.
+Seriously, for now, they are my endgame, mainly because of how heavy and smooth they are, and because the tactile bump is very satisfying and at the very top.
 {:refdef: style="text-align: center;"}
 [![burntOrange](/assets/posts/lily58-build-guide-and-review/burntOrange.jpg)](/assets/posts/lily58-build-guide-and-review/burntOrange.jpg) <br>
 *Burnt orange switches*
@@ -66,7 +66,7 @@ I decided to go for the [DSA "Beyond"](https://pimpmykeyboard.com/dsa-beyond-key
 {: refdef}
 
 ## Building the keyboard
-Soldering and screwing everything toghether took me about 6 hours total, which I think is pretty good given the result, and that it was *my first "big" project that involved soldering*.
+Soldering and screwing everything together took me about 6 hours total, which I think is pretty good given the result, and that it was *my first "big" project that involved soldering*.
 {:refdef: style="text-align: center;"}
 [![soldering](/assets/posts/lily58-build-guide-and-review/timelapse.gif)](/assets/posts/lily58-build-guide-and-review/timelapse.gif) <br>
 *Soldering Timelapse w/ my father*

@@ -43,7 +43,7 @@ I use [polybar](https://polybar.github.io/) as my bar, it's highly configurable 
 [![myBar](/assets/posts/my-archlinux-bspwm-setup/bar1.png)](/assets/posts/my-archlinux-bspwm-setup/bar1.png)
 [![myBar](/assets/posts/my-archlinux-bspwm-setup/bar2.png)](/assets/posts/my-archlinux-bspwm-setup/bar2.png)
 <br>
-This is what my bar looks like right now. I chose to break it in half becaues it was too big, *did I mention that it's hard to have a big monitor?*.
+This is what my bar looks like right now. I chose to break it in half because it was too big, *did I mention that it's hard to have a big monitor?*.
 
 ## Colorschemes and Pywal
 As you may have noticed from the screenshots, my colorschemes are always based on the colors of my wallpaper. I achieved this by using [pywal](https://github.com/dylanaraps/pywal), a tool written in python to generate colorschemes based on a given image. Pywal changes your [Xresources](https://wiki.archlinux.org/index.php/X_resources), which means that every application that uses Xresources(Like your [terminal](https://en.wikipedia.org/wiki/Terminal_emulator)), gets updated automatically. <br>
@@ -62,7 +62,7 @@ And here is my Discord: <br>
 As you can see they use the same base colors.
 
 ## My Terminal
-I use [termite](https://github.com/thestinger/termite/) as my terminal because it has extremely good [unicode](https://en.wikipedia.org/wiki/Unicode) support and it's very lightweight. I would really like to switch to [alacritty](https://github.com/alacritty/alacritty) because it's written in ***pure rust***, but it doesn't support unicode nearly aswell, and as much as I like Rust, functionality comes before pristine code and memory safe applications. <br>
+I use [termite](https://github.com/thestinger/termite/) as my terminal because it has extremely good [unicode](https://en.wikipedia.org/wiki/Unicode) support and it's very lightweight. I would really like to switch to [alacritty](https://github.com/alacritty/alacritty) because it's written in ***pure rust***, but it doesn't support unicode nearly as well, and as much as I like Rust, functionality comes before pristine code and memory safe applications. <br>
 It also supports tabs and a ["visual mode"](https://wiki.archlinux.org/index.php/Termite#Usage), which are cool features to have. <br>
 ### Shell
 I use [ZSh](https://www.zsh.org/) as my shell, because of the awesome plugins, such as [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) and [autosuggestions](https://github.com/zsh-users/zsh-autosuggestions). <br>

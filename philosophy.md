@@ -2,7 +2,7 @@
 title: My thoughts about things that happen
 permalink: /philosophy/
 layout: page
-excerpt: My Philosphy
+excerpt: My Philosophy
 comments: false
 ---
 
@@ -27,4 +27,4 @@ comments: false
 > In the U.S., Section 103(f) of the Digital Millennium Copyright Act (DMCA) (17 USC § 1201 (f) - Reverse Engineering) specifically states that it is legal to reverse engineer and circumvent the protection to achieve interoperability between computer programs (such as information transfer between applications). Interoperability is defined in paragraph 4 of Section 103(f).  
 > \- JMcAfreak on Stack Exchange
 
-- I find disgusting that 99.9999999% of modern computing hardware has some form of proprietary software on it, ranging from [intel ME](https://www.wired.com/story/intel-management-engine-vulnerabilities-pcs-servers-iot/) to [whole operating systems](https://www.microsoft.com/en-us/windows/). And I really think that this problem(yes it's a problem ) doesn't have enough voice, but I really think that in the next years(2050 MAX) some major company will do something wrong and expose how bad this problem really is(more than Edward Snowden did). **Because since in our society technology rules us, we cannot be free if our techonology isn't.** And for some reason, people don't realize this and don't think that this is a real problem.
+- I find disgusting that 99.9999999% of modern computing hardware has some form of proprietary software on it, ranging from [intel ME](https://www.wired.com/story/intel-management-engine-vulnerabilities-pcs-servers-iot/) to [whole operating systems](https://www.microsoft.com/en-us/windows/). And I really think that this problem(yes it's a problem ) doesn't have enough voice, but I really think that in the next years(2050 MAX) some major company will do something wrong and expose how bad this problem really is(more than Edward Snowden did). **Because since in our society technology rules us, we cannot be free if our technology isn't.** And for some reason, people don't realize this and don't think that this is a real problem.

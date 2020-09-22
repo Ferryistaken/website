@@ -35,7 +35,7 @@ This is a [~140LoC](https://github.com/Ferryistaken/nmPolyWidget/blob/master/src
 The [code](https://github.com/Ferryistaken/nmPolyWidget/blob/master/src/main.rs) is *waaaay* cleaner than the other program, I *even* have a custom IP address struct. <br>
 Here is what this one looks like: <br>
 [![nm widget](/assets/posts/my-custom-polybar-widgets/nmWidget.jpg)](/assets/posts/my-custom-polybar-widgets/nmWidget.jpg) <br>
-Here it's telling me the name of the WiFi network that I'm connected to (ORBI80), the signal strenght, and my internal IP address <br>
+Here it's telling me the name of the WiFi network that I'm connected to (ORBI80), the signal strength, and my internal IP address <br>
 
 # Other modules which are not written in rust, but still useful
 I know that I promised you only perfect, memory safe, rust code, but you might want to take a look at this other modules too.

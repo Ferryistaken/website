@@ -5,7 +5,7 @@ date: “2020-07-18 12:22:34 -0400”
 tags: [blog, mobile, webdev, git, ide, coding, ipad]
 description: In this article I will tell you how to set up a fully working IDE for web development on any mobile device for free
 ---
-This article is about how you can turn your boring IPad(or any mobile device), into an *amazing*, fully functional, [git](https://git-scm.com/) intergrated, IDE for web development and light coding, ***completely for free.***
+This article is about how you can turn your boring IPad(or any mobile device), into an *amazing*, fully functional, [git](https://git-scm.com/) integrated, IDE for web development and light coding, ***completely for free.***
 
 # Why?
 Sometimes you have(or want) to work in places where space is extremely limited, or maybe you just don't want to carry an heavy laptop around all the time. <br>
@@ -23,7 +23,7 @@ If you have an internet connection, the best IDE has to be repl. It supports bas
 2. Option 2: [Working Copy](https://workingcopyapp.com/) <br>
 If you don't want to depend on having an internet connection, Working Copy is the best IDE, because it has a free version, it has seamless git integration, syntax highlighting and most importantly, you can continue to edit your files without a connection. <br>
 If you want to push the changes to the remote branch you will need the paid version to Working Copy, *and I promised a **free** way of coding on an ipad, but then again, in the last post I promised only rust widgets, what did you expect?*. Because of this in order to push the changes I just go on the github page and push them "manually". <br>
-The main flaw with Working Copy is that you cannot execute any code, so we need to use another app to do that. The best one that I found so far is [LibTerm](https://libterm.app/), which can be used to execute pyton code, and even *compile c code*. It also gives you a "shell", but of course it's limited to the application container. <br>
+The main flaw with Working Copy is that you cannot execute any code, so we need to use another app to do that. The best one that I found so far is [LibTerm](https://libterm.app/), which can be used to execute python code, and even *compile c code*. It also gives you a "shell", but of course it's limited to the application container. <br>
 To actually deploy the changes that you made you have to set up some sort of [CI/CD](https://en.wikipedia.org/wiki/CI/CD) system, so that as soon as you push you code your website updates. <br>
 
 ## My configuration
@@ -32,7 +32,7 @@ To actually deploy the changes that you made you have to set up some sort of [CI
 As I said before I am using a 2017 IPad, paired with the [Anne Pro 2](https://annepro2.com/products/kailh-box-switchobins-anne-pro-2-60-nkro-bluetooth-4-0-type-c-rgb-mechanical-gaming-keyboard?variant=28863929057357). A lot of people have reported issues with the bluetooth but I found that if the device that it's paired with is only a couple of inches away(like in our case) it works perfectly. I have the one with brown switches, because I think that they are the best "mainstream" ones. The fact that the keyboard is a 60% really helps with the portability of the whole setup. <br>
 
 ### Software
-I use Working Copy as my IDE because of the perfect git integration(it is more of a git client with an IDE built around of it than an IDE with some git features). The syntax highilighting works very well and it supports a lot of file formats. <br>
+I use Working Copy as my IDE because of the perfect git integration(it is more of a git client with an IDE built around of it than an IDE with some git features). The syntax highlighting works very well and it supports a lot of file formats. <br>
 In order to deploy my articles as soon as I push them I set up [Netlify](https://www.netlify.com/) so that it builds my [Jekyll](https://jekyllrb.com/) site every time that the master branch is updated, which basically means that as soon as I change my code, the site gets updated in a matter of seconds, so that I can publish new articles even without the use of a pc. <br>
 The main flaw of this setup is that I cannot push entire directories, so the folder structure that I usually keep of */_posts/post-name/post.markdown* gets messed up, which is a major inconvenience, because I then have to create new directories for any new post that I created without my pc, as soon as I get back to my pc.
 <br>

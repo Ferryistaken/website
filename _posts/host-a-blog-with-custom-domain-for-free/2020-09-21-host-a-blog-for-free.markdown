@@ -7,7 +7,7 @@ description: How to host a website, with a custom domain completely for free
 ---
 # Host any website with a *custom* domain completely for free
 Today I'm going to tell you how I found and exploited a loophole to host [my blog]({{ site.url }}) completely for free.  
-*Yes, this blog, which you are browsing in this very moment.* Take a look at your's browser's top bar, that spanking new domain was obtained without spending 1$ dollar.  
+*Yes, this blog, which you are browsing in this very moment.* Take a look at your browser's top bar, that spanking new domain was obtained without spending 1$ dollar.  
 On top of that, the hosting is handled by a third party, so I don't have to worry about servers which are open to the internet, and, *of course*, **completely for free**.  
 If that wasn't enough, I don't even have to worry about deploys, since **every time I push my site to github, it gets automatically updated and published to the internet**, _almost_ in real time.  
 I chose to host a blog on it, but you could **host any html page** on it, and here is how:
@@ -37,7 +37,7 @@ I chose to host a blog on it, but you could **host any html page** on it, and he
 ## Tools needed
 1. Install [Jekyll](https://jekyllrb.com/), you could use any other SSG, in this guide I'm going to use jekyll
 2. Install [Git](https://gitforwindows.org/), if you are following this guide you should already be familiar with it
-3. Your favourite text editor. <s>Use <a href="https://github.com/vim/vim">vim</a> or get out</s> I'm gonna start allowing the use of open source IDEs with vim plugins, so if you use VScodium with a vim plugin, I'm cool with that, _but you're on damn thin ice_.
+3. Your favorite text editor. <s>Use <a href="https://github.com/vim/vim">vim</a> or get out</s> I'm gonna start allowing the use of open source IDEs with vim plugins, so if you use VScodium with a vim plugin, I'm cool with that, _but you're on damn thin ice_.
 
 ## 1. Create your website
 <img src="https://jekyllrb.com/img/logo-2x.png" alt="jekyll logo" width="200" style="text-align: center">  You could create your own site from scratch using html, but it honestly isn't a viable choice if you are looking to create a blog, because it's going to get harder the more content you have.  
@@ -79,7 +79,7 @@ After you do this go to [netlify](https://netlify.com) dashboard, and following 
 Your site should now be live, but the domain is a random mess of words, _and we don't like that_.
 
 ## 4. Get your free domain
-Go to [Freenom](https://www.freenom.com/en/index.html?lang=en) and find a domain that you like. Techincally you could get more than 1, but please don't do that as that site can only exist if the userbase is able to regulate themselves. As you can probably see I chose `ferrry.tk`(unless I changed it since writing this post).
+Go to [Freenom](https://www.freenom.com/en/index.html?lang=en) and find a domain that you like. Technically you could get more than 1, but please don't do that as that site can only exist if the userbase is able to regulate themselves. As you can probably see I chose `ferrry.tk`(unless I changed it since writing this post).
 
 ## 5. Set up your domain with Netlify
 Now all you need to do is go on your project dashboard on [Netlify](https://app.netlify.com), click on `Domain Settings`, then `Add Custom Domain`, and follow the simple process to register your newly acquired domain as a valid one for netlify.
