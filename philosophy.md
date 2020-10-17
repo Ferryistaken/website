@@ -9,6 +9,7 @@ comments: false
 # Topics/Table of Contents:
 - [Software]({{ site.urlphilosophy }}#software)
 - [Hardware]({{ site.urlphilosophy }}#hardware)
+- [Diet]({{ site.urlphilosophy }}#diet)
 
 ## Terms used in this post
 - Free ➜ Free doesn't mean free of charge, rather Free in a less materialistic way.
@@ -27,4 +28,11 @@ comments: false
 > In the U.S., Section 103(f) of the Digital Millennium Copyright Act (DMCA) (17 USC § 1201 (f) - Reverse Engineering) specifically states that it is legal to reverse engineer and circumvent the protection to achieve interoperability between computer programs (such as information transfer between applications). Interoperability is defined in paragraph 4 of Section 103(f).  
 > \- JMcAfreak on Stack Exchange
 
-- I find disgusting that 99.9999999% of modern computing hardware has some form of proprietary software on it, ranging from [intel ME](https://www.wired.com/story/intel-management-engine-vulnerabilities-pcs-servers-iot/) to [whole operating systems](https://www.microsoft.com/en-us/windows/). And I really think that this problem(yes it's a problem ) doesn't have enough voice, but I really think that in the next years(2050 MAX) some major company will do something wrong and expose how bad this problem really is(more than Edward Snowden did). **Because since in our society technology rules us, we cannot be free if our technology isn't.** And for some reason, people don't realize this and don't think that this is a real problem.
+- I find disgusting that 99.9999999% of modern computing hardware has some form of proprietary software on it, ranging from [intel ME](https://www.wired.com/story/intel-management-engine-vulnerabilities-pcs-servers-iot/) to [whole operating systems](https://www.microsoft.com/en-us/windows/). And I really think that this problem(yes it's a problem ) doesn't have enough voice, but I really think that in the next years(2050 MAX) some major company will do something wrong and expose how bad this problem really is(more than Edward Snowden did). **Because since in our society technology rules us, we cannot be free if our technology isn't.** And for some reason, people don't realize this and don't think that this is a real problem.  
+
+# Diet
+
+- If you spend a good amount of time on the internet, you probably saw some very disturbing videos about how animals are treated in [factory farms](https://sentientmedia.org/factory-farming/). They are truly horrifying and some of them are really enough to make the watcher have second thoughts about ever eating meat again. Even if you have never seen this videos, you probably have heard of animal cruelty in the current industry, maybe you just don't care, or maybe you just choose to ignore it. I'm not judging and I'm not writing this to make you change your diet(mostly because I know from experience that people don't make such radical changes based on a random article they found on the internet), but just to share my thoughts about the subject, which _may_ make you think about what you eat a bit more.  
+- I don't think that to solve the problem of animal cruelty in farms we should all go vegan/vegetarian or any other of those diets which radically change your eating habits because:
+    1.  They are just too much of a change for them to be feasible as a long term solution. Most people don't have the dedication to keep being vegan/vegetarian. Most vegetarian/vegan people in fact pick up those diets because it makes them feel different, and better than other people, which is sadly a very sought after feeling in our society.  
+    2. Eating meat is in our nature, and a lot of other animals eat meat too. Not eating meat would be like solving climate change by stopping every factory in the world. ***It's just not an healthy solution.***
