@@ -9,7 +9,7 @@ comments: false
 # Topics/Table of Contents:
 - [Software]({{ site.urlphilosophy }}#software)
 - [Hardware]({{ site.urlphilosophy }}#hardware)
-- [Food/Diet]({{ site.urlphilosophy }}#Food)
+- [Food/Diet]({{ site.urlphilosophy }}#food)
 
 ## Terms used in this post
 - Free ➜ Free doesn't mean free of charge, rather Free in a less materialistic way.
