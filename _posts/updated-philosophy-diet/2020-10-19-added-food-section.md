@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Check out the new \"Food\" section in philosophy"
-date: "2020-09-20 11:17:13"
+date: "2020-10-19 11:17:13"
 tags: [unix, linux, os, ricing, software, hardware, idea]
 description: My ideals
 ---
