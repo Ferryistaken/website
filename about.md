@@ -12,7 +12,7 @@ If you have a question about this site or anything I made, send me an email.
 
 You can [report here](https://github.com/Ferryistaken/blog/issues/new) if there are an broken links/spelling mistakes or somethings else.
 
-##### Contact me:
+##### Contact me:📝
 
 - <{{ site.author.email }}>
 - <https://github.com/{{ site.author.github }}>
