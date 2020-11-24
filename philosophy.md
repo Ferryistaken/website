@@ -1,5 +1,5 @@
 ---
-title: My thought
+title: My thoughts
 permalink: /philosophy/
 layout: page
 excerpt: My Philosophy
