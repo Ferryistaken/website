@@ -43,7 +43,11 @@ There are 2 ways to turn off the `fast start` option:
     • Type `powercfg -h off` and press Enter  
 
 The next time you reboot, the Linux kernel should be able to start the wifi card correctly.
-> After some updates Windows might turn fast start back on, just repeat this steps to turn it off again
+> After some updates Windows might turn fast start back on, just repeat this steps to turn it off again  
+
+{:refdef : style="text-align: center;"}
+#### Thanks to [u/jbaber](https://www.reddit.com/user/jbaber/) and [this reddit post](https://www.reddit.com/r/archlinux/comments/gn4lsx/wifi_not_working_iwlwifi_probe_of_000002000/)
+{: refdef}
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
