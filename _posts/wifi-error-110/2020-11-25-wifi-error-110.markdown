@@ -1,0 +1,50 @@
+---
+layout: post
+title: "How to fix \"iwlwifi: probe of <wifi card> failed with error -110\""
+date: "2020-11-25 18:59:13 +0200"
+tags: [linux, os, hardware]
+description: Guide on how to fix the linux kernel error "probe failed with error -110"
+---
+
+# How to fix "probe failed with error -110" during boot on linux
+
+## Specs
+```yaml
+Cpu: Ryzen 9 3900x
+Motherboard: Aorus x570 Master
+Gpu: MSI RTX 2080 S
+Ram: Corsair Vengeance Pro RGB 2x32Gb
+Linux Version: 5.9.10-zen1-1-zen
+```
+
+## The Error
+When you boot your kernel will throw this error:
+```shell_session
+iwlwifi: probe of <wifi card> failed with error -110
+```
+And your wifi card won't be recognized, this is not because of a driver error and is **almost impossible to troubleshoot**, this is because this error is caused by Windows.
+> Caused by dual booting Windows, no, it's not a joke
+
+## What causes the error
+This error is caused by Windows's `fast start` option, which basically hogs the wifi card and makes it so that the linux kernel cannot load the drivers for it.
+
+## How to fix the error
+To fix the error, simply turn off the `fast start` option in Windows, if this doesn't fix it, then it's a different error with the same error code.
+
+There are 2 ways to turn off the `fast start` option:
+1. Through Control Panel:  
+    • Open Control Panel  
+    • Choose `Power Options`  
+    • Select `Choose what the power buttons do`  
+    • Under `Shutdown Settings`, turn off the checkbox which says `Turn on fast startup`  
+    • Click `Save Settings`  
+2. Using the Command Prompt  
+    • Start command prompt as root  
+    • Type `powercfg -h off` and press Enter  
+
+The next time you reboot, the Linux kernel should be able to start the wifi card correctly.
+> After some updates Windows might turn fast start back on, just repeat this steps to turn it off again
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com
