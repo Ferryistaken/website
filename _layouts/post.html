@@ -35,7 +35,10 @@ layout: compress
               {% capture words %}
                 {{ page.content | number_of_words }}
               {% endcapture %}
-              {{ words | append: " Words," }} {{ words | divided_by: 180 | append: " Minutes to read"}}
+              {% capture time %}
+                {{ words | divided_by: 180 }}
+              {% endcapture %}
+              {{ words | append: " Words," }} {{ time }} {% if time == '1' %}Minute{% else %}Minutes{% endif %} to read
             </span>
             <!--<span itemprop="author" itemscope itemtype="https://schema.org/Person">
               <span itemprop="name">{{ site.author.name }}</span>
