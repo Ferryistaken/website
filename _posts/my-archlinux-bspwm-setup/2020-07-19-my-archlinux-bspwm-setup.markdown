@@ -2,7 +2,7 @@
 layout: post
 title: "My Archlinux-Bspwm setup"
 date: "2020-07-19 19:51:55 -0400"
-tags: [blog, ricing, unix, linux, os]
+tags: [linux, ricing, unix, os]
 description: This is a description of my current arch linux setup that I've been using everyday for the past 6 months
 ---
 About a year ago, when I still didn't even know about the existence of [Rust](https://www.rust-lang.org/) (I know, *dark times*), I was browsing reddit, when I laid my eyes on a comment under a screenshot of an [OpenBSD](https://www.openbsd.org/) desktop. <br>

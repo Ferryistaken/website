@@ -2,7 +2,7 @@
 layout: post
 title: "How I got into keyboards & Lily58 Pro build log and review"
 date: "2020-07-20 18:36:13 -0400"
-tags: [blog, keyboard, hardware, soldering]
+tags: [hardware, keyboard, soldering]
 description: This is a build log of the lily58 Pro split ergo keyboard
 ---
 Some time ago, while browsing reddit, I came across a subreddit: [r/MechanicalKeyboards](https://www.reddit.com/r/MechanicalKeyboards/), which is a sub about the hobby of building and collecting mechanical keyboards. At the time I had an average mechanical keyboard, the [Logitech G613](https://www.logitechg.com/en-us/products/gaming-keyboards/g613-wireless-mechanical-gaming-keyboard.920-008386.html), which I bought mainly because it was mechanical and *wireless*, which is *reeeeally* nice. At first I though: *"Why would someone build his own keyboard? Or even own more than one? I'd never do that lol"*. <br>

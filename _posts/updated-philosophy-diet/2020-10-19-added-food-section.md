@@ -2,7 +2,7 @@
 layout: post
 title: "New \"Food\" section in philosophy"
 date: "2020-10-19 11:17:13"
-tags: [unix, linux, os, ricing, software, hardware, idea]
+tags: [philosophy, blog]
 description: My ideals
 ---
 I added a "Philosophy" section in the navbar, which is where I will put my ideals, and what I believe in. It would be awesome if you could check it out since it's the most coherent and technology-unrelated section of this blog yet. I will be adding more topics to it and I'll try to keep it at a pretty high level.
