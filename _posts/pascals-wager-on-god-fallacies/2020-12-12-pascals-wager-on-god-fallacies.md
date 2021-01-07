@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fallacies in Pascal's "Wager on God"
-date: 2020-12-12 17:20 +0000
+date: 2021-01-7 17:20 +0000
 tags: [idea, philosphy, papers]
 ---
 
