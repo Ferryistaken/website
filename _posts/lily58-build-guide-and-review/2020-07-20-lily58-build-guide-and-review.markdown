@@ -81,6 +81,7 @@ Here is how the keyboard came out:
 {: refdef}
 It is the best keyboard I ever felt *by far*, and after trying a split keyboard you cannot go back. It took me just shy of a month to get back to my 70wpm typing speed, which is not bad at all. Would recommend to anyone that spends a lot of time in front of a pc.
 
+
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com
