@@ -1,7 +1,6 @@
 ---
-title: My thoughts
 permalink: /philosophy/
-layout: page
+layout: philosophy
 excerpt: My Philosophy
 comments: false
 ---
