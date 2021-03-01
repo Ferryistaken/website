@@ -1,0 +1,9 @@
+---
+layout: none
+permalink: .well-known/brave-rewards-verification.txt
+---
+
+This is a Brave Rewards publisher verification file.
+
+Domain: ferrry.tk
+Token: 68e6d2fcb646b525c0f91988f9e2b0cdf20a56df1d5339f34f7db5ab6bffdee8
