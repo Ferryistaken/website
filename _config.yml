@@ -66,6 +66,9 @@ include:
   - _redirects
   - .htaccess
 
+feed:
+  path: feed.xml
+
 exclude:
   - CNAME
   - Gemfile
