@@ -85,7 +85,7 @@ I also put `pfetch` and `fortune` in my zsh, so that I get cool graphics every t
 
 
 ## My text editor
-As you may have grasped by my obsession to have vim keybinds everywhere that I can, I am a [Vim](https://www.vim.org/) user(actually [NeoVim](https://neovim.io/), but they are basically the same thing). Simply because, if you are willing to learn the keybinds, it's the **best text editor**, without exceptions. I tried [Emacs](https://www.gnu.org/software/emacs/), but it's just too slow, and I have a 12 core 3900x and 64 GBs of ram. When I need to edit some text, I don't want to wait a minute for my text editor to start up. <br>
+As you may have grasped by my obsession to have vim keybinds everywhere that I can, I am a [Vim](https://www.vim.org/) user(actually [NeoVim](https://neovim.io/), but they are basically the same thing). Simply because, if you are willing to learn the keybinds, it's the **best text editor**, without exceptions. I tried [Emacs](https://www.gnu.org/software/emacs/), but it's too slow and bloated. When I need to edit some text, I don't want to wait a minute for my text editor to start up. And if I really need to spin up a full IDE, I'll just start VSCode <br>
 I will be making another article only on my NeoVim setup, because it really revolutionized the way that I code. <br>
 Here is what it looks like now: <br>
 [![vimsetup](/assets/posts/my-archlinux-bspwm-setup/vimSetup.png)](/assets/posts/my-archlinux-bspwm-setup/vimSetup.png) <br>
