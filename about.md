@@ -10,7 +10,7 @@ I'm just a guy who likes not being spied on by microsoft, google or else. So I f
 
 If you have a question about this site or anything I made, send me an email.
 
-You can [report here](https://github.com/Ferryistaken/blog/issues/new) if there are an broken links/spelling mistakes or somethings else.
+You can [report here](https://github.com/Ferryistaken/blog/issues/new) if there are an broken links/spelling mistakes or anything else.
 
 ##### Contact me:📝
 

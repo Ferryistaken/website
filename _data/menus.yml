@@ -2,9 +2,9 @@
   url: /
   external: false
 
-- title: philosophy
-  url: /philosophy/
-  external: false # set true if you using external link, see bellow
+- title: github
+  url: https://github.com/Ferryistaken
+  external: true # set true if you using external link, see bellow
 
 - title: crypto
   url: /crypto/
