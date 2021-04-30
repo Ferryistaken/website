@@ -14,6 +14,11 @@ layout: compress
     </main>
     {% include footer.html %}
   </div>
-    <img id=anime_dumpling src="../assets/img/anime-dumpling.png" alt="dumpling" />
+    {% assign min = 1 %}
+    {% assign max = 4 %}
+    {% assign diff = max | minus: min %}
+    {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+    <!-- <img id=anime_dumpling src="../assets/img/jdm-car{{ randomNumber }}.png" alt="illustration" /> -->
+    <img id=anime_dumpling src="../assets/img/gtr.png" alt="illustration" />
 </body>
 </html>
