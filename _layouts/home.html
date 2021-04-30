@@ -2,12 +2,19 @@
 layout: default-home
 home: true
 ---
+
 <h4 class="posts-item-note">Recent Posts</h4>
 {% for post in site.posts %}
 <article class="post-item">
-  <span class="post-item-date">{{ post.date | date: "%b %d, %Y" }}</span>
-  <h4 class="post-item-title">
-    <a href="{{ post.url }}">{{ post.title | escape }}<a href="{{ post.tag[0].url }}" class="inline-tag">&nbsp{{ post.tags[0] | escape }}</a></a>
-  </h4>
+	<span class="post-item-date">{{ post.date | date: "%b %d, %Y" }}</span>
+	<h4 class="post-item-title">
+		<a href="{{ post.url }}"
+			>{{ post.title | escape }}<a
+				href="{{ post.tag[0].url }}"
+				class="inline-tag"
+				>&nbsp{{ post.tags[0] | escape }}</a
+			></a
+		>
+	</h4>
 </article>
 {% endfor %}

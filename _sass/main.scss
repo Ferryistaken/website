@@ -49,16 +49,27 @@ $on-tablet: 769px;
 $on-desktop: 1024px;
 $on-widescreen: 1152px;
 
+// Cute dumpling
+#anime_dumpling {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 20vw;
+	height: 20vw;
+	max-width: 150px;
+	max-height: 150px;
+}
+
 @mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
+	@media screen and (max-width: $device) {
+		@content;
+	}
 }
 
 @mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
+	font-size: $base-font-size * $ratio;
 }
 
 // Import sass files
 @import "klise/fonts", "klise/base", "klise/layout", "klise/post",
-  "klise/miscellaneous", "klise/_syntax", "klise/dark";
+	"klise/miscellaneous", "klise/_syntax", "klise/dark";
