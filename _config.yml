@@ -24,6 +24,8 @@ author:
 
 # Url settings
 url: "https://ferry.ml"
+canonical_url: "https://ferry.ml"
+
 baseurl:
 permalink: /:title/
 google_analytics: G-52T9RYYQLX
