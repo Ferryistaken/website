@@ -2,7 +2,7 @@
 layout: post
 title: "Galileo's Scientific method's paradox"
 date: "2020-10-31 12:14:13"
-tags: [philosphy, history, papers, idea]
+tags: [philosophy, history, papers, idea]
 description: Paper on the paradox in Galileo's scientific method
 ---
 
