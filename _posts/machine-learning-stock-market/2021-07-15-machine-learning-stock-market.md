@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using Neural Networks to Predict Stock Prices"
+title: "🧠Using Neural Networks to Predict Stock Prices📈"
 date: "2021-07-15 13:53:13 +0200"
 tags: [ai, finance, coding, stocks]
 description: My ideals
