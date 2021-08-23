@@ -11,6 +11,9 @@
   external: false
 
 
+- title: resume
+  url: /resume/
+  external: false
 # Example:
 # - title: github
 #   url: https://github.com/Ferryistaken?tab=repositories

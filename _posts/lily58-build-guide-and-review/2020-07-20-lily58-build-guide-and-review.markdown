@@ -20,7 +20,7 @@ And the [Ducky One 2 Mini](https://mechanicalkeyboards.com/shop/index.php?l=prod
 [![ducky](/assets/posts/lily58-build-guide-and-review/ducky.jpg)](/assets/posts/lily58-build-guide-and-review/ducky.jpg) <br>
 *Ducky One 2 Mini*
 {: refdef}
-As you could probably tell by the pictures (and [one of my recent articles](https://www.ferrry.tk/set-up-a-mobile-webdev-envirnomet-on-an-ipad-for-free/#my-configuration)) I chose the Anne Pro 2. <br>
+As you could probably tell by the pictures (and [one of my recent articles](https://www.ferry.ml/set-up-a-mobile-webdev-envirnomet-on-an-ipad-for-free/#my-configuration)) I chose the Anne Pro 2. <br>
 I chose this over the Ducky One 2 Mini because the latter lacked software, while the AP2 has software for both windows and linux, and because, thanks to [Open Anne Pro](https://openannepro.github.io/) I can run [QMK](https://qmk.fm/), which is an *open source* firmware for keyboards. Which means that everything running on that keyboard(apart from the [bootloader](https://www.cs.tau.ac.il/telux/lin-club_files/linux-boot/slide0002.htm)) is open source, and [some of it](https://github.com/OpenAnnePro/AnnePro2-Tools) is ***even written in Rust***. <br>
 
 ## The Anne Pro 2

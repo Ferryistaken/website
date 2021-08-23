@@ -79,7 +79,7 @@ After you do this go to [netlify](https://netlify.com) dashboard, and following 
 Your site should now be live, but the domain is a random mess of words, _and we don't like that_.
 
 ## 4. Get your free domain
-Go to [Freenom](https://www.freenom.com/en/index.html?lang=en) and find a domain that you like. Technically you could get more than 1, but please don't do that as that site can only exist if the userbase is able to regulate themselves. As you can probably see I chose `ferrry.tk`(unless I changed it since writing this post).
+Go to [Freenom](https://www.freenom.com/en/index.html?lang=en) and find a domain that you like. Technically you could get more than 1, but please don't do that as that site can only exist if the userbase is able to regulate themselves. As you can probably see I chose `ferry.ml`(unless I changed it since writing this post).
 
 ## 5. Set up your domain with Netlify
 Now all you need to do is go on your project dashboard on [Netlify](https://app.netlify.com), click on `Domain Settings`, then `Add Custom Domain`, and follow the simple process to register your newly acquired domain as a valid one for netlify.

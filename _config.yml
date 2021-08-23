@@ -20,14 +20,16 @@ author:
   github: Ferryistaken
   twitter: ferrryx
   facebook: Alessandro Ferrari
-  email: alessandroferry@protonmail.com # your contact adress
+  email: alessandro.ferrari.2004@gmail.com # your contact adress
   avatar: /assets/img/avatar.jpg
 
 # Url settings
-url: "https://ferrry.tk"
+url: "https://ferry.ml"
+canonical_url: "https://ferry.ml"
+
 baseurl:
 permalink: /:title/
-google_analytics:
+google_analytics: UA-120232408-2
 fb_appid:
 
 # Collection setting
