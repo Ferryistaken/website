@@ -33,13 +33,13 @@ The first thing of is the [OS](https://en.wikipedia.org/wiki/Operating_system), 
 Of course this tools will work on any unix-like OS.
 
 ## The window manager
-I use bspwm, a [tiling window manager](https://en.wikipedia.org/wiki/Tiling_window_manager), which means that I don't have to drag and resize windows around, they just place themselves in an organized grid. Here is what I mean *(sorry for the bad quality, as I said in a [previous article](https://www.ferrry.tk/my-custom-polybar-widgets/#context) having a 21:9 3440x1440 monitor is hard)*: <br>
+I use bspwm, a [tiling window manager](https://en.wikipedia.org/wiki/Tiling_window_manager), which means that I don't have to drag and resize windows around, they just place themselves in an organized grid. Here is what I mean *(sorry for the bad quality, as I said in a [previous article](https://www.ferry.ml/my-custom-polybar-widgets/#context) having a 21:9 3440x1440 monitor is hard)*: <br>
 [![window manager showcase](/assets/posts/my-archlinux-bspwm-setup/tilingShowCase.gif)](/assets/posts/my-archlinux-bspwm-setup/tilingShowCase.gif) <br>
 
 I use sxhkd to manage keybinds. It works very well and it's highly configurable. It was created by the same creator of bspwm, [baskerville](https://github.com/baskerville), and he recommends to use it with bspwm. <br>
 
 ## The bar
-I use [polybar](https://polybar.github.io/) as my bar, it's highly configurable and very lightweight. I have a whole [article](https://www.ferrry.tk/my-custom-polybar-widgets/) on some of my *custom* polybar widgets. <br>
+I use [polybar](https://polybar.github.io/) as my bar, it's highly configurable and very lightweight. I have a whole [article](https://www.ferry.ml/my-custom-polybar-widgets/) on some of my *custom* polybar widgets. <br>
 [![myBar](/assets/posts/my-archlinux-bspwm-setup/bar1.png)](/assets/posts/my-archlinux-bspwm-setup/bar1.png)
 [![myBar](/assets/posts/my-archlinux-bspwm-setup/bar2.png)](/assets/posts/my-archlinux-bspwm-setup/bar2.png)
 <br>

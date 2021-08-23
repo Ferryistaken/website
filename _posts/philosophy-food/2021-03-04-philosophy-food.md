@@ -4,6 +4,12 @@ title: "Philosophy: Food"
 date: 2021-03-04 13:13 +0000
 tags: [philosophy, idea]
 ---
+# NOTE (17 July 2021): After reading this post again, I don't find any of the contents in this page relevant to my current thoughts. Everything written here does not reflect what I think, but I will leave it up for free speach's sake.
+
+Everything under here is what the post looked like before this side note:
+
+---
+
 > Disclaimer: this post(and all other that start with "Philosophy") contains ideas which are completely personal, and sometimes not based on objective facts, but rather on an interpretation of them.  
 
 # Food

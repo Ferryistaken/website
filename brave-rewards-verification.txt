@@ -5,5 +5,5 @@ permalink: .well-known/brave-rewards-verification.txt
 
 This is a Brave Rewards publisher verification file.
 
-Domain: ferrry.tk
-Token: 68e6d2fcb646b525c0f91988f9e2b0cdf20a56df1d5339f34f7db5ab6bffdee8
+Domain: ferry.ml
+Token: c89e720d963bfeeff4a34675b19183a141c44c70491b004f5db59c24ee037b67
