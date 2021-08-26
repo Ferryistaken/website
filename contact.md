@@ -10,7 +10,8 @@ If you have a question about this site or anything I made, send me an email.
 
 You can [report here](https://github.com/Ferryistaken/blog/issues/new) if there are an broken links/spelling mistakes or anything else.
 
-##### Contact me:📝
+##### Find me here:📝
 
-- <{{ site.author.email }}>
-- <https://github.com/{{ site.author.github }}>
+- 📧 [Email](mailto:<{{ site.author.email }}>)
+- 👨‍💻 [Github](<https://github.com/{{ site.author.github }}>)
+- 📚 [GoodReads](https://www.goodreads.com/user/show/139253581-alessandro-ferrari)
