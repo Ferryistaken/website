@@ -64,7 +64,7 @@ comments: false
 ![usdc qr code](/assets/img/usdc-qr.png)  
 {: refdef}  
 
-# Traditional Payments
+# Traditional Payment Methods
 > Traditional payment methods are not encouraged, open a cryptocurrency wallet [you boomer](https://www.youtube.com/watch?v=ta41xU-tkFA){:target="_blank"}
 
 ## [Paypal](http://paypal.me/ferryistaken)
