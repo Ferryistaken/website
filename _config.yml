@@ -26,6 +26,8 @@ author:
   email: alessandro.ferrari.2004@gmail.com # your contact adress
   avatar: /assets/img/avatar.jpg
 
+# The favicon is: フェリー, meaning: ferry (the boat)
+
 # Url settings
 url: "https://ferry.ml"
 canonical_url: "https://ferry.ml"
