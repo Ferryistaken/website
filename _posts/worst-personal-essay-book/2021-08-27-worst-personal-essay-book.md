@@ -72,7 +72,9 @@ If I managed to keep up with this speed for all the essays, it would take me a b
 
 You know what they say, ***One man's trash is another man's treasure***, let's say that you read through these essays, and extrapolated the top 200, this will leave you with a **100000 words** book, just over average, which contains the best personal presentations of america's young writers.
 
-And mind you, you could publish this book *every year*. You could even do 10 Year specials with the top story from each year. You can thank me later, after you become a New York Times best selling author, since it a lot of trash gets there anyways, so this book will have just the right content.
+And mind you, you could publish this book *every year*. You could even do 10 Year specials with the top story from each year. You can thank me later, after you become a New York Times best selling author, since it seems to me like they let anyone be a best selling author now, and this book will have just the right content.
+
+> It's just a joke of course, I wish I could become a NY Times best selling author
 
 ### Thank you
 
