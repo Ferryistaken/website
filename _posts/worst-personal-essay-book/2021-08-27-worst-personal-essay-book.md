@@ -13,7 +13,7 @@ Today I will cover the following topic:
 
 # What would happen if we came up with a yearly collection of the weirdest, worst, most particular, interesting personal essays submitted each year to colleges?
 
-While I was finding things to do to procrastinate the writing of my Mathematical Internal Assessment, I had a strange conversation with a friend of mine. For the purpose of this article, we'll call him **Randall** (Thanks [to this randome name generator](https://www.name-generator.org.uk/?i=2hyvavea) for this awesome prompt).
+While I was finding things to do to procrastinate the writing of my Mathematical Internal Assessment, I had a strange conversation with a friend of mine. For the purpose of this article, we'll call him **Randall** (Thanks [to this random name generator](https://www.name-generator.org.uk/?i=2hyvavea) for this awesome prompt).
 
 ## The Genesis
 
