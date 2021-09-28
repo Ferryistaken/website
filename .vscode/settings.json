@@ -7,5 +7,23 @@
         "ortholinear",
         "reeeeally",
         "urlphilosophy"
-    ]
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#18cddf",
+        "activityBar.activeBorder": "#c916b9",
+        "activityBar.background": "#18cddf",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#c916b9",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "statusBar.background": "#13a3b1",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#18cddf",
+        "tab.activeBorder": "#18cddf",
+        "titleBar.activeBackground": "#13a3b1",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#13a3b199",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#13a3b1"
 }
