@@ -6,6 +6,8 @@ date: 2021-11-14 18:53 -0400
 usemathjax: true
 ---
 
+# 🚧 WIP 🚧 Come back soon.
+
 In this brief writeup, I'll show you how I wrote my first emulator--an emulator to the CHIP-8 programming language--in Rust.
 
 # Table of Contents
