@@ -222,12 +222,14 @@
   color: $black;
 }
 
+
 // List of posts
 .post-item {
   display: flex;
   padding-top: 5px;
   padding-bottom: 6px;
   @extend %clearfix;
+
 
   &:not(:first-child) {
     border-top: 1px solid $light;
@@ -259,6 +261,10 @@
   }
 }
 
+.post-item:hover {
+  &:hover {
+    color: $text-link-blue;
+  }
 .inline-tag {
   font-weight: lighter;
   font-style: italic;

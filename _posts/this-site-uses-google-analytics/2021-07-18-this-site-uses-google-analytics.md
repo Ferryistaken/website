@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "⚠️ This blog now uses google analytics ⚠️"
+title: "⚠️ This blog now uses google analytics"
 tags: [privacy, blog, webdev]
 date: 2021-07-18 14:37 +0000
 ---
