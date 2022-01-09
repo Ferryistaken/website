@@ -22,7 +22,7 @@ comments: false
 ## Monero
 {:refdef: style="text-align: center;"}
 ```
-86A3SXgNMJb22HgUNQWwrsH7LAeQtziKSj7ZwhU7FoSajQxxy9piCeDj4C743amUBP7id3pNpj6wefCSJeee8hEKM6hGSRv
+87BbxUBQyYW9VfvMBxrZG96E81zy7AR4wcYckJCfs3akjSHL3EMjh5J5jfxm6Er6pjRrZdhdxvSEuKN63gRUGzRUVSvxrKb
 ```
 {: refdef}  
 {:refdef: style="text-align: center;"}
@@ -31,7 +31,7 @@ comments: false
 ## Bitcoin
 {:refdef: style="text-align: center;"}
 ```
-32cta3D1Zy3Umj7ubCrRbawK5nYmmCHQBh
+bc1qeczdgdpwsd90sysy0cqj3vglztv9mgwjl9k8k3
 ```
 <br>
 ![btc qr code](/assets/img/btc-qr.png)  
