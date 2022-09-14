@@ -1,9 +1,8 @@
 ---
 title: Contact me
 permalink: /contact/
-layout: page
-excerpt: Just an italian guy who likes tech.
-comments: false
+redirect_to:
+	- https://contact.alessandroferrari.live
 ---
 
 If you have a question about this site or anything I made, send me an email.
