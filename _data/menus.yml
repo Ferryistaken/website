@@ -6,7 +6,7 @@
   url: https://github.com/Ferryistaken
   external: true # set true if you using external link, see bellow
 
-- title: contact%20me
+- title: "contact me"
   url: https://contact.alessandroferrari.live
   external: false
 
