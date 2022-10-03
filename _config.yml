@@ -26,8 +26,8 @@ author:
 # The favicon is: フェリー, meaning: ferry (the boat)
 
 # Url settings
-url: "https://ferry.ml"
-canonical_url: "https://ferry.ml"
+url: "https://alessandroferrari.live"
+canonical_url: "https://alessandroferrari.live"
 
 baseurl:
 permalink: /:title/
