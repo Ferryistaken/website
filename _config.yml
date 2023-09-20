@@ -1,12 +1,11 @@
 # Site settings
-title: Ferry's blog # site title
+title: Ferry's Website # site title
 short_name: "fs"
 description: >- # site description
-    This is my blog about random loosely tech related topics,
-    like my projects, unix system management, coding, linux ricing and configuration
+  This is my website. It contains a blog, my portfolio, and ways to contact me.
 lang: en-US # default lang
 timezone: UnitedStates/NewYork # set your timezone
-image: assets/img/computer.png # This image used for Open Graph more info https://ogp.me/
+image: assets/favicons/apple-touch-icon.png
 repo: https://github.com/Ferryistaken/Ferryistaken.github.io # site repo [optional]
 mode: light # default theme "dark" | "light"
 
@@ -20,7 +19,7 @@ author:
   github: Ferryistaken
   twitter: ferrryx
   facebook: Alessandro Ferrari
-  email: alessandro.ferrari.2004@gmail.com # your contact adress
+  email: alessandroferrari@gatech.edu
   avatar: /assets/img/avatar.jpg
 
 # The favicon is: フェリー, meaning: ferry (the boat)
