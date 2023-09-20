@@ -1,0 +1,36 @@
+---
+layout: default-noauth
+---
+<article style="margin-top: 30px;">
+  <div style="display: flex; flex-direction: row; align-items: flex-start;">
+    <div style="flex: 1;">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h1>{{ page.title }}</h1>
+        <div style="flex: 0 0 100px; margin-left: 20px;">
+          <img src="{{ page.logo }}" alt="{{ page.title }} Logo" style="width: 100px; height: auto;" />
+        </div>
+      </div>
+      <p><strong>Location:</strong> {{ page.location }}</p>
+      <p><strong>Role:</strong> {{ page.role }}</p>
+      <p><strong>Duration:</strong> {{ page.duration }}</p>
+    </div>
+  </div>
+  <div style="margin-top: 20px;">
+    {{ content }}
+  </div>
+</article>
+
+<style>
+@media (max-width: 600px) {
+  article > div > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article > div > div > div {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+</style>
+
