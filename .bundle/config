@@ -1,2 +1,3 @@
 ---
 BUNDLE_PATH: "/home/ferry/Projects/webdev/blog/vendor/bundle"
+BUNDLE_FORCE_RUBY_PLATFORM: "true"
