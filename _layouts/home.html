@@ -1,20 +1,22 @@
 ---
-layout: default-home
-home: true
+layout: compress
 ---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
+{% include header-home.html %}
 
-<h4 class="posts-item-note">Recent Posts</h4>
-{% for post in site.posts %}
-<article class="post-item">
-	<span class="post-item-date">{{ post.date | date: "%b %d, %Y" }}</span>
-	<h4 class="post-item-title">
-		<a href="{{ post.url }}"
-			>{{ post.title | escape }}<a
-				href="{{ post.tag[0].url }}"
-				class="inline-tag"
-				>&nbsp{{ post.tags[0] | escape }}</a
-			></a
-		>
-	</h4>
-</article>
-{% endfor %}
+<body data-theme="{{ site.mode }}">
+  {% include navbar.html %}
+  <div class="wrapper">
+    {% include author.html %}
+    <main aria-label="Content">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </div>
+    {% assign min = 1 %}
+    {% assign max = 4 %}
+    {% assign diff = max | minus: min %}
+    {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+</body>
+</html>

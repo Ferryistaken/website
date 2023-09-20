@@ -3,20 +3,15 @@ layout: compress
 ---
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: " en " }}">
-{% include header-home.html %}
+{% include header.html %}
 
 <body data-theme="{{ site.mode }}">
   {% include navbar.html %}
   <div class="wrapper">
-    {% include author.html %}
     <main aria-label="Content">
       {{ content }}
     </main>
     {% include footer.html %}
   </div>
-    {% assign min = 1 %}
-    {% assign max = 4 %}
-    {% assign diff = max | minus: min %}
-    {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
 </body>
 </html>

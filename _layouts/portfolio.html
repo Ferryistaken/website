@@ -25,7 +25,7 @@ layout: compress
         <!-- Add your links here -->
         <a href="{{ page.link1 }}">Github</a>
         <a href="{{ page.link2 }}">Linkedin</a>
-        <a href="{{ page.link4 }}">Resume</a>
+        <a href="{{ page.link3 }}">Resume</a>
       </div>
     </div>
 
@@ -44,19 +44,88 @@ layout: compress
         <p>{{ page.current_work }}</p>
       </section>
 
-      <section id="past-work">
-        <h2>Past Work</h2>
-        <div class="work-cards" style="display: flex; flex-wrap: wrap; gap: 20px;">
-          {% for work in site.data.past_work %}
-            <div class="work-card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 10px; text-align: center; flex: 1 1 calc(33.333% - 20px);">
-              <a href="{{ work.link }}" style="text-decoration: none; color: inherit;">
-                <img src="{{ work.logo }}" alt="{{ work.title }}" style="max-width: 100px; height: auto; margin-bottom: 10px;">
-                <h3>{{ work.title }}</h3>
-              </a>
-            </div>
-          {% endfor %}
+
+<section id="past-work"> <h2>Past Work</h2> <div class="work-cards" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+        {% for work in site.work_experience %}
+        <div class="work-card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 10px; flex: 1 1 calc(33.333% - 20px); display: flex; flex-direction: row; align-items: center; max-width: 300px; width: 100%;">
+            <a href="{{ work.url }}" style="text-decoration: none; color: inherit; display: flex; flex-direction: row; align-items: center; width: 100%;">
+                <img src="{{ work.logo }}" alt="{{ work.title }} Logo" style="flex: 1; max-width: 33%; height: auto; margin: auto;" />
+                <div style="flex: 2; max-width: 66%;">
+                    <h3>{{ work.title }}</h3>
+                </div>
+            </a>
         </div>
-      </section>
+        {% endfor %}
+    </div>
+</section>
+
+<style>
+.work-cards {
+    justify-content: center;
+}
+
+.work-card {
+    max-width: 300px; /* Adjust as necessary */
+    width: 100%;
+}
+
+.work-card a {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Align items to the center */
+    width: 100%;
+}
+
+.work-card img {
+    flex: 1;
+    max-width: 33%;
+    height: 80px; /* Set a fixed height */
+    margin: auto;
+    object-fit: contain; /* Ensure the logo maintains its aspect ratio */
+}
+
+.work-card a div {
+    flex: 2;
+    max-width: 66%;
+    display: flex; /* Make this a flex container */
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center; /* Center the items vertically */
+}
+
+          @media (max-width: 600px) {
+    .work-card {
+        flex-direction: column !important;
+        align-items: center !important;
+        max-width: 100%;
+        text-align: center;
+    }
+    .work-card a {
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100%;
+        text-align: center;
+    }
+    .work-card img {
+        flex: unset !important;
+        max-width: 100px !important;
+        margin: auto !important;
+        display: block;
+        height: 70%; /* Set a fixed height */
+        object-fit: contain; /* Ensure the logo maintains its aspect ratio */
+    }
+    .work-card a div {
+        flex: unset !important;
+        max-width: 100% !important;
+        display: flex; /* Make this a flex container */
+        flex-direction: column; /* Arrange items in a column */
+        justify-content: center; /* Center the items vertically */
+        margin-bottom: 25px; /* Add margin to the bottom */
+    }
+}
+</style>
+
+
+
 
       <section id="latest-blog-posts">
         <h2>Latest Blog Posts</h2>
