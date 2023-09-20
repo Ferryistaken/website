@@ -2,22 +2,18 @@
   url: /
   external: false
 
-- title: github
-  url: https://github.com/Ferryistaken
-  external: true # set true if you using external link, see bellow
+- title: blog
+  url: /blog
+  external: false
 
 - title: "contact me"
   url: https://contact.alessandroferrari.live
   external: false
 
+- title: github
+  url: https://github.com/Ferryistaken
+  external: true # set true if you using external link, see bellow
 
 - title: resume
   url: /resume/
   external: false
-
-# Example:
-# - title: github
-#   url: https://github.com/Ferryistaken?tab=repositories
-#   external: true
-
-# need to add links tab
