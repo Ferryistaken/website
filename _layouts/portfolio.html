@@ -38,7 +38,7 @@ layout: compress
         {{ content }}
       </section>
 
-<section id="past-work"> <h2>Past Work</h2> <div class="work-cards" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+<section id="past-work"> <h2 style="text-align: center;">Past Work</h2> <div class="work-cards" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
         {% for work in site.work_experience %}
         <div class="work-card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 10px; flex: 1 1 calc(33.333% - 20px); display: flex; flex-direction: row; align-items: center; max-width: 300px; width: 100%;">
             <a href="{{ work.url }}" style="text-decoration: none; color: inherit; display: flex; flex-direction: row; align-items: center; width: 100%;">
