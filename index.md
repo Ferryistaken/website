@@ -18,6 +18,8 @@ I am Alessandro Ferrari, a **software engineer** with a specialization in **bioi
 
 I'm currently doing **immuno transcriptomics** research at the Gibson lab. I'm currently developing **scRNA** and **scATAC** pipelines: from raw data to quality-controlled, clustered data ready for downstream analysis. By applying a **computer science-centric** methodology to bioinformatics, I'm enhancing efficiency by **automating processes** that are traditionally hand-coded in leading publications.
 
+<br>
+
 <div style="display: flex; justify-content: center; align-items: center;">
   <img src="/assets/img/portfolio/dune.png" style="width: 33%; margin-right: 10px;" alt="Description 1">
   <img src="/assets/img/portfolio/marker.png" style="width: 33%; margin-right: 10px;" alt="Description 2">
