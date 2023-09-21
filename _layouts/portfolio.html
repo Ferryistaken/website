@@ -30,20 +30,13 @@ layout: compress
     </div>
 
     <div style="display: inline-block; background-color: #00325a; border-radius: 4%; padding: 10px;">
-      <img src="{{ page.image }}" alt="{{ page.title }}" style="display: block; width: 200px; height: auto; max-width: 100%;" />
+      <img src="{{ page.image }}" alt="{{ page.title }}" style="display: block; width: 200px; height: auto; max-width: 100%; border-radius: 2%;" />
     </div>
   </section>
 
       <section id="about-me">
-        <h2>About Me</h2>
         {{ content }}
       </section>
-
-      <section id="current-work">
-        <h2>Current Work</h2>
-        <p>{{ page.current_work }}</p>
-      </section>
-
 
 <section id="past-work"> <h2>Past Work</h2> <div class="work-cards" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
         {% for work in site.work_experience %}
