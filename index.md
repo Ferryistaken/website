@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: Alessandro Ferrari's Website
+title: Alessandro Ferrari
 image: /assets/img/headshot-removebg-preview.png
 link1: https://github.com/Ferryistaken
 link2: https://linkedin.com/in/alessandroferrari04
