@@ -49,20 +49,6 @@ $on-tablet: 769px;
 $on-desktop: 1024px;
 $on-widescreen: 1152px;
 
-// Cute dumpling
-#anime_dumpling {
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
-	width: 25vw;
-	height: 20vw;
-	max-width: 200px;
-	max-height: 150px;
-	-webkit-transform: scaleX(-1);
-	transform: scaleX(-1);
-	filter: hue-rotate(180deg);
-}
-
 @mixin media-query($device) {
 	@media screen and (max-width: $device) {
 		@content;

@@ -5,17 +5,15 @@ date: “2020-07-18 12:22:34 -0400”
 tags: [blog, mobile, webdev, git, ide, coding, ipad]
 description: In this article I will tell you how to set up a fully working IDE for web development on any mobile device for free
 ---
-This article is about how you can turn your boring IPad(or any mobile device), into an *amazing*, fully functional, [git](https://git-scm.com/) integrated, IDE for web development and light coding, ***completely for free.***
 
 # Why?
 Sometimes you have(or want) to work in places where space is extremely limited, or maybe you just don't want to carry an heavy laptop around all the time. <br>
->*My personal reason is that I bought a massive gaming laptop and I really don't want to carry 5+ pounds of plastic and silicon everywhere I go. Kids, for the love of god, buy small and light laptops.*
 
 # Requirements
 1. **A mobile device** <br>
-This guide is targeted for IOs but the steps should basically be the same for android. I am using and recommend an IPad because of the bigger screen, but it really doesn't change anything. <br>
+This guide is targeted for iOS but the steps should basically be the same for android. I am using and recommend an IPad because of the bigger screen, but it really doesn't change anything. <br>
 2. **A bluetooth Keyboard** <br>
-This technically isn't *needed*, but realistically you aren't going to be able to do any work with the virtual keyboard covering up most of the screen. I am using the [Anne Pro 2](https://annepro2.com/products/kailh-box-switchobins-anne-pro-2-60-nkro-bluetooth-4-0-type-c-rgb-mechanical-gaming-keyboard?variant=28863929057357) but any bluetooth keyboard will do.
+This technically isn't *needed*, but realistically you aren't going to be able to do any work with the virtual keyboard covering up most of the screen.
 
 ## The IDE
 1. Option 1: [Repl.it](https://repl.it/) <br>
