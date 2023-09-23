@@ -6,10 +6,6 @@ tags: [linux, software, ricing]
 description: "A writeup made to share rofi themes"
 ---
 
-# Introduction
-
-This is a writeup that I made to showcase that a riced linux desktop can look on par(if not better) than any other modern operating system's.  
-
 ## What is Rofi?
 
 In this writeup I'm going to talk about [`rofi`](https://github.com/davatorium/rofi), from their github, "a window switcher, Application launcher and dmenu replacement".  

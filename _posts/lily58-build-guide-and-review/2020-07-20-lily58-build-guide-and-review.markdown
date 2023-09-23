@@ -5,9 +5,6 @@ date: "2020-07-20 18:36:13 -0400"
 tags: [hardware, keyboard, soldering]
 description: This is a build log of the lily58 Pro split ergo keyboard
 ---
-Some time ago, while browsing reddit, I came across a subreddit: [r/MechanicalKeyboards](https://www.reddit.com/r/MechanicalKeyboards/), which is a sub about the hobby of building and collecting mechanical keyboards. At the time I had an average mechanical keyboard, the [Logitech G613](https://www.logitechg.com/en-us/products/gaming-keyboards/g613-wireless-mechanical-gaming-keyboard.920-008386.html), which I bought mainly because it was mechanical and *wireless*, which is *reeeeally* nice. At first I though: *"Why would someone build his own keyboard? Or even own more than one? I'd never do that lol"*. <br>
-***Boy was I wrong.*** <br>
-Here I am 3 months later with 2 more keyboards, [one hand built by myself](https://www.reddit.com/r/MechanicalKeyboards/comments/hip7ax/my_first_custom_keyboard_the_lily58_pro_with/).
 
 ## How did I get here?
 After about a year of using the `Logitech G613` I decided to search for a smaller keyboard, which wouldn't occupy the majority of my desk. After scrounging the internet for every possible review I had to choose between the [Anne Pro 2](https://www.amazon.com/ANNE-PRO-Wireless-Mechanical-Keyboard/dp/B07Y53M9N1): <br>

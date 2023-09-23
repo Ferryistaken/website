@@ -6,12 +6,12 @@ tags: [ricing, linux, os, unix, software]
 description: Writeup to create a way to minimize windows in bspwm
 ---
 
-When I switched to tiling WMs, I instantly noticed that I liked them way more than floating WMs because of the predictable and streamlined behaviour. As Lao Tzu said: "*Simplicity is the ultimate sophistication*"
-> *Simplicity is the ultimate sophistication*
-> \- Lao Tzu
+# Introduction
 
-This is because if I know exactly what will happen when I open or close a window, then I can structure my workflow around simple concepts without having to remember or use a thousand useless features.
-This is why I chose [bspwm](https://github.com/baskerville/bspwm), its behaviour is very simple and it's very customizable. I pretty much used the basic config file, tweaking some window rules to suit my needs. This is what my `bspwmrc` looks like:
+In this guide I will show you how to create a basic minimize menu in bspwm.
+
+This is my bspwmrc:
+
 ```bash
 #! /bin/sh
 
@@ -126,7 +126,7 @@ sleep 10 && bspc config ignore_ewmh_focus false
 
 As you can see, other than starting some programs and choosing their desktop, I didn't change a lot. This is because the best way to customize bspwm is to use its socket architecture, and calling `bspc` interactively.
 
-The feature that I missed most in bspwm switching from normal DEs like `kde` or `gnome` (or even Window's DE) is that it didn't have a minimize feature, so you either had the windows that you wanted open in your face, or you had to send them to another desktop.
+The only feature that I missed in bspwm was a way to minimize my windows, as I don't want to keep an "everything" desktop to throw all my other windows to.
 
 # Solution: create your own minimize menu
 
