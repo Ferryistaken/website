@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const carouselText = [
-        {text: "TAGGCGCACTAA", color: "#020305"},
-        {text: "TGCTCAGCACCA", color: "#0492ca"},
-        {text: "CGACACCAGATC", color: "#00325a"}
+        {text: "TAGGCGCAC", color: "#020305"},
+        {text: "TGCTCAGCAC", color: "#0492ca"},
+        {text: "CGACACCA", color: "#00325a"}
     ];
 
     carousel(carouselText, document.getElementById("feature-text"));
