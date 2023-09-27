@@ -13,6 +13,8 @@ In this brief writeup, I'll show you how I wrote my first emulator--an emulator 
 
 This post isn't supposed to be a step-to-step guide, it may be treated as such, but you will probably find some better guides on the internet. I wrote this emulator a while ago and am just now(~1.5 years later) writing this post, so don't lynch me for my errors--or better yet; fix them on [github](https://github.com/Ferryistaken/CHIP8-rs/issues).
 
+Skip to the [code](https://github.com/Ferryistaken/CHIP8-rs).
+
 # Project setup
 
 # CHIP8
@@ -538,6 +540,7 @@ This opcode performs a bitwise OR operation between the values in registers Vx a
 **OP_8xy2** - Set Vx = Vx AND Vy
 
 Functionality: Bitwise AND of Vx and Vy.
+
 Implementation Details: The values of registers Vx and Vy are obtained from the opcode. The value at register Vx is then bitwise AND-ed with the value at register Vy, and the result is stored back in Vx.
 
 ```rust
@@ -555,6 +558,7 @@ Implementation Details: The values of registers Vx and Vy are obtained from the 
 **OP_8xy3** - Set Vx = Vx XOR Vy
 
 Functionality: Bitwise XOR of Vx and Vy.
+
 Implementation Details: The values of registers Vx and Vy are obtained from the opcode. The value at register Vx is then bitwise XOR-ed with the value at register Vy, and the result is stored back in Vx.
 
 ```rust
@@ -572,6 +576,7 @@ Implementation Details: The values of registers Vx and Vy are obtained from the 
 **OP_8xy4** - Set Vx = Vx + Vy, set VF = carry.
 
 Functionality: Adds Vx and Vy. Checks for an overflow.
+
 Implementation Details: If the result exceeds 255, the VF register is set to 1 (indicating a carry). Otherwise, it's set to 0. Only the lowest 8 bits of the result are kept and stored back in Vx.
 
 ```rust
@@ -597,6 +602,7 @@ Implementation Details: If the result exceeds 255, the VF register is set to 1 (
 **OP_8xy5** - Set Vx = Vx - Vy, set VF = NOT borrow.
 
 Functionality: Subtracts Vy from Vx. Checks if there's a borrow.
+
 Implementation Details: If Vx > Vy, VF is set to 1 (no borrow). If Vy > Vx, VF is set to 0 (indicates a borrow). The result of the subtraction is then stored back in Vx.
 
 ```rust
@@ -622,6 +628,7 @@ Implementation Details: If Vx > Vy, VF is set to 1 (no borrow). If Vy > Vx, VF i
 **OP_8xy6** - Set Vx = Vx SHR 1.
 
 Functionality: Bitwise shift right of Vx.
+
 Implementation Details: If the least-significant bit of Vx is 1, then VF is set to 1; otherwise, it's 0. The value in Vx is then halved (shifted right by one bit).
 
 ```rust
@@ -641,6 +648,7 @@ Implementation Details: If the least-significant bit of Vx is 1, then VF is set 
 **OP_8xy7** - SUBN Vx, Vy
 
 Functionality: Subtract Vx from Vy.
+
 Implementation Details: If Vy > Vx, VF is set to 1 (no borrow). If Vx > Vy, VF is set to 0 (indicates a borrow). The result of Vy - Vx is then stored back in Vx.
 
 ```rust
@@ -666,6 +674,7 @@ Implementation Details: If Vy > Vx, VF is set to 1 (no borrow). If Vx > Vy, VF i
 **OP_8xyE** - Set Vx = Vx SHL 1.
 
 Functionality: Bitwise shift left of Vx.
+
 Implementation Details: If the most-significant bit of Vx is 1, then VF is set to 1; otherwise, it's 0. The value in Vx is then doubled (shifted left by one bit).
 
 ```rust
@@ -685,6 +694,7 @@ Implementation Details: If the most-significant bit of Vx is 1, then VF is set t
 **OP_9xy0** - Skip next instruction if Vx != Vy
 
 Functionality: Conditional instruction skipping.
+
 Implementation Details: If the values in registers Vx and Vy are not equal, the program counter is increased by 2, effectively skipping the next instruction.
 
 ```rust
@@ -704,6 +714,7 @@ Implementation Details: If the values in registers Vx and Vy are not equal, the 
 **OP_Annn** - set I = nnn
 
 Functionality: Sets the index register to the value nnn from the opcode.
+
 Implementation Details: The value nnn from the opcode is directly assigned to the index register.
 
 ```rust
@@ -720,6 +731,7 @@ Implementation Details: The value nnn from the opcode is directly assigned to th
 **OP_Bnnn** - Jump to location nnn + V0
 
 Functionality: Sets the program counter to the address nnn + the value in register V0.
+
 Implementation Details: The program counter is adjusted to the new address computed as the sum of nnn and the value in register V0.
 
 ```rust
@@ -736,6 +748,7 @@ Implementation Details: The program counter is adjusted to the new address compu
 **OP_Cxkk** - Set Vx = random byte AND kk.
 
 Functionality: Sets Vx to the result of a bitwise AND operation between a random byte and kk.
+
 Implementation Details: A random byte is generated and bitwise AND-ed with the value kk. The result is then stored in register Vx.
 
 ```rust
@@ -761,6 +774,7 @@ Implementation Details: A random byte is generated and bitwise AND-ed with the v
 **OP_Dxyn** - Display n-byte sprite starting at memory location I at (Vx, Vy), set VF = collision.
 
 Functionality: Draws a sprite on the display.
+
 Implementation Details: The sprite data starts at the memory location pointed to by the index register. The sprite is drawn at coordinates (Vx, Vy) and has a height of n bytes. If a sprite pixel collides with an existing pixel on the screen, VF is set to 1.
 
 ```rust
@@ -811,6 +825,7 @@ Implementation Details: The sprite data starts at the memory location pointed to
 **OP_Ex9E** - Skip next instruction if key with the value of Vx is pressed.
 
 Functionality: Conditional instruction skipping based on key press.
+
 Implementation Details: If the key corresponding to the value in register Vx is currently pressed, the program counter is increased by 2, effectively skipping the next instruction.
 
 ```rust
@@ -830,6 +845,7 @@ Implementation Details: If the key corresponding to the value in register Vx is 
 **OP_ExA1** - Skip next instruction if key with the value of Vx is not pressed.
 
 Functionality: Conditional instruction skipping based on key release.
+
 Implementation Details: If the key corresponding to the value in register Vx is currently not pressed, the program counter is increased by 2, effectively skipping the next instruction.
 
 ```rust
@@ -847,7 +863,9 @@ Implementation Details: If the key corresponding to the value in register Vx is 
 ```
 
 **OP_Fx07** - Set Vx = delay timer value
+
 Functionality: Sets register Vx to the value of the delay timer.
+
 Implementation Details: Vx is extracted from the opcode, and its value is set to the current value of the delay timer.
 
 ```rust
@@ -862,7 +880,9 @@ Implementation Details: Vx is extracted from the opcode, and its value is set to
 ```
 
 **OP_Fx0A** - Wait for a key press, store the value of the key in Vx
+
 Functionality: Halts execution until a key press is detected, then stores the key value in Vx.
+
 Implementation Details: The function checks each key in the keypad array. If a key is pressed (has a non-zero value), the corresponding key value is stored in Vx. If no keys are pressed, the program counter is decremented by 2, effectively halting the program and rerunning the same opcode until a key is pressed.
 
 ```rust
@@ -911,7 +931,9 @@ Implementation Details: The function checks each key in the keypad array. If a k
 ```
 
 **OP_Fx15** - Set delay timer = Vx
+
 Functionality: Sets the delay timer to the value in Vx.
+
 Implementation Details: Vx is extracted from the opcode, and the delay timer's value is set to the value in Vx.
 
 ```rust
@@ -926,7 +948,9 @@ Implementation Details: Vx is extracted from the opcode, and the delay timer's v
 ```
 
 **OP_Fx18** - Set sound timer = Vx
+
 Functionality: Sets the sound timer to the value in Vx.
+
 Implementation Details: Vx is extracted from the opcode, and the sound timer's value is set to the value in Vx.
 
 ```rust
@@ -941,7 +965,9 @@ Implementation Details: Vx is extracted from the opcode, and the sound timer's v
 ```
 
 **OP_Fx1E** - Set I = I + Vx
+
 Functionality: Increments the index register I by the value in Vx.
+
 Implementation Details: Vx is extracted from the opcode, and the index register's value is increased by the value in Vx.
 
 ```rust
@@ -956,7 +982,9 @@ Implementation Details: Vx is extracted from the opcode, and the index register'
 ```
 
 **OP_Fx29** - Set I = location of sprite for digit Vx
+
 Functionality: Sets I to the starting address of the sprite data for a given digit in Vx.
+
 Implementation Details: The function calculates the starting address of the sprite (5 bytes per sprite) and assigns it to the index register.
 
 ```rust
@@ -973,7 +1001,9 @@ Implementation Details: The function calculates the starting address of the spri
 ```
 
 **OP_Fx33** - Store BCD representation of Vx in memory locations I, I+1, and I+2
+
 Functionality: Converts Vx into its BCD (Binary-Coded Decimal) representation and stores the digits in memory.
+
 Implementation Details: Vx is extracted and broken down into its ones, tens, and hundreds digits. These are then stored in consecutive memory locations starting at I.
 
 ```rust
@@ -998,7 +1028,9 @@ Implementation Details: Vx is extracted and broken down into its ones, tens, and
 ```
 
 **OP_Fx55** - Store registers V0 to VX in memory starting at location I
+
 Functionality: Stores the values of registers V0 through Vx in memory starting at the address in I.
+
 Implementation Details: For each register from V0 to Vx, the function stores its value in memory, beginning at the address specified by the index register.
 
 ```rust
@@ -1015,7 +1047,9 @@ Implementation Details: For each register from V0 to Vx, the function stores its
 ```
 
 **OP_Fx65** - Read registers V0 through Vx from memory starting at location I
+
 Functionality: Populates registers V0 through Vx with values from memory starting at the address in I.
+
 Implementation Details: For each register from V0 to Vx, the function assigns it the value found in memory, starting at the address in the index register.
 
 ```rust
@@ -1032,7 +1066,9 @@ Implementation Details: For each register from V0 to Vx, the function assigns it
 ```
 
 **OP_ERR** - Fallback opcode for errors
+
 Functionality: Error-handling opcode for invalid opcodes.
+
 Implementation Details: When an opcode does not match any of the known opcodes, this function is triggered. It prints an error message showing the invalid opcode.
 
 ```rust
@@ -1064,6 +1100,7 @@ fn Table0(&mut self) {
 ```
 
 Purpose: This function handles opcodes that begin with the hexadecimal 0.
+
 Implementation Details: The opcode's last nibble (4 bits) is extracted and used as an index to look up the corresponding function in the table0 array. This function pointer is then invoked with the emulator's current instance as its argument.
 
 ## Table8 Function
@@ -1078,6 +1115,7 @@ fn Table8(&mut self) {
 ```
 
 Purpose: This function addresses opcodes that start with 8 and are followed by three more hexadecimal values, where the last nibble determines the exact operation (e.g., ADD, OR, AND).
+
 Implementation Details: Similar to Table0, the last nibble of the opcode determines the exact function to call from the table8 array.
 
 ## TableE Function
@@ -1092,6 +1130,7 @@ fn TableE(&mut self) {
 ```
 
 Purpose: Manages opcodes beginning with E.
+
 Implementation Details: The function uses the opcode's last nibble to find the corresponding function from the tableE array.
 
 ## TableF Function
@@ -1106,6 +1145,7 @@ fn TableF(&mut self) {
 ```
 
 Purpose: A handler for opcodes that start with F. Unlike the previous tables, the distinguishing feature for opcodes managed by this table is the last two hexadecimal values (byte).
+
 Implementation Details: The function extracts the opcode's last byte and uses it to fetch the relevant function from the tableF array.
 
 # Fetch, Decode, Execute
@@ -1124,6 +1164,7 @@ self.op_code = ((self.memory[self.program_counter as usize] as u16).checked_shl(
 ```
 
 Purpose: CHIP-8 opcodes are 2 bytes long. This section combines two consecutive bytes from the emulator's memory to form a single opcode.
+
 Implementation Details: The opcode is constructed by shifting the first byte to the left by 8 bits and then performing a bitwise OR with the second byte. This essentially merges the two bytes into one contiguous 16-bit opcode.
 
 **Incrementing the Program Counter**
@@ -1133,6 +1174,7 @@ self.program_counter += 2;
 ```
 
 Purpose: The program counter points to the memory location of the next opcode to be executed. Since each opcode is 2 bytes long, the program counter needs to be incremented by 2 to point to the next instruction.
+
 Implementation Details: A simple addition operation increments the program counter by two.
 
 **Decoding and Executing the Opcode**
@@ -1142,6 +1184,7 @@ self.table[((self.op_code & 0xF000).checked_shr(12).unwrap_or(0)) as usize](self
 ```
 
 Purpose: Determines which instruction the fetched opcode represents and then executes that instruction.
+
 Implementation Details:
 The most significant nibble (the first 4 bits) of the opcode is extracted. This value is then used as an index to fetch the corresponding function pointer from the table array.
 The function pointer (which points to an opcode-handling function) is then invoked.
@@ -1155,6 +1198,7 @@ if (self.delay_timer > 0) {
 ```
 
 Purpose: CHIP-8 has a delay timer that counts down at 60Hz when set to a non-zero value. When this timer reaches zero, it stops counting down.
+
 Implementation Details: If the delay timer is greater than 0, it's decremented by 1.
 
 **Decrementing the Sound Timer**
@@ -1166,6 +1210,7 @@ if (self.sound_timer > 0) {
 ```
 
 Purpose: The CHIP-8 system also features a sound timer. When this timer is non-zero, a beep sounds, counting down at the same 60Hz frequency.
+
 Implementation Details: Similar to the delay timer, if the sound timer's value is above 0, it gets decremented by 1.
 
 # Results
@@ -1177,3 +1222,5 @@ Implementation Details: Similar to the delay timer, if the sound timer's value i
 When coding this emulator, I was around 15 years old. I took heavy inspiration from [this awesome guide](https://austinmorlan.com/posts/chip8_emulator/) by Austin Morlan.
 
 While the Rust code is 100% mine, his C++ code was a big inspiration while creating both the program and this writeup.
+
+Make sure to checkout the code [here](https://github.com/Ferryistaken/CHIP8-rs).
