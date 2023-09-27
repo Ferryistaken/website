@@ -9,6 +9,7 @@
   <meta name="application-name" content="{{ site.title }}" />
   <meta name="apple-mobile-web-app-status-bar-style" content="#fff" />
   <meta name="apple-mobile-web-app-title" content="{{ site.title }}" />
+  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
   {% if site.google_analytics and jekyll.environment == 'production' %}
   {% include analytics.html %}
   {% endif %}

@@ -1,16 +1,17 @@
 ---
 layout: compress
 ---
+
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+{% include header.html %}
 
 <img src="/assets/img/corner.svg" alt="Corner" style="pointer-events: none; position: absolute; top: 0; left: 0; width: 33vw; min-width: 500px; height: auto; z-index: -1; margin-left: 0px; margin-top: 0px;">
 
-{% include header-home.html %}
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <body data-theme="{{ site.mode }}">
   {% include navbar.html %}
