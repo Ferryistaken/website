@@ -81,12 +81,12 @@ Icon=vscodium
 
 Before:
 {:refdef: style="text-align: center;"}
-[![before image](/assets/posts/custom-gtk3-theme/before.png)](/assets/posts/custom-gtk3-theme/before.png) <br>
+[![before image](/assets/posts/custom-gtk3-theme/before.webp)](/assets/posts/custom-gtk3-theme/before.webp) <br>
 *Ugly white border*
 {: refdef}
 After:
 {:refdef: style="text-align: center;"}
-[![after image](/assets/posts/custom-gtk3-theme/after.png)](/assets/posts/custom-gtk3-theme/after.png) <br>
+[![after image](/assets/posts/custom-gtk3-theme/after.webp)](/assets/posts/custom-gtk3-theme/after.webp) <br>
 *No more ugly white border, much better cool dark border*
 {: refdef}
 

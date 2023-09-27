@@ -25,7 +25,7 @@ The main flaw with Working Copy is that you cannot execute any code, so we need 
 To actually deploy the changes that you made you have to set up some sort of [CI/CD](https://en.wikipedia.org/wiki/CI/CD) system, so that as soon as you push you code your website updates. <br>
 
 ## My configuration
-![my setup](/assets/posts/set-up-a-mobile-webdev-envirnomet-on-an-ipad-for-free/setup.jpg)
+![my setup](/assets/posts/set-up-a-mobile-webdev-envirnomet-on-an-ipad-for-free/setup.webp)
 ### Hardware
 As I said before I am using a 2017 IPad, paired with the [Anne Pro 2](https://annepro2.com/products/kailh-box-switchobins-anne-pro-2-60-nkro-bluetooth-4-0-type-c-rgb-mechanical-gaming-keyboard?variant=28863929057357). A lot of people have reported issues with the bluetooth but I found that if the device that it's paired with is only a couple of inches away(like in our case) it works perfectly. I have the one with brown switches, because I think that they are the best "mainstream" ones. The fact that the keyboard is a 60% really helps with the portability of the whole setup. <br>
 

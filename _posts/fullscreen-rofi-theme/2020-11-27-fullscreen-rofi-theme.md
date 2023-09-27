@@ -15,7 +15,7 @@ These are 2 themes that I hand picked from _the internet_ over the years, which 
 # Rofi Glass
 
 {:refdef: style="text-align: center;"}
-[![screenshot1](/assets/posts/fullscreen-rofi-theme/rofi_theme_screenshot1.png)](/assets/posts/fullscreen-rofi-theme/rofi_theme_screenshot1.png)
+[![screenshot1](/assets/posts/fullscreen-rofi-theme/rofi_theme_screenshot1.webp)](/assets/posts/fullscreen-rofi-theme/rofi_theme_screenshot1.webp)
 *Screenshot on my 21:9 screen*
 {: refdef}
 [Rofi-Glass](https://gist.github.com/Ferryistaken/e0cf8e0850ae386d33580aa191b4ebad#file-rofi-glass-fullscreen-rasi) is a rofi theme which aims to be clean and minimal, to disrupt the thought that linux window manager setups can't look modern.  
@@ -24,7 +24,7 @@ When used, you can only see your current background and the rofi prompt, _nothin
 # Rofi Sidetab
 
 {:refdef: style="text-align: center;"}
-[![screenshot2](/assets/posts/fullscreen-rofi-theme/rofi_theme_screenshot2.png)](/assets/posts/fullscreen-rofi-theme/rofi_theme_screenshot2.png)
+ ![screenshot2](/assets/posts/fullscreen-rofi-theme/rofi_theme_screenshot2.webp)](/assets/posts/fullscreen-rofi-theme/rofi_theme_screenshot2.webp)
 *Screenshot on my 21:9 screen*
 {: refdef}
 [Rofi-Sidetab](https://gist.github.com/Ferryistaken/e0cf8e0850ae386d33580aa191b4ebad#file-sidetab-rasi) is a rofi theme which is singular in the sense that it works as a sidetab, this makes it feel more integrated with the desktop. On top of that it has 3 tabs on the bottom, which make you choose between Window(as in windows switcher), Run and Ssh.

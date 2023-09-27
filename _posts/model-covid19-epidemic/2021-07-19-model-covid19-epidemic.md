@@ -40,7 +40,7 @@ Here are the tools that I used:
 By using those tools I can come up with a setup like this:
 
 ### The editor
-[![Jupyterlab Setup](/assets/posts/model-covid19-epidemic/jupyterlab-setup.png)](/assets/posts/model-covid19-epidemic/jupyterlab-setup.png)
+[![Jupyterlab Setup](/assets/posts/model-covid19-epidemic/jupyterlab-setup.webp)](/assets/posts/model-covid19-epidemic/jupyterlab-setup.webp)
 > I generally use the light theme for visibility of the graphs, here I used the dark theme because it looks better in screenshots.
 
 ### Dynamic graphs with `dygraph`:
@@ -52,7 +52,7 @@ By using those tools I can come up with a setup like this:
 The data comes from the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University.
 
 Here's how the data is structured:
-[![Data](/assets/posts/model-covid19-epidemic/data-structure.png)](/assets/posts/model-covid19-epidemic/data-structure.png)
+[![Data](/assets/posts/model-covid19-epidemic/data-structure.webp)](/assets/posts/model-covid19-epidemic/data-structure.webp)
 
 Each **row** is a **country/province**, while each **column** after column 4 is a **day**. This specific screenshot is taken from the confirmed cases csv file.
 
@@ -147,7 +147,7 @@ The [SIR](https://www.google.com/search?q=Sir+model+&sxsrf=ALeKk01PRPAIyua2TQjDf
 - **R**ecovered (or dead)
 - **N** = the whole population, $$S + I + R$$
 
-[![SIR Model Graph](https://covid19.uclaml.org/figures/sir_illu.png)](https://covid19.uclaml.org/figures/sir_illu.png)
+[![SIR Model Graph](https://covid19.uclaml.org/figures/sir_illu.webp)](https://covid19.uclaml.org/figures/sir_illu.webp)
 
 ##### The Math Behind the Model
 
@@ -242,7 +242,7 @@ The [SEIR]() model is an expansion on the SIR model. The E stands for **Exposed.
 - **N** = total population. This time $$N = S + E + I + R$$.
 
 
-[![SIR Model Graph](https://covid19.uclaml.org/figures/seir_illu.png)](https://covid19.uclaml.org/figures/seir_illu.png)
+[![SIR Model Graph](https://covid19.uclaml.org/figures/seir_illu.webp)](https://covid19.uclaml.org/figures/seir_illu.webp)
 
 ##### The Math Behind the Model
 
