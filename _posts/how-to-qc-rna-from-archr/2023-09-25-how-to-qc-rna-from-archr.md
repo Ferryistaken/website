@@ -19,7 +19,7 @@ This is an easy problem to fix, however I haven't found any easy resources onlin
 
 For this tutorial, I'm going to use ArchR as the main framework. I first load in the data like this:
 
-```
+```r
 inputFiles <- "data/<your-file-name>"
 
 ArrowFiles <- createArrowFiles(
@@ -49,7 +49,7 @@ proj <- proj[!is.na(proj$Gex_nGenes) &
 Then, I start my quality control pipeline. In this case, I want to set the *minTSS* to 12, *minFrags* to 1200, *minFeatures* to 600, *maxFeatures* to 4000 and *maxMT* to 0.019.
 
 
-```
+```r
 minTSS <- 12
 minFrags <- 1200
 
@@ -62,7 +62,7 @@ maxMT <- 0.019
 
 In order to filter out ATAC cells that don't pass these thresholds, I can index into the ArchR object like so:
 
-```
+```r
 proj <- proj[proj$TSSEnrichment > minTSS & proj$nFrags > minFrags]
 ```
 
@@ -70,7 +70,7 @@ proj <- proj[proj$TSSEnrichment > minTSS & proj$nFrags > minFrags]
 
 I can then repeat the same process for the RNA data.
 
-```
+```r
 proj <- proj[proj$Gex_nGenes > minFeatures
              & proj$Gex_nGenes < maxFeatures
              & proj$Gex_MitoRatio < maxMT]
