@@ -1,7 +1,7 @@
 ---
 layout: portfolio
 title: Alessandro Ferrari
-image: /assets/img/headshot-removebg-preview.png
+image: /assets/img/headshot-removebg-preview.webp
 link1: https://github.com/Ferryistaken
 link2: https://linkedin.com/in/alessandroferrari04
 link3: /assets/af-resume.pdf
@@ -21,9 +21,9 @@ I'm currently doing **immuno transcriptomics** research at the Gibson lab. My wo
 <br>
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/assets/img/portfolio/dune.png" style="width: 33%; margin-right: 10px;" alt="Description 1">
-  <img src="/assets/img/portfolio/marker.png" style="width: 33%; margin-right: 10px;" alt="Description 2">
-  <img src="/assets/img/portfolio/umap.png" style="width: 33%;" alt="Description 3">
+  <img src="/assets/img/portfolio/dune.webp" style="width: 33%; margin-right: 10px;" alt="Description 1">
+  <img src="/assets/img/portfolio/marker.webp" style="width: 33%; margin-right: 10px;" alt="Description 2">
+  <img src="/assets/img/portfolio/umap.webp" style="width: 33%;" alt="Description 3">
 </div>
 
 <br>

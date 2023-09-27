@@ -15,7 +15,7 @@ At the end of this guide, your new business card will look like this:
 
 | The Website | The Native Contact Card |
 | ----------- | ----------------------- |
-| ![smart business card ss 1](/assets/posts/open-source-business-card/safari-ss.jpg) | ![smart business card ss 2](/assets/posts/open-source-business-card/native-contact-ss-obfuscated.jpg) |
+| ![smart business card ss 1](/assets/posts/open-source-business-card/safari-ss.webp) | ![smart business card ss 2](/assets/posts/open-source-business-card/native-contact-ss-obfuscated.webp) |
 
 ## Tutorial
 

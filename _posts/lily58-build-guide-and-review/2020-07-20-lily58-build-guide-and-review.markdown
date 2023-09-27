@@ -9,12 +9,12 @@ description: This is a build log of the lily58 Pro split ergo keyboard
 ## How did I get here?
 After about a year of using the `Logitech G613` I decided to search for a smaller keyboard, which wouldn't occupy the majority of my desk. After scrounging the internet for every possible review I had to choose between the [Anne Pro 2](https://www.amazon.com/ANNE-PRO-Wireless-Mechanical-Keyboard/dp/B07Y53M9N1): <br>
 {:refdef: style="text-align: center;"}
-[![annepro2](/assets/posts/lily58-build-guide-and-review/annepro2.jpg)](/assets/posts/lily58-build-guide-and-review/annepro2.jpg) <br>
+[![annepro2](/assets/posts/lily58-build-guide-and-review/annepro2.webp)](/assets/posts/lily58-build-guide-and-review/annepro2.webp) <br>
 *My Anne Pro 2*
 {: refdef}
 And the [Ducky One 2 Mini](https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=4322): <br>
 {:refdef: style="text-align: center;"}
-[![ducky](/assets/posts/lily58-build-guide-and-review/ducky.jpg)](/assets/posts/lily58-build-guide-and-review/ducky.jpg) <br>
+[![ducky](/assets/posts/lily58-build-guide-and-review/ducky.webp)](/assets/posts/lily58-build-guide-and-review/ducky.webp) <br>
 *Ducky One 2 Mini*
 {: refdef}
 As you could probably tell by the pictures (and [one of my recent articles]({{ site.url  }}/set-up-a-mobile-webdev-envirnomet-on-an-ipad-for-free/#my-configuration)) I chose the Anne Pro 2. <br>
@@ -48,7 +48,7 @@ I didn't really have that much experience with switches since before buying this
 But this time I wanted something different. I wanted something which was way heavier that browns, and that gave me a bigger tactile bump, while having a deeper sound. And the [NovelKeys x Kailh BOX Heavy Burnt Orange](https://novelkeys.xyz/products/novelkeys-x-kailh-box-heavy-switches?variant=3747939975208) switch gave me all that, *and more*. <br>
 Seriously, for now, they are my endgame, mainly because of how heavy and smooth they are, and because the tactile bump is very satisfying and at the very top.
 {:refdef: style="text-align: center;"}
-[![burntOrange](/assets/posts/lily58-build-guide-and-review/burntOrange.jpg)](/assets/posts/lily58-build-guide-and-review/burntOrange.jpg) <br>
+[![burntOrange](/assets/posts/lily58-build-guide-and-review/burntOrange.webp)](/assets/posts/lily58-build-guide-and-review/burntOrange.webp) <br>
 *Burnt orange switches*
 {: refdef}
 
@@ -58,7 +58,7 @@ When you think about building a keyboard, you probably think that the electronic
  In my case the keycaps where more than 4x the cost of the second most expensive part of the build, which where the switches. And my keyboard doesn't even have that many keys, just 58, *like the name suggests*. <br>
 I decided to go for the [DSA "Beyond"](https://pimpmykeyboard.com/dsa-beyond-keyset-sublimated/) ortholinear keycap set, which has a simple [typeface](https://en.wikipedia.org/wiki/Typeface), and is pretty colorful. <br>
 {:refdef: style="text-align: center;"}
-[![keycaps](/assets/posts/lily58-build-guide-and-review/dsaBeyond.jpg)](/assets/posts/lily58-build-guide-and-review/dsaBeyond.jpg) <br>
+[![keycaps](/assets/posts/lily58-build-guide-and-review/dsaBeyond.webp)](/assets/posts/lily58-build-guide-and-review/dsaBeyond.webp) <br>
 *DSA Beyond Keycap set*
 {: refdef}
 
@@ -73,7 +73,7 @@ This timelapse *only* shows soldering the [diodes](https://en.wikipedia.org/wiki
 ## How it came out & final thoughts
 Here is how the keyboard came out:
 {:refdef: style="text-align: center;"}
-[![split keyboard](/assets/posts/lily58-build-guide-and-review/splitKeyboard.jpg)](/assets/posts/lily58-build-guide-and-review/splitKeyboard.jpg) <br>
+[![split keyboard](/assets/posts/lily58-build-guide-and-review/splitKeyboard.webp)](/assets/posts/lily58-build-guide-and-review/splitKeyboard.webp) <br>
 *Final Result*
 {: refdef}
 It is the best keyboard I ever felt *by far*, and after trying a split keyboard you cannot go back. It took me just shy of a month to get back to my 70wpm typing speed, which is not bad at all. Would recommend to anyone that spends a lot of time in front of a pc.

@@ -13,18 +13,18 @@ I was intrigued by the name, so I decided to take a look at it. ***My life hasn'
 [Unixporn](https://reddit.com/r/unixporn), *as the name suggests*, is a subreddit about the customization, and ricing of \*nix operating systems. *(Linux, Unix, Bsd, MacOS, and everything [Unix-like](https://en.wikipedia.org/wiki/Unix-like))*. <br>
 Some of them are [awesome](https://www.reddit.com/r/unixporn/comments/hpakeu/awesome_afternoon_in_a_perfect_world/), *pun intended*, some of them will burn your eyes, [*but are different, so they still get 3k+ upvotes*](https://www.reddit.com/r/unixporn/comments/cskb33/oc_i_wrote_a_script_that_periodically_sets_your/). <br>
 Of course, the customization [doesn't stop on the desktop](https://www.reddit.com/r/unixporn/comments/hgba3b/i3_razer_blade_stealth_highlighting_shortcuts_and/), and sometimes people share [entirely new tools that they coded themselves](https://www.reddit.com/r/unixporn/comments/ha9q9q/oc_audio_visualizer_that_pulses_the_background_of/). <br> <br>
-[![unixporn](/assets/posts/my-archlinux-bspwm-setup/unixporn.png)](/assets/posts/my-archlinux-bspwm-setup/unixporn.png) <br> <br>
+[![unixporn](/assets/posts/my-archlinux-bspwm-setup/unixporn.webp)](/assets/posts/my-archlinux-bspwm-setup/unixporn.webp) <br> <br>
 After spending all night watching other people's rices, I decided to nuke my *lame* [Manjaro-KDE](https://manjaro.org/download/#kde-plasma) setup, and install *glorious **[ArchLinux](https://www.archlinux.org/)***. I started by installing [I3WM](https://i3wm.org/), like some *normie*. After about a month of being an [i3 scrub](https://www.youtube.com/watch?v=B5r47Q1cn_o), I decided to switch to [bspwm](https://github.com/baskerville/bspwm), because it's based on a [binary tree](https://en.wikipedia.org/wiki/Binary_tree)(which makes it more rational then i3, which is based on a normal tree), and because the keybinds are completely handled by another program, [sxhkd](https://github.com/baskerville/sxhkd), which I was already using because it's *waaaay* better than the default i3 keybinds. <br>
 I also made a [post](https://www.reddit.com/r/unixporn/comments/hrb43z/bspwm_pywal_pywal_apps_that_support_custom_css/) on unixporn myself, *but I didn't get reddit famous.*
 
 # My current setup
-[![screenshot1](/assets/posts/my-archlinux-bspwm-setup/screenshot1.png)](/assets/posts/my-archlinux-bspwm-setup/screenshot1.png)
+[![screenshot1](/assets/posts/my-archlinux-bspwm-setup/screenshot1.webp)](/assets/posts/my-archlinux-bspwm-setup/screenshot1.webp)
 
-[![screenshot2](/assets/posts/my-archlinux-bspwm-setup/screenshot2.png)](/assets/posts/my-archlinux-bspwm-setup/screenshot2.png)
+[![screenshot2](/assets/posts/my-archlinux-bspwm-setup/screenshot2.webp)](/assets/posts/my-archlinux-bspwm-setup/screenshot2.webp)
 
-[![screenshot3](/assets/posts/my-archlinux-bspwm-setup/screenshot3.png)](/assets/posts/my-archlinux-bspwm-setup/screenshot3.png)
+[![screenshot3](/assets/posts/my-archlinux-bspwm-setup/screenshot3.webp)](/assets/posts/my-archlinux-bspwm-setup/screenshot3.webp)
 
-[![screenshot4](/assets/posts/my-archlinux-bspwm-setup/screenshot4.png)](/assets/posts/my-archlinux-bspwm-setup/screenshot4.png)
+[![screenshot4](/assets/posts/my-archlinux-bspwm-setup/screenshot4.webp)](/assets/posts/my-archlinux-bspwm-setup/screenshot4.webp)
 <br> <br>
 After looking at these pristine screenshots you might be wondering how fun I am at parties, *but don't worry*, keep reading and your desktop will soon look just like mine, so you will be able to answer that question by yourself. <br>
 
@@ -40,8 +40,8 @@ I use sxhkd to manage keybinds. It works very well and it's highly configurable.
 
 ## The bar
 I use [polybar](https://polybar.github.io/) as my bar, it's highly configurable and very lightweight. I have a whole [article](https://{{ site.url }}/my-custom-polybar-widgets/) on some of my *custom* polybar widgets. <br>
-[![myBar](/assets/posts/my-archlinux-bspwm-setup/bar1.png)](/assets/posts/my-archlinux-bspwm-setup/bar1.png)
-[![myBar](/assets/posts/my-archlinux-bspwm-setup/bar2.png)](/assets/posts/my-archlinux-bspwm-setup/bar2.png)
+[![myBar](/assets/posts/my-archlinux-bspwm-setup/bar1.webp)](/assets/posts/my-archlinux-bspwm-setup/bar1.webp)
+[![myBar](/assets/posts/my-archlinux-bspwm-setup/bar2.webp)](/assets/posts/my-archlinux-bspwm-setup/bar2.webp)
 <br>
 This is what my bar looks like right now. I chose to break it in half because it was too big, *did I mention that it's hard to have a big monitor?*.
 
@@ -56,9 +56,9 @@ After spending a couple more days restlessly scrolling through r/unixporn I came
 I instantly download [Betterdiscord](https://betterdiscord.net/home/) and [Spicetify](https://github.com/khanhas/spicetify-cli), which are needed in order to use custom css for Discord and Spotify. I then used [pywal-discord](https://github.com/FilipLitwora/pywal-discord) to generate colorschemes for discord, and [this spicetify theme](https://github.com/Ferryistaken/dots/tree/master/spicetify/Themes/wal) for spotify. <br>
 The setup was tedious and the tools are not very well documented but I finally figured it out, thus making every application that I use on a daily basis use the same colorscheme. <br>
 Here is my Spotify: <br>
-[![spicetify](/assets/posts/my-archlinux-bspwm-setup/spicetify.png)](/assets/posts/my-archlinux-bspwm-setup/spicetify.png)
+[![spicetify](/assets/posts/my-archlinux-bspwm-setup/spicetify.webp)](/assets/posts/my-archlinux-bspwm-setup/spicetify.webp)
 And here is my Discord: <br>
-[![discord](/assets/posts/my-archlinux-bspwm-setup/discord.png)](/assets/posts/my-archlinux-bspwm-setup/discord.png)
+[![discord](/assets/posts/my-archlinux-bspwm-setup/discord.webp)](/assets/posts/my-archlinux-bspwm-setup/discord.webp)
 As you can see they use the same base colors.
 
 ## My Terminal
@@ -81,14 +81,14 @@ bindkey -v '^?' backward-delete-char
 ```
 In my config, to have vim keybinds in my shell too, such as `Shift + i` to go to the start of the line, `dd` to delete line, etc. <br>
 I also put `pfetch` and `fortune` in my zsh, so that I get cool graphics every time that I launch a new terminal it looks like this: <br>
-[![terminalsetup](/assets/posts/my-archlinux-bspwm-setup/terminal.png)](/assets/posts/my-archlinux-bspwm-setup/terminal.png) <br>
+[![terminalsetup](/assets/posts/my-archlinux-bspwm-setup/terminal.webp)](/assets/posts/my-archlinux-bspwm-setup/terminal.webp) <br>
 
 
 ## My text editor
 As you may have grasped by my obsession to have vim keybinds everywhere that I can, I am a [Vim](https://www.vim.org/) user(actually [NeoVim](https://neovim.io/), but they are basically the same thing). Simply because, if you are willing to learn the keybinds, it's the **best text editor**, without exceptions. I tried [Emacs](https://www.gnu.org/software/emacs/), but it's too slow and bloated. When I need to edit some text, I don't want to wait a minute for my text editor to start up. And if I really need to spin up a full IDE, I'll just start VSCode <br>
 I will be making another article only on my NeoVim setup, because it really revolutionized the way that I code. <br>
 Here is what it looks like now: <br>
-[![vimsetup](/assets/posts/my-archlinux-bspwm-setup/vimSetup.png)](/assets/posts/my-archlinux-bspwm-setup/vimSetup.png) <br>
+[![vimsetup](/assets/posts/my-archlinux-bspwm-setup/vimSetup.webp)](/assets/posts/my-archlinux-bspwm-setup/vimSetup.webp) <br>
 
 ## My dotfiles
 [This](https://github.com/Ferryistaken/dots) are my dotfiles, I don't update them very often, but when I update them it's because I found something new that needs to be backed up. Feel free to use them, but don't try to sell them as yours!

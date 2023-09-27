@@ -13,13 +13,13 @@ Since IBM [killed CentOS](https://www.redhat.com/en/blog/centos-stream-building-
 When they released their first release candidate yesterday, April 30 2021, we all began testing it. Soon enough, `@jorp` on mattermost started a contest, and decided to award someone a unique badge on the [rocky linux forums](https://forum.rockylinux.org) to whoever was the first one to spin up a Minecraft server on the latest Rocky Linux release. Sure enough, I won the prize, with a time of _just_ 10 minutes, from when `@jorp` announced the race to when I got the mc server running.
 
 {:refdef: style="text-align: center;"}
-[![@jorp announcing the race](/assets/posts/my-biggest-open-source-achievement-yet/jorp-announcement.png)](/assets/posts/my-biggest-open-source-achievement-yet/jorp-announcement.png)
+[![@jorp announcing the race](/assets/posts/my-biggest-open-source-achievement-yet/jorp-announcement.webp)](/assets/posts/my-biggest-open-source-achievement-yet/jorp-announcement.webp)
 
 *`@jorp` announcing the race*
 {: refdef}
 
 {:refdef: style="text-align: center;"}
-[![my server](/assets/posts/my-biggest-open-source-achievement-yet/my-server.png)](/assets/posts/my-biggest-open-source-achievement-yet/my-server.png)
+[![my server](/assets/posts/my-biggest-open-source-achievement-yet/my-server.webp)](/assets/posts/my-biggest-open-source-achievement-yet/my-server.webp)
 
 *My Minecraft server running*
 {:refdef}
@@ -27,7 +27,7 @@ When they released their first release candidate yesterday, April 30 2021, we al
 ### And just like that, I got my [unique forum badge](https://forums.rockylinux.org/badges/105/first-minecraft-server-on-rocky-linux).
 
 {:refdef: style="text-align: center;"}
-[![my server](/assets/posts/my-biggest-open-source-achievement-yet/my-badge.png)](/assets/posts/my-biggest-open-source-achievement-yet/my-badge.png)
+[![my server](/assets/posts/my-biggest-open-source-achievement-yet/my-badge.webp)](/assets/posts/my-biggest-open-source-achievement-yet/my-badge.webp)
 
 {: refdef}
 
