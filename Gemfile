@@ -24,6 +24,7 @@ group :jekyll_plugins do
   gem 'jekyll-postfiles', '~> 3.1'
   gem 'jekyll-sass-converter'
   gem 'jekyll-toc'
+  gem 'jekyll-seo-tag'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
