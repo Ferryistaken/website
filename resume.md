@@ -4,6 +4,6 @@ layout: page
 title: "My Resume"
 ---
 
-I'm interested in any kind of software engineering/data science positions. These are my main skills:
+[Download a copy](/assets/af-resume.pdf)
 
 <object data="/assets/af-resume.pdf" width="100%" height="1000" type='application/pdf'>
