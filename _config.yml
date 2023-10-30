@@ -7,7 +7,7 @@ lang: en-US # default lang
 timezone: UnitedStates/NewYork # set your timezone
 image: assets/favicons/apple-touch-icon.png
 repo: https://github.com/Ferryistaken/Ferryistaken.github.io # site repo [optional]
-mode: light # default theme "dark" | "light"
+mode: light
 
 # Profile settings
 author:
