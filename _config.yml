@@ -1,5 +1,5 @@
 # Site settings
-title: Ferry's Website # site title
+title: Alessandro Ferrari's Website
 short_name: "fs"
 description: >- # site description
   This is my website. It contains a blog, my portfolio, and ways to contact me.
@@ -13,10 +13,10 @@ mode: light
 author:
   name: Alessandro Ferrari # author name
   bio: >- # tell to the world
-    <i>Personalized Medicine benefits the group</i>
+    <i>Personalized Medicine benefits the group, not the individual.</i>
   username: ferry # author username
   github: Ferryistaken
-  twitter: ferrryx
+  twitter: notfound
   facebook: Alessandro Ferrari
   email: alessandroferrari@gatech.edu
   avatar: /assets/img/avatar.webp
