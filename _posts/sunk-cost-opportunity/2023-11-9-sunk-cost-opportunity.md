@@ -37,7 +37,7 @@ While thinking about this, I came up with an idea:
 
 We are all familiar with the sunk cost fallacy: our tendency to follow through on something if we are already invested in it. To this fun concept, I raise: the **sunk cost opportunity**.
 
-On any given week, I spend tens of hours researching random topics. Some weeks I read publications on the [effect on noise machines on sleep](https://x.com/BioAlessandro/status/1721648737700008021?s=20), some other weeks I'll sink time into [building a "smart" business card](https://alessandroferrari.live/open-source-business-card/) for no apparent benefit, at other times I will [code an emulator to learn Rust](https://alessandroferrari.live/chip8-emulator-written-in-rust/).
+On any given week, I spend tens of hours researching random topics. Some weeks I read publications on the [effect on noise machines on sleep](https://x.com/BioAlessandro/status/1721648737700008021?s=20), some other weeks I'll sink time into [building a "smart" business card]({{ site.baseurl }}{% link _posts/open-source-business-card/2022-09-14-open-source-business-card.md %}) for no apparent benefit, at other times I will [code an emulator to learn Rust]({{ site.baseurl }}{% link _posts/chip8-emulator-written-in-rust/2021-11-14-chip8-emulator-written-in-rust.md %}).
 
 These are all endeavours that feed my constant research for knowledge. They are almost therapeutic. They keep me sharp. They keep me updated on current events. They even train my ability to pivot from one project to another quickly--a nice switch up from the semester or year-long projects that I'm faced with in my school or research.
 
