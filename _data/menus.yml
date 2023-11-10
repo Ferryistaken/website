@@ -2,8 +2,12 @@
   url: /
   external: false
 
-- title: blog
+- title: writing
   url: /blog/
+  external: false
+
+- title: reading
+  url: https://books.alessandroferrari.live
   external: false
 
 - title: "contact me"
