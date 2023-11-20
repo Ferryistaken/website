@@ -93,4 +93,3 @@ plugins:
   - jekyll-postfiles
   - jekyll-toc
   - jekyll-seo-tag
-  - jekyll-twitter-plugin
