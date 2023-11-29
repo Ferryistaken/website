@@ -87,12 +87,10 @@ Soldering and screwing everything together took me about 6 hours total, which I 
 {: refdef}
 This timelapse *only* shows soldering the [diodes](https://en.wikipedia.org/wiki/Diode) on 1 side.
 
-## How it came out & final thoughts
-Here is how the keyboard came out:
+## Final product
 
 {% include image-gallery-links.html image_links=page.my_image_links %}
 
-It is the best keyboard I ever felt *by far*, and after trying a split keyboard you cannot go back. It took me just shy of a month to get back to my 70wpm typing speed, which is not bad at all. Would recommend to anyone that spends a lot of time in front of a pc.
 
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
