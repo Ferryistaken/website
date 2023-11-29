@@ -1,0 +1,55 @@
+<style>
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;  /* Adjust this for the minimal space between images */
+        justify-content: space-between;
+        align-items: flex-start;
+        width: calc(100% + 20vw); /* Extend beyond parent width */
+        margin: 0 -10vw; /* Adjust this value to offset the extended width */
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .image-gallery .image-item {
+        flex-grow: 1;
+        min-width: 40%;  /* Ensure image is at least 60% of its original size */
+        box-sizing: border-box;
+    }
+
+    .image-gallery .image-item:nth-child(6n+1),
+    .image-gallery .image-item:nth-child(6n+2) {
+        flex-basis: calc(50% - 1px);  /* for 2 items in the row */
+    }
+
+    .image-gallery .image-item:nth-child(6n+3),
+    .image-gallery .image-item:nth-child(6n+4),
+    .image-gallery .image-item:nth-child(6n+5) {
+        flex-basis: calc(33.33% - 1px);  /* for 3 items in the row */
+    }
+
+    .image-gallery .image-item a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: #777;
+        width: 100%;
+    }
+
+    .image-gallery .image-item a img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+</style>
+
+
+<div class="image-gallery">
+    {% for img_url in include.image_links %}
+        <div class="image-item">
+            <a href="{{ img_url }}" title="Image">
+                <img src="{{ img_url }}" alt="Image" />
+            </a>
+        </div>
+    {% endfor %}
+</div>

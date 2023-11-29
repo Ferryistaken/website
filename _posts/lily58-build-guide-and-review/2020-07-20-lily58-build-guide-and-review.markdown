@@ -1,10 +1,23 @@
 ---
 layout: post
-title: "How I got into keyboards & Lily58 Pro build log and review"
+title: "⌨️ How I got into keyboards & Lily58 Pro build log and review"
 date: "2020-07-20 18:36:13 -0400"
 tags: [hardware, keyboard, soldering]
 description: This is a build log of the lily58 Pro split ergo keyboard
+my_image_links:
+- https://i.imgur.com/nv2TF8t.jpg
+- https://i.imgur.com/LipQM3V.jpg
+- https://i.imgur.com/FxuaMra.jpg
+- https://i.imgur.com/CKK73Lg.jpg
+- https://i.imgur.com/tFvaoSu.jpg
+- https://i.imgur.com/QGPR1Iz.jpg
+- https://i.imgur.com/KMLCmku.jpg
+- https://i.imgur.com/oN4zikB.jpg
 ---
+
+{:refdef: style="text-align: center;"}
+![Lily58 Pro Final](https://i.imgur.com/nv2TF8t.jpg)
+{: refdef }
 
 ## How did I get here?
 After about a year of using the `Logitech G613` I decided to search for a smaller keyboard, which wouldn't occupy the majority of my desk. After scrounging the internet for every possible review I had to choose between the [Anne Pro 2](https://www.amazon.com/ANNE-PRO-Wireless-Mechanical-Keyboard/dp/B07Y53M9N1): <br>
@@ -26,6 +39,9 @@ The software is also pretty good, the led customization is ok, but not great, an
 My only complaint is that on linux the keyboard goes in "sleep mode" every 15 minutes or so, and to wake it up I have to unplug it and plug it back in, which is a major hassle. A quick fix for this is leaving the Software Open on the "Layout" tab. <br>
 But then again, if you choose to use the custom qmk firmware it will work just fine. <br>
 ## The Lily58 Pro
+{:refdef: style="text-align: center;"}
+![Keyboard](https://i.imgur.com/LipQM3V.jpg)
+{: refdef}
 Just a month later buying the AP2 I decided that I was going to build my own keyboard. And it was going to be the [Lily58 Pro](https://github.com/kata0510/Lily58). <br>
 I came across this keyboard while browsing through the [Awesome Split Keyboard List](https://github.com/diimdeep/awesome-split-keyboards) on github. <br>
 I chose the lily58 pro over "normal" keyboards or other more popular splits like the [Corne](https://github.com/foostan/crkbd) because of this features:
@@ -48,7 +64,7 @@ I didn't really have that much experience with switches since before buying this
 But this time I wanted something different. I wanted something which was way heavier that browns, and that gave me a bigger tactile bump, while having a deeper sound. And the [NovelKeys x Kailh BOX Heavy Burnt Orange](https://novelkeys.xyz/products/novelkeys-x-kailh-box-heavy-switches?variant=3747939975208) switch gave me all that, *and more*. <br>
 Seriously, for now, they are my endgame, mainly because of how heavy and smooth they are, and because the tactile bump is very satisfying and at the very top.
 {:refdef: style="text-align: center;"}
-[![burntOrange](/assets/posts/lily58-build-guide-and-review/burntOrange.webp)](/assets/posts/lily58-build-guide-and-review/burntOrange.webp) <br>
+![Burn Orange](https://i.imgur.com/oN4zikB.jpg)
 *Burnt orange switches*
 {: refdef}
 
@@ -58,7 +74,8 @@ When you think about building a keyboard, you probably think that the electronic
  In my case the keycaps where more than 4x the cost of the second most expensive part of the build, which where the switches. And my keyboard doesn't even have that many keys, just 58, *like the name suggests*. <br>
 I decided to go for the [DSA "Beyond"](https://pimpmykeyboard.com/dsa-beyond-keyset-sublimated/) ortholinear keycap set, which has a simple [typeface](https://en.wikipedia.org/wiki/Typeface), and is pretty colorful. <br>
 {:refdef: style="text-align: center;"}
-[![keycaps](/assets/posts/lily58-build-guide-and-review/dsaBeyond.webp)](/assets/posts/lily58-build-guide-and-review/dsaBeyond.webp) <br>
+![DSA Beyond](https://i.imgur.com/tFvaoSu.jpg)
+![DSA Beyond 2](https://i.imgur.com/FxuaMra.jpg)
 *DSA Beyond Keycap set*
 {: refdef}
 
@@ -72,10 +89,9 @@ This timelapse *only* shows soldering the [diodes](https://en.wikipedia.org/wiki
 
 ## How it came out & final thoughts
 Here is how the keyboard came out:
-{:refdef: style="text-align: center;"}
-[![split keyboard](/assets/posts/lily58-build-guide-and-review/splitKeyboard.webp)](/assets/posts/lily58-build-guide-and-review/splitKeyboard.webp) <br>
-*Final Result*
-{: refdef}
+
+{% include image-gallery-links.html image_links=page.my_image_links %}
+
 It is the best keyboard I ever felt *by far*, and after trying a split keyboard you cannot go back. It took me just shy of a month to get back to my 70wpm typing speed, which is not bad at all. Would recommend to anyone that spends a lot of time in front of a pc.
 
 
