@@ -48,8 +48,9 @@
     {% for img_url in include.image_links %}
         <div class="image-item">
             <a href="{{ img_url }}" title="Image">
-                <img src="{{ img_url }}" alt="Image" />
+                {% include lazyload.html image_src=img_url image_alt="Image" %}
             </a>
         </div>
     {% endfor %}
 </div>
+
