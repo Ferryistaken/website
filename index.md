@@ -21,9 +21,9 @@ I'm currently doing **immuno transcriptomics** research at the Gibson lab. My wo
 <br>
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/assets/img/portfolio/dune.webp" style="width: 33%; margin-right: 10px;" alt="Description 1">
-  <img src="/assets/img/portfolio/marker.webp" style="width: 33%; margin-right: 10px;" alt="Description 2">
-  <img src="/assets/img/portfolio/umap.webp" style="width: 33%;" alt="Description 3">
+  {% include lazyload.html image_src="/assets/img/portfolio/dune.webp" image_alt="Description 1" %}
+  {% include lazyload.html image_src="/assets/img/portfolio/marker.webp" image_alt="Description 2" %}
+  {% include lazyload.html image_src="/assets/img/portfolio/umap.webp" image_alt="Description 3" %}
 </div>
 
 <br>
