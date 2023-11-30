@@ -16,16 +16,17 @@ my_image_links:
 ---
 
 {:refdef: style="text-align: center;"}
-![Lily58 Pro Final](/assets/posts/lily58-build-guide-and-review/final.jpg)
+
+{% include lazyload.html image_src="/assets/posts/lily58-build-guide-and-review/final.jpg" image_alt="Lily58 Pro Final Product" image_title="Lily58 Pro" %}
+
 {: refdef }
 
 ## How did I get here?
 After about a year of using the `Logitech G613` I decided to search for a smaller keyboard, which wouldn't occupy the majority of my desk. After scrounging the internet for every possible review I had to choose between the [Anne Pro 2](https://www.amazon.com/ANNE-PRO-Wireless-Mechanical-Keyboard/dp/B07Y53M9N1): <br>
 {:refdef: style="text-align: center;"}
-[![annepro2](/assets/posts/lily58-build-guide-and-review/annepro2.webp)](/assets/posts/lily58-build-guide-and-review/annepro2.webp) <br>
+{% include lazyload.html image_src="/assets/posts/lily58-build-guide-and-review/annepro2.webp" image_alt="Anne Pro 2" image_title="Anne Pro 2" %} <br>
 *My Anne Pro 2*
 {: refdef}
-{% include lazyload.html image_src="https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=4322" image_alt="Alt" image_title="Title" %}
 And the [Ducky One 2 Mini](https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=4322): <br>
 {:refdef: style="text-align: center;"}
 [![ducky](/assets/posts/lily58-build-guide-and-review/ducky.webp)](/assets/posts/lily58-build-guide-and-review/ducky.webp) <br>
@@ -41,7 +42,7 @@ My only complaint is that on linux the keyboard goes in "sleep mode" every 15 mi
 But then again, if you choose to use the custom qmk firmware it will work just fine. <br>
 ## The Lily58 Pro
 {:refdef: style="text-align: center;"}
-![Keyboard](https://i.imgur.com/LipQM3V.jpg)
+{% include lazyload.html image_src="https://i.imgur.com/LipQM3V.jpg" image_alt="Lily58 Pro Final Product" image_title="Lily58 Pro" %}
 {: refdef}
 Just a month later buying the AP2 I decided that I was going to build my own keyboard. And it was going to be the [Lily58 Pro](https://github.com/kata0510/Lily58). <br>
 I came across this keyboard while browsing through the [Awesome Split Keyboard List](https://github.com/diimdeep/awesome-split-keyboards) on github. <br>
@@ -65,7 +66,7 @@ I didn't really have that much experience with switches since before buying this
 But this time I wanted something different. I wanted something which was way heavier that browns, and that gave me a bigger tactile bump, while having a deeper sound. And the [NovelKeys x Kailh BOX Heavy Burnt Orange](https://novelkeys.xyz/products/novelkeys-x-kailh-box-heavy-switches?variant=3747939975208) switch gave me all that, *and more*. <br>
 Seriously, for now, they are my endgame, mainly because of how heavy and smooth they are, and because the tactile bump is very satisfying and at the very top.
 {:refdef: style="text-align: center;"}
-![Burn Orange](https://i.imgur.com/oN4zikB.jpg)
+{% include lazyload.html image_src="https://i.imgur.com/oN4zikB.jpg" image_alt="Lily58 Pro Final Product" image_title="Lily58 Pro" %}
 *Burnt orange switches*
 {: refdef}
 
@@ -75,15 +76,15 @@ When you think about building a keyboard, you probably think that the electronic
  In my case the keycaps where more than 4x the cost of the second most expensive part of the build, which where the switches. And my keyboard doesn't even have that many keys, just 58, *like the name suggests*. <br>
 I decided to go for the [DSA "Beyond"](https://pimpmykeyboard.com/dsa-beyond-keyset-sublimated/) ortholinear keycap set, which has a simple [typeface](https://en.wikipedia.org/wiki/Typeface), and is pretty colorful. <br>
 {:refdef: style="text-align: center;"}
-![DSA Beyond](https://i.imgur.com/tFvaoSu.jpg)
-![DSA Beyond 2](https://i.imgur.com/FxuaMra.jpg)
+{% include lazyload.html image_src="https://i.imgur.com/tFvaoSu.jpg" image_alt="Lily58 Pro Final Product" image_title="Lily58 Pro" %}
+{% include lazyload.html image_src="https://i.imgur.com/FxuaMra.jpg" image_alt="Lily58 Pro Final Product" image_title="Lily58 Pro" %}
 *DSA Beyond Keycap set*
 {: refdef}
 
 ## Building the keyboard
 Soldering and screwing everything together took me about 6 hours total, which I think is pretty good given the result, and that it was *my first "big" project that involved soldering*.
 {:refdef: style="text-align: center;"}
-![Soldering]()
+{% include lazyload.html image_src="/assets/posts/lily58-build-guide-and-review/timelapse.gif" image_alt="Build timelapse" image_title="Lily58 Pro Build Timelapse" %}
 *Soldering Timelapse w/ my father*
 {: refdef}
 This timelapse *only* shows soldering the [diodes](https://en.wikipedia.org/wiki/Diode) on 1 side.
