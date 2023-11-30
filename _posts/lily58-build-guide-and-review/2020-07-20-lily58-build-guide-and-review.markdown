@@ -16,7 +16,7 @@ my_image_links:
 ---
 
 {:refdef: style="text-align: center;"}
-![Lily58 Pro Final](https://i.imgur.com/nv2TF8t.jpg)
+![Lily58 Pro Final](/assets/posts/lily58-build-guide-and-review/final.jpg)
 {: refdef }
 
 ## How did I get here?
