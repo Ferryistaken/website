@@ -25,6 +25,7 @@ After about a year of using the `Logitech G613` I decided to search for a smalle
 [![annepro2](/assets/posts/lily58-build-guide-and-review/annepro2.webp)](/assets/posts/lily58-build-guide-and-review/annepro2.webp) <br>
 *My Anne Pro 2*
 {: refdef}
+{% include lazyload.html image_src="https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=4322" image_alt="Alt" image_title="Title" %}
 And the [Ducky One 2 Mini](https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=4322): <br>
 {:refdef: style="text-align: center;"}
 [![ducky](/assets/posts/lily58-build-guide-and-review/ducky.webp)](/assets/posts/lily58-build-guide-and-review/ducky.webp) <br>
@@ -82,7 +83,7 @@ I decided to go for the [DSA "Beyond"](https://pimpmykeyboard.com/dsa-beyond-key
 ## Building the keyboard
 Soldering and screwing everything together took me about 6 hours total, which I think is pretty good given the result, and that it was *my first "big" project that involved soldering*.
 {:refdef: style="text-align: center;"}
-[![soldering](/assets/posts/lily58-build-guide-and-review/timelapse.gif)](/assets/posts/lily58-build-guide-and-review/timelapse.gif) <br>
+![Soldering]()
 *Soldering Timelapse w/ my father*
 {: refdef}
 This timelapse *only* shows soldering the [diodes](https://en.wikipedia.org/wiki/Diode) on 1 side.
