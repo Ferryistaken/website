@@ -2,4 +2,4 @@
 
 # My Website
 
-![Lighthouse report]
+![Lighthouse report](https://raw.githubusercontent.com/Ferryistaken/website/master/lighthouse-report.png)
