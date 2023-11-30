@@ -60,7 +60,7 @@ layout: compress
     </div>
 
     <div style="display: inline-block; background-color: #00325a; border-radius: 4%; padding: 10px;">
-      <img src="{{ page.image }}" alt="{{ page.title }}" style="display: block; width: 200px; height: auto; max-width: 100%; border-radius: 2%;" />
+        {% include lazyload.html image_src=page.image image_alt=page.title %}
     </div>
   </section>
 
