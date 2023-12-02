@@ -5,6 +5,9 @@ date: "2020-07-19 19:51:55 -0400"
 tags: [linux, ricing, unix, os]
 description: This is a description of my current arch linux setup that I've been using everyday for the past 6 months
 ---
+{% include admonition.html type="info" title="Note from the future (Dec 2023)" body="Looking back, I had way too much time in highschool : )" %}
+
+
 About a year ago, when I still didn't even know about the existence of [Rust](https://www.rust-lang.org/) (I know, *dark times*), I was browsing reddit, when I laid my eyes on a comment under a screenshot of an [OpenBSD](https://www.openbsd.org/) desktop. <br>
 The content of that comment isn't that important, all I remember is that the commenter was saying that [OP](https://www.lifewire.com/what-does-o-p-stand-for-2483372) should post his screenshot on another [subreddit](https://www.reddit.com/r/help/comments/37shum/what_is_a_subreddit/): [r/unixporn](https://www.reddit.com/r/unixporn/). <br>
 I was intrigued by the name, so I decided to take a look at it. ***My life hasn't been the same since***. <br>

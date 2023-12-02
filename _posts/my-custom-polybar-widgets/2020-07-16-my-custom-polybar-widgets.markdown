@@ -5,6 +5,7 @@ date: "2020-07-16 15:43:51 -0400"
 tags: [ricing, unix, rust, coding]
 description: Most of the polybar modules that I use on my personal setup are written in perfect, memory safe, fast, Rust. Here is how!
 ---
+{% include admonition.html type="info" title="Note from the future (Dec 2023)" body="Looking back, I had way too much time in highschool : )" %}
 
 In order to practice [Rust](https://www.rust-lang.org/) development, and to [rice](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wiki_rice) my [desktop](https://imgur.com/gallery/Xp52JgU) to infinity, I decided to write some custom [polybar](https://github.com/polybar/polybar) modules in Rust.
 
