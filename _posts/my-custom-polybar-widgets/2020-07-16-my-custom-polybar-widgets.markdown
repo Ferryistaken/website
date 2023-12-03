@@ -2,7 +2,7 @@
 layout: post
 title: "My custom polybar widgets"
 date: "2020-07-16 15:43:51 -0400"
-tags: [ricing, unix, rust, coding]
+tags: [linux, ricing, unix, rust, coding]
 description: Most of the polybar modules that I use on my personal setup are written in perfect, memory safe, fast, Rust. Here is how!
 ---
 {% include admonition.html type="info" title="Note from the future (Dec 2023)" body="Looking back, I had way too much time in highschool : )" %}

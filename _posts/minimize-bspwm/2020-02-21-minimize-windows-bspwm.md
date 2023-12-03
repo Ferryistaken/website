@@ -2,7 +2,7 @@
 layout: post
 title: "Create a minimize menu in bspwm"
 date: "2021-02-21 17:54:59 -0500"
-tags: [ricing, linux, os, unix, software]
+tags: [linux, ricing, os, unix, software]
 description: Writeup to create a way to minimize windows in bspwm
 ---
 

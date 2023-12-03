@@ -2,7 +2,7 @@
 layout: post
 title: "Host a Blog/Website with custom domain for free"
 date: "2020-09-21 12:39:13 +0200"
-tags: [blog, unix, webdev, ide, coding, git]
+tags: [writing, unix, webdev, ide, coding, git]
 description: How to host a website, with a custom domain completely for free
 ---
 
