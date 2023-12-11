@@ -71,7 +71,7 @@ I decided to go for the [DSA "Beyond"](https://pimpmykeyboard.com/dsa-beyond-key
 
 ## Building the keyboard
 Soldering and screwing everything together took me about 6 hours total, which I think is pretty good given the result, and that it was *my first "big" project that involved soldering*.
-{% include lazyload.html image_src="/assets/posts/lily58-build-guide-and-review/timelapse.gif" image_alt="Build timelapse" image_title="Lily58 Pro Build Timelapse" %}
+{% include lazyload.html image_src="https://i.imgur.com/4DN1X8J.mp4" image_alt="Build timelapse" image_title="Lily58 Pro Build Timelapse" %}
 *Soldering Timelapse w/ my father*
 This timelapse *only* shows soldering the [diodes](https://en.wikipedia.org/wiki/Diode) on 1 side.
 
