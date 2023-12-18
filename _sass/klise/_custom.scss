@@ -6,3 +6,61 @@
     overflow: hidden;
     outline:none;
 }*/
+
+.portfolio-blob {
+    background-color: $blob-light;
+}
+
+.portfolio-svg {
+    fill: $blob-light;
+}
+
+.popup-wrapper {
+    background-color: $blob-light;
+    padding: 8px; // Creates the 8px visible border
+    box-sizing: border-box; // Ensures padding is included in width/height calculations
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; // Adjust as needed
+}
+
+// Popup container
+.popup-container {
+    background-color: $white; // Background color of the popup
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); // More noticeable shadow
+    border-radius: 15px; // Rounded corners
+    padding: 20px; // Spacing inside the popup
+    min-width: 90vw;
+    max-width: 90vw;
+    min-height: 90%;
+    max-height: 90%;
+    z-index: 100; // Ensuresh the popup is above other elements
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+// Body modifications
+body[data-theme] {
+    padding: 0;
+    margin: 0;
+    background-color: transparent; // Or any other color you want for the rest of the page
+}
+
+
+body[data-theme="dark"] {
+    .portfolio-blob {
+        background-color: $blob-dark;
+    }
+
+    .portfolio-svg {
+        fill: $blob-dark;
+    }
+
+    .popup-wrapper {
+        background-color: $blob-dark;
+    }
+    .popup-container {
+        background-color: $black; // Background color of the popup
+    }
+}

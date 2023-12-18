@@ -12,6 +12,10 @@ $normal-weight: 400;
 $bold-weight: 700;
 // $black-weight: 900; // uncomment if necessary
 
+// blob colors
+$blob-light: #00325a;
+$blob-dark: #ce5437;
+
 //Light Colors
 $text-base-color: #434648;
 $text-link-blue: #037eaf;
@@ -62,4 +66,4 @@ $on-widescreen: 1152px;
 
 // Import sass files
 @import "klise/fonts", "klise/base", "klise/layout", "klise/post",
-	"klise/miscellaneous", "klise/_syntax", "klise/dark", "klise/admonition";
+	"klise/miscellaneous", "klise/custom", "klise/_syntax", "klise/dark", "klise/admonition";

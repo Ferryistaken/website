@@ -33,6 +33,10 @@ figure {
   padding: 0;
 }
 
+body {
+  border: 0px solid $blob-light;
+}
+
 // Basic styling
 body {
   min-height: 100vh;
