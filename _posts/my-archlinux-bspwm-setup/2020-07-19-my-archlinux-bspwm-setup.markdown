@@ -2,7 +2,7 @@
 layout: post
 title: "My Archlinux-Bspwm setup"
 date: "2020-07-19 19:51:55 -0400"
-tags: [linux, ricing, unix, os]
+tags: [linux, ricing, unix, os, noshow]
 description: This is a description of my current arch linux setup that I've been using everyday for the past 6 months
 ---
 {% include admonition.html type="info" title="Note from the future (Dec 2023)" body="Looking back, I had way too much time in highschool : )" %}

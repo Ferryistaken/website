@@ -162,7 +162,9 @@ layout: compress
         <h2>Latest Blog Posts</h2>
         <ul>
           {% for post in site.posts limit:5 %}
+            {% unless post.tags contains 'noshow' %}
             <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}</li>
+                {% endunless %}
           {% endfor %}
         </ul>
       </section>

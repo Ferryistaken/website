@@ -2,7 +2,7 @@
 layout: post
 title: "Best Rofi themes for a modern linux desktop experience"
 date: 2020-11-27 22:50 +0200
-tags: [linux, software, ricing]
+tags: [linux, software, ricing, noshow]
 description: "A writeup made to share rofi themes"
 ---
 
