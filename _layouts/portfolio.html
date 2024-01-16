@@ -18,6 +18,15 @@ layout: compress
         <div class="popup-wrapper">
     <div class="popup-container">
     <script src="/assets/js/lazysizes.min.js" async=""></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var directions = ['to left', 'to right', 'to top', 'to bottom', 'to top left', 'to top right', 'to bottom left', 'to bottom right'];
+            var randomDirection = directions[Math.floor(Math.random() * directions.length)];
+
+            var popupWrapper = document.querySelector('.popup-wrapper');
+            popupWrapper.style.background = 'linear-gradient(' + randomDirection + ', $blob-light, $blob-light-gradient)';
+        });
+    </script>
   {% include navbar.html %}
   <div class="wrapper" style="max-width: 60vw; margin: 0 auto; padding: 0; margin-bottom: -10px;">
       <style>
