@@ -8,9 +8,9 @@
 
 .popup-wrapper {
     background: linear-gradient(to bottom right, $blob-light, $blob-light-gradient);
-    padding: 8px;
     box-sizing: border-box;
     display: flex;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -20,14 +20,11 @@
     background-color: $white;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
     border-radius: 15px;
-    padding: 20px;
     min-width: 90vw;
-    max-width: 90vw;
-    min-height: 90%;
-    max-height: 90%;
+    margin: 20px;
+    max-width: 1650px;
+    height: 90%;
     z-index: 100;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
 }
 
 body[data-theme] {
@@ -53,3 +50,8 @@ body[data-theme="dark"] {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .popup-wrapper {
+        padding: 50px; /* Add 50px padding for mobile devices */
+    }
+}
