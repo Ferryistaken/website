@@ -56,4 +56,10 @@ body[data-theme="dark"] {
     .popup-wrapper {
         padding: 50px; /* Add 50px padding for mobile devices */
     }
+    
+    body[data-theme="dark"] {
+        .popup-wrapper {
+            padding: 50px; /* Add 50px padding for mobile devices */
+        }
+    }
 }
