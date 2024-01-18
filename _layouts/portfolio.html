@@ -29,30 +29,6 @@ layout: compress
     </script>
   {% include navbar.html %}
   <div class="wrapper" style="max-width: 60vw; margin: 0 auto; padding: 0; margin-bottom: -10px;">
-      <style>
-  @media (max-width: 600px) {
-    #portfolio-intro {
-      flex-direction: column-reverse;
-      align-items: center;
-    }
-  }
-
-  .social-links {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 25%;
-    margin-left: 0;
-  }
-
-  @media (max-width: 600px) {
-    .social-links {
-        flex-direction: column;
-        margin-right: 0;
-        margin-left: 0;
-        align-items: flex-start;
-    }
-  }
-</style>
 <main aria-label="Content">
   <section id="portfolio-intro" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; position: relative; margin-top: 7vh;">
     <div>
@@ -97,73 +73,6 @@ layout: compress
         {% endfor %}
     </div>
 </section>
-
-<style>
-.work-cards {
-    justify-content: center;
-}
-
-.work-card {
-    max-width: 300px; /* Adjust as necessary */
-    width: 100%;
-}
-
-.work-card a {
-    display: flex;
-    flex-direction: row;
-    align-items: center; /* Align items to the center */
-    width: 100%;
-}
-
-.work-card img {
-    flex: 1;
-    max-width: 33%;
-    height: 80px; /* Set a fixed height */
-    margin: auto;
-    object-fit: contain; /* Ensure the logo maintains its aspect ratio */
-}
-
-.work-card a div {
-    flex: 2;
-    max-width: 66%;
-    display: flex; /* Make this a flex container */
-    flex-direction: column; /* Arrange items in a column */
-    justify-content: center; /* Center the items vertically */
-}
-
-          @media (max-width: 600px) {
-    .work-card {
-        flex-direction: column !important;
-        align-items: center !important;
-        max-width: 100%;
-        text-align: center;
-    }
-    .work-card a {
-        flex-direction: column !important;
-        align-items: center !important;
-        width: 100%;
-        text-align: center;
-    }
-    .work-card img {
-        flex: unset !important;
-        max-width: 100px !important;
-        margin: auto !important;
-        display: block;
-        height: 70%; /* Set a fixed height */
-        object-fit: contain; /* Ensure the logo maintains its aspect ratio */
-    }
-    .work-card a div {
-        flex: unset !important;
-        max-width: 100% !important;
-        display: flex; /* Make this a flex container */
-        flex-direction: column; /* Arrange items in a column */
-        justify-content: center; /* Center the items vertically */
-        margin-bottom: 25px; /* Add margin to the bottom */
-    }
-}
-</style>
-
-
 
 
       <section id="latest-blog-posts">

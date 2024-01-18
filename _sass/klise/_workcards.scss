@@ -1,0 +1,76 @@
+.work-cards {
+    justify-content: center;
+}
+
+.work-card {
+    max-width: 300px; /* Adjust as necessary */
+    width: 100%;
+}
+
+.work-card a {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Align items to the center */
+    width: 100%;
+}
+
+.work-card img {
+    flex: 1;
+    max-width: 33%;
+    height: 80px; /* Set a fixed height */
+    margin: auto;
+    object-fit: contain; /* Ensure the logo maintains its aspect ratio */
+}
+
+.work-card a div {
+    flex: 2;
+    max-width: 66%;
+    display: flex; /* Make this a flex container */
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center; /* Center the items vertically */
+}
+
+
+@media (max-width: 600px) {
+    .work-card {
+        flex-direction: column !important;
+        align-items: center !important;
+        max-width: 100%;
+        text-align: center;
+    }
+    .work-card a {
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100%;
+        text-align: center;
+    }
+    .work-card img {
+        flex: unset !important;
+        max-width: 100px !important;
+        margin: auto !important;
+        display: block;
+        height: 70%; /* Set a fixed height */
+        object-fit: contain; /* Ensure the logo maintains its aspect ratio */
+    }
+    .work-card a div {
+        flex: unset !important;
+        max-width: 100% !important;
+        display: flex; /* Make this a flex container */
+        flex-direction: column; /* Arrange items in a column */
+        justify-content: center; /* Center the items vertically */
+        margin-bottom: 25px; /* Add margin to the bottom */
+    }
+
+    @media (max-width: 600px) {
+  article > div > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article > div > div > div {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+
+}

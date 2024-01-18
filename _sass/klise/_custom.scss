@@ -16,6 +16,14 @@
     min-height: 100vh;
 }
 
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25%;
+    margin-left: 0;
+}
+
+
 .popup-container {
     background-color: $white;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
@@ -53,5 +61,17 @@ body[data-theme="dark"] {
 @media screen and (max-width: 768px) {
     .popup-wrapper {
         padding: 50px; /* Add 50px padding for mobile devices */
+    }
+
+    .social-links {
+        flex-direction: column;
+        margin-right: 0;
+        margin-left: 0;
+        align-items: flex-start;
+    }
+
+    #portfolio-intro {
+        flex-direction: column-reverse;
+        align-items: center;
     }
 }
