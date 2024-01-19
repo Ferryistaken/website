@@ -11,10 +11,9 @@
 }
 
 .popup-wrapper {
-        background: linear-gradient(to bottom right, $blob-light, $blob-light-gradient);
+    background: linear-gradient(to bottom right, $blob-light, $blob-light-gradient);
     background-size: 200% 200%;
-    animation: gradient 10s ease infinite;
-
+    animation: gradient 5s ease infinite;
     box-sizing: border-box;
     display: flex;
     padding: 10px;
@@ -40,15 +39,14 @@
 body[data-theme="dark"] {
     .popup-wrapper {
         background: linear-gradient(to bottom right, $blob-dark, $blob-dark-gradient);
-        background-size: 200% 200%; // Enlarge background size for smooth transition
-    animation: gradient 10s ease infinite; // 15s is the duration of one cycle
-
-    box-sizing: border-box;
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+        background-size: 200% 200%;
+        animation: gradient 5s ease infinite;
+        box-sizing: border-box;
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
     }
     .popup-container {
         background-color: $black;

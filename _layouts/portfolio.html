@@ -17,15 +17,21 @@ layout: compress
             <div class="popup-container">
                 <script src="/assets/js/lazysizes.min.js" async=""></script>
                 <script>
-                    document.addEventListener('scroll', function() {
+document.addEventListener('scroll', function() {
     const scrollTop = document.documentElement.scrollTop;
     const maxScrollTop = document.documentElement.scrollHeight - window.innerHeight;
     const scrollFraction = scrollTop / maxScrollTop;
-    const backgroundPosition = Math.min(100 * scrollFraction, 100) + '% 50%';
+    const angle = scrollFraction * 360;
 
-    document.querySelector('.popup-wrapper').style.setProperty('--bg-x', backgroundPosition);
+    const isDarkMode = document.body.getAttribute('data-theme') === 'dark';
+    const gradientColorStart = isDarkMode ? '$blob-dark' : '$blob-light';
+    const gradientColorEnd = isDarkMode ? '$blob-dark-gradient' : '$blob-light-gradient';
+
+    document.querySelector('.popup-wrapper').style.backgroundImage = 
+        `linear-gradient(${angle}deg, ${gradientColorStart}, ${gradientColorEnd})`;
 });
-                </script>
+</script>
+
                 <script>
                     document.addEventListener("DOMContentLoaded", function() {
                         var directions = ['to left', 'to right', 'to top', 'to bottom', 'to top left', 'to top right', 'to bottom left', 'to bottom right'];
