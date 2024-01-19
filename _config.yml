@@ -76,6 +76,9 @@ include:
 feed:
   path: feed.xml
 
+postcss:
+  cache: false
+
 exclude:
   - CNAME
   - Gemfile
@@ -93,3 +96,5 @@ plugins:
   - jekyll-postfiles
   - jekyll-toc
   - jekyll-seo-tag
+  - jekyll-postcss
+

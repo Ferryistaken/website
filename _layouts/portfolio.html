@@ -17,6 +17,16 @@ layout: compress
             <div class="popup-container">
                 <script src="/assets/js/lazysizes.min.js" async=""></script>
                 <script>
+                    document.addEventListener('scroll', function() {
+    const scrollTop = document.documentElement.scrollTop;
+    const maxScrollTop = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollFraction = scrollTop / maxScrollTop;
+    const backgroundPosition = Math.min(100 * scrollFraction, 100) + '% 50%';
+
+    document.querySelector('.popup-wrapper').style.setProperty('--bg-x', backgroundPosition);
+});
+                </script>
+                <script>
                     document.addEventListener("DOMContentLoaded", function() {
                         var directions = ['to left', 'to right', 'to top', 'to bottom', 'to top left', 'to top right', 'to bottom left', 'to bottom right'];
                         var randomDirection = directions[Math.floor(Math.random() * directions.length)];

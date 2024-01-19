@@ -21,6 +21,9 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    --bg-x: 0%;
+    --bg-y: 50%;
+    background-position: var(--bg-x) var(--bg-y);
 }
 
 .popup-container {
