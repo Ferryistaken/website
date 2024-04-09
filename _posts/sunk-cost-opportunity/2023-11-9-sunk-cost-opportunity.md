@@ -10,13 +10,9 @@ description: My thoughts on creating a personal brand and the idea of "Sunk Cost
 
 The thought of creating a personal brand, building an audience, and curating content that is relevant to what I care about and research is more tempting than ever.
 
-I don't mean this in an arrogant way, but I think that I'm getting to a point in my life where there are only a handful of people that have my exact expertise on certain subjects, who have a daily life similar to mine _(high achieving student, involved in research and entrepreneurial projects)_, who have studied and love topics completely tangential to the field at hand _(philosophy, art, and literature)_ on top of having lived and experienced life outside and inside of the States for a long time. And even fewer people in this subset are willing to write and post their thoughts on the internet.
+I think that there is a case for me to take time out of my days to share my views and expertise on different subjects that I'm well versed in, as I might genuinely **create value** for some of my readers (I'll define what I mean by create value later).
 
-And I really mean this in a humble way. I know that I'm not an expert in anything yet, but I don't think that you need to be an expert to create value. Often knowing what beginners and intermediate people are going through is just as valuable as knowing what the greats are going through, as long as you are hearing a different opinion from yours.
-
-Going back to creating content, what this means is that there is a case for me to take time out of my days to share my views and expertise on different subjects that I'm well versed in, as I might genuinely **create value** for some of my readers (I'll define what I mean by create value later).
-
-However--due to the self-evident reasons listed above--I view time as my scarcest (and most valuable) commodity, and taking time out of my research, studies, side projects, job search, etc, etc, etc in order to curate my thoughts is often hard to justify in my own mind.
+However I view time as my scarcest (and most valuable) commodity, and taking time out of my research, studies, side projects, job search, etc, etc, etc in order to curate my thoughts is often hard to justify in my own mind.
 
 Either choice seems a no-brainer. I should start curating content because:
 
