@@ -7,6 +7,9 @@
         <meta charset="UTF-8">
         <title>Alessandro Ferrari</title>
         <style>
+            html {
+                cursor: none;
+            }
             body {
                 margin-top: 120px;
                 margin-left: 80px;
@@ -16,7 +19,6 @@
                 font-family: 'Domine', Serif, monospace;
                 padding: 20px;
                 font-size: 21px;
-                cursor: none;
                 line-height: 1.6em;
             }
             div {
@@ -67,6 +69,9 @@
                 #invertedcursor {
                     display: none;
                 }
+                html {
+                    cursor: auto;
+                }
             }
         </style>
     </head>
@@ -102,21 +107,19 @@
         </ul>
 
     </body>
-    <script>
-        document.body.onmousemove = function(e) {
-            document.documentElement.style.setProperty (
-                '--x', (
-                    e.clientX+window.scrollX
-                )
-                + 'px'
-            );
-            document.documentElement.style.setProperty (
-                '--y', (
-                    e.clientY+window.scrollY
-                ) 
-                + 'px'
-            );
-        }
-    </script>
+<script>
+    document.addEventListener('mousemove', function(e) {
+        document.documentElement.style.setProperty(
+            '--x', (
+                e.clientX + window.scrollX
+            ) + 'px'
+        );
+        document.documentElement.style.setProperty(
+            '--y', (
+                e.clientY + window.scrollY
+            ) + 'px'
+        );
+    });
+</script>
 </html>
 
