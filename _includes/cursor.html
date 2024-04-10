@@ -1,0 +1,19 @@
+<span class="cursor"></span>
+<style>
+    .cursor {
+        display: inline-block;
+        width: 8px;        /* Cursor width, can be adjusted */
+        height: 1em;       /* Cursor height to match font size */
+        background-color: #fef1eb;
+        vertical-align: text-bottom; /* Adjusts the alignment with the text baseline */
+        margin-left: 2px;  /* Space before cursor */
+        margin-right: 2px; /* Space after cursor */
+        animation: blink-animation 1s steps(1) infinite;
+    }
+    @keyframes blink-animation {
+        50% {
+            background-color: transparent;
+        }
+    }
+</style>
+

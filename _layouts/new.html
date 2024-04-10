@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Alessandro Ferrari</title>
+    <style>
+    body {
+        margin-top: 120px;
+        margin-left: 80px;
+        margin-right: 80px;
+        background: #fe793d;
+        color: #fef1eb;
+        font-family: 'Arbutus Slab', Serif, monospace;
+        padding: 20px;
+        font-size: 20px;
+    }
+    div {
+        margin-bottom: 20px;
+    }
+    a:link {
+  color: #fef1eb;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #fee4d8;
+  background-color: transparent;
+  text-decoration: underline;
+}
+    ul {
+        list-style-type: none; /* Removes default bullets */
+        margin: 0;
+        padding: 0;
+    }
+    ul li {
+        padding-left: 20px; /* Space for the bullet */
+        position: relative; /* Needed for absolute positioning of the pseudo-element */
+    }
+    ul li::before {
+        content: ''; /* Necessary for the pseudo-element to work */
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        border: 2px solid ; /* Makes the square hollow */
+        box-sizing: border-box;
+    }
+
+    </style>
+</head>
+<body>
+    {{ content }}
+</body>
+</html>
+

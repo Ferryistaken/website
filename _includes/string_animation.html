@@ -1,0 +1,55 @@
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var target = document.querySelector('.code');
+    var toString = target.getAttribute('data-string');
+    var OGarray = toString.split('');
+    var genNum;
+    var counter = 0;
+    var obfuscated = 1;
+    var interval;
+
+    function getRandom(len) {
+        return new Array(len + 1).join('2');
+    }
+
+    function Gen() {
+        var length = toString.length;
+        genNum = getRandom(length);
+        target.innerHTML = genNum;
+    }
+
+    function parser(NUarray) {
+        NUarray.forEach(function(value, index) {
+            var change;
+            if (value === '0' || value === OGarray[index] || isNaN(value)) {
+                NUarray[index] = OGarray[index];
+            } else {
+                change = Math.round(Math.random() * 9).toString();
+                NUarray[index] = change;
+            }
+        });
+
+        if (NUarray.join('') === OGarray.join('') || counter >= 50) {
+            clearInterval(interval);
+            NUarray = OGarray.slice(); // Ensure the final output is correct
+        }
+        counter++;
+        return NUarray.join("");
+    }
+
+    function Genletters(stringToChange) {
+        var string = stringToChange.toString().split('');
+        return genNum = parser(string);
+    }
+
+    function runThis() {
+        Genletters(genNum);
+        target.innerHTML = genNum;
+    }
+    Gen();
+    interval = setInterval(runThis, 20);
+});
+</script>
+<div class="code" data-string="{{ include.string }}"></div>
