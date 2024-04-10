@@ -2,7 +2,7 @@
 layout: new
 ---
 
-**Alessandro Ferrari**
+<div style="color: white;"><b>Alessandro Ferrari</b></div>
 
 Computer Science // Biology Student @ Georgia Tech.
 
@@ -22,11 +22,15 @@ Single Cell // Machine Learning Researcher @ the [Gibson Lab](https://ggibsongt.
 <br>
 
 
-**Work.**
+<div style="color: white;"><b>Work.</b></div>
 
-* [Maverick Biometals](https://www.maverickbiometals.com/) (YC S22) --  *making enzymes to mine metals.*
-* [Biocentis](https://www.biocentis.com/) -- *manufacturing pests instead of pesticides.*
-* [Egicon](https://www.egicon.com/en) -- *production ready embedded systems*
-* [WestSideEats](https://westsideeats.com/About) -- *shredding food delivery costs.*
-* [Rocky Linux](https://rockylinux.org/) -- *creating a platoform for the open source community.*
+\* [Maverick Biometals](https://www.maverickbiometals.com/) (YC S22) --  *making enzymes to mine metals.*
+
+\* [Biocentis](https://www.biocentis.com/) -- *manufacturing pests instead of pesticides.*
+
+\* [Egicon](https://www.egicon.com/en) -- *production ready embedded systems*
+
+\* [Rocky Linux](https://rockylinux.org/) -- *a platform for the open source community.*
+
+\* [WestSideEats](https://westsideeats.com/About) -- *shredding food delivery costs.*
 {% include cursor.html %}
