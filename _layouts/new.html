@@ -2,75 +2,105 @@
 <html lang="en">
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <title>Alessandro Ferrari</title>
         <style>
-body {
-    margin-top: 120px;
-    margin-left: 80px;
-    margin-right: 80px;
-    background: #fe793d;
-    color: #fef1eb;
-    font-family: 'Domine', Serif, monospace;
-    padding: 20px;
-    font-size: 21px;
-    cursor: none;
-}
-    div {
-        margin-bottom: 20px;
-    }
-    a:link {
-        color: #fef1eb;
-        background-color: transparent;
-        text-decoration: underline;
-    }
+            body {
+                margin-top: 120px;
+                margin-left: 80px;
+                margin-right: 80px;
+                background: #fe793d;
+                color: #fef1eb;
+                font-family: 'Domine', Serif, monospace;
+                padding: 20px;
+                font-size: 21px;
+                cursor: none;
+                line-height: 1.6em;
+            }
+            div {
+                margin-bottom: 20px;
+            }
+            a:link {
+                color: #fef1eb;
+                background-color: transparent;
+                text-decoration: underline;
+            }
 
-    a:visited {
-        color: #fee4d8;
-        background-color: transparent;
-        text-decoration: underline;
-    }
-    ul {
-        list-style-type: none; /* Removes default bullets */
-        margin: 0;
-        padding: 0;
-    }
-    ul li {
-        padding-left: 20px; /* Space for the bullet */
-        position: relative; /* Needed for absolute positioning of the pseudo-element */
-    }
-    ul li::before {
-        content: ''; /* Necessary for the pseudo-element to work */
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 10px;
-        height: 10px;
-        border: 2px solid ; /* Makes the square hollow */
-        box-sizing: border-box;
-    }
-    #invertedcursor {
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        background: #fff;
-        border-radius: 50%;
-        top: var(--y, 0);
-        left: var(--x, 0);
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        mix-blend-mode: difference;
-        transition: transform .2s;
-    }
+            a:visited {
+                color: #fee4d8;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+            ul {
+                list-style-type: none; /* Removes default bullets */
+                margin: 0;
+                padding: 0;
+            }
+            ul li {
+                padding-left: 20px; /* Space for the bullet */
+                position: relative; /* Needed for absolute positioning of the pseudo-element */
+            }
+            ul li::before {
+                content: '*'; /* Necessary for the pseudo-element to work */
+                position: absolute;
+                left: 0;
+                top: 25%;
+            }
+            #invertedcursor {
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                background: #fff;
+                border-radius: 50%;
+                top: var(--y, 0);
+                left: var(--x, 0);
+                transform: translate(-50%, -50%);
+                z-index: 2;
+                mix-blend-mode: difference;
+                transition: transform .2s;
+                pointer-events: none;
+            }
+
+            @media (max-width: 768px) {
+                #invertedcursor {
+                    display: none;
+                }
+            }
         </style>
     </head>
     <body>
         <div id="invertedcursor"></div>
         {% include setcolors.html %}
-        {{ content }}
+        <div style="color: white;"><b>Alessandro Ferrari</b></div>
+
+        <p>Computer Science // Biology Student @ <span style="color: white;">Georgia Tech</span>.</p>
+
+        <p>Single Cell // Machine Learning Researcher @ the <a href="https://ggibsongt.wixsite.com/gibsongatech">Gibson Lab</a>.</p>
+
+        <br>
+
+        <p>✉️ <a href="mailto:alessandroferrari@gatech.edu">alessandroferrari@gatech.edu</a> <br>
+        👨‍💻 <a href="https://github.com/Ferryistaken">github.com/Ferryistaken</a> <br>
+        👥 <a href="https://linkedin.com/in/alessandroferrari04">linkedin.com/in/alessandroferrari04</a> <br>
+        📝 <a href="https://alessandroferrari.live/assets/af-resume.pdf">resume</a></p>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div style="color: white;"><b>Work.</b></div>
+
+        <ul>
+            <li><a href="https://www.maverickbiometals.com/">Maverick Biometals</a> <span style="color: white;">(YC S22)</span> —  <i>making enzymes to mine metals.</i></li>
+            <li><a href="https://www.biocentis.com/">Biocentis</a> — <i>manufacturing pests instead of pesticides.</i></li>
+            <li><a href="https://www.egicon.com/en">Egicon</a> — <i>production ready embedded systems</i></li>
+            <li><a href="https://rockylinux.org/">Rocky Linux</a> — <i>a platform for the open source community.</i></li>
+            <li><a href="https://westsideeats.com/About">WestSideEats</a> — <i>shredding food delivery costs.</i></li>
+        </ul>
+
     </body>
     <script>
         document.body.onmousemove = function(e) {
