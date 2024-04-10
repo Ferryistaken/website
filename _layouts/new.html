@@ -80,7 +80,7 @@
         {% include setcolors.html %}
         <div style="color: white;"><b>Alessandro Ferrari</b></div>
 
-        <p>Computer Science // Biology Student @ <span style="color: white;">Georgia Tech</span>.</p>
+        <p>Computer Science // Biology Student @ <span style="color: white;"><span class="code" data-string="Georgia Tech"></span></span>.</p>
 
         <p>Single Cell // Machine Learning Researcher @ the <a href="https://ggibsongt.wixsite.com/gibsongatech">Gibson Lab</a>.</p>
 
@@ -98,8 +98,9 @@
 
         <div style="color: white;"><b>Work.</b></div>
 
+
         <ul>
-            <li><a href="https://www.maverickbiometals.com/">Maverick Biometals</a> <span style="color: white;">(YC S22)</span> —  <i>making enzymes to mine metals.</i></li>
+            <li><a href="https://www.maverickbiometals.com/">Maverick Biometals</a> <span style="color: white;">(YC S<span class="animated-number" data-target="22">0</span>)</span> —  <i>making enzymes to mine metals.</i></li>
             <li><a href="https://www.biocentis.com/">Biocentis</a> — <i>manufacturing pests instead of pesticides.</i></li>
             <li><a href="https://www.egicon.com/en">Egicon</a> — <i>production ready embedded systems</i></li>
             <li><a href="https://rockylinux.org/">Rocky Linux</a> — <i>a platform for the open source community.</i></li>
@@ -121,5 +122,87 @@
         );
     });
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var target = document.querySelector('.code');
+    var toString = target.getAttribute('data-string');
+    var OGarray = toString.split('');
+    var genNum;
+    var counter = 0;
+    var obfuscated = 1;
+    var interval;
+
+    function getRandom(len) {
+        return new Array(len + 1).join('2');
+    }
+
+    function Gen() {
+        var length = toString.length;
+        genNum = getRandom(length);
+        target.innerHTML = genNum;
+    }
+
+    function parser(NUarray) {
+        NUarray.forEach(function(value, index) {
+            var change;
+            if (value === '0' || value === OGarray[index] || isNaN(value)) {
+                NUarray[index] = OGarray[index];
+            } else {
+                change = Math.round(Math.random() * 9).toString();
+                NUarray[index] = change;
+            }
+        });
+
+        if (NUarray.join('') === OGarray.join('') || counter >= 50) {
+            clearInterval(interval);
+            NUarray = OGarray.slice(); // Ensure the final output is correct
+        }
+        counter++;
+        return NUarray.join("");
+    }
+
+    function Genletters(stringToChange) {
+        var string = stringToChange.toString().split('');
+        return genNum = parser(string);
+    }
+
+    function runThis() {
+        Genletters(genNum);
+        target.innerHTML = genNum;
+    }
+    Gen();
+    interval = setInterval(runThis, 20);
+});
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var animatedNumbers = document.querySelectorAll('.animated-number');
+    animatedNumbers.forEach(function(elem) {
+      if (!elem.getAttribute('data-animated')) {
+        var target = parseInt(elem.getAttribute('data-target'), 10);
+        var current = 0;
+        var increment = target / 100;
+
+        function updateCount() {
+          current += increment;
+          if (current < target) {
+            elem.innerText = Math.ceil(current);
+            requestAnimationFrame(updateCount);
+          } else {
+            elem.innerText = target;
+          }
+        }
+
+        requestAnimationFrame(updateCount);
+        elem.setAttribute('data-animated', 'true');
+      }
+    });
+  });
+</script>
+
+
+
 </html>
 
