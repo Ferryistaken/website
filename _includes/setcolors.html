@@ -1,0 +1,35 @@
+<script>
+    function applyColorScheme() {
+    // Define known color combinations
+    const colorSchemes = [
+        { bg: 'rgb(0, 100, 230)', fg: 'rgb(194, 246, 255)' },
+        { bg: '#ee793d', fg: '#fef1eb' }
+    ];
+
+    // Function to make a color slightly darker
+    function darkenColor(rgb) {
+        let [r, g, b] = rgb.match(/\d+/g).map(Number);
+        r = Math.max(0, r - 30);
+        g = Math.max(0, g - 30);
+        b = Math.max(0, b - 30);
+        return `rgb(${r}, ${g}, ${b})`;
+    }
+
+    // Select a random color scheme
+    const chosenScheme = colorSchemes[Math.floor(Math.random() * colorSchemes.length)];
+
+    // Apply the background and foreground colors
+    document.body.style.backgroundColor = chosenScheme.bg;
+    document.body.style.color = chosenScheme.fg;
+
+    // Derive and apply link color from foreground
+    const linkColor = darkenColor(chosenScheme.fg);
+    document.querySelectorAll('a').forEach(link => {
+        link.style.color = linkColor;
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    applyColorScheme();
+});
+</script>
