@@ -1,10 +1,5 @@
 <!-- Animated Number Include -->
-<style>
-  .animated-number {
-    display: inline; /* Ensure inline display */
-    white-space: nowrap; /* Prevent breaking numbers into multiple lines */
-  }
-</style>
+<span class="animated-number" data-target="{{ include.number }}">0</span>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -32,4 +27,3 @@
   });
 </script>
 
-<span class="animated-number" data-target="{{ include.number }}">0</span>
