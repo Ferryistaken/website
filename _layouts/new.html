@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (!elem.getAttribute('data-animated')) {
         var target = parseInt(elem.getAttribute('data-target'), 10);
         var current = 0;
-        var increment = target / 100;
+        var increment = target / 40;
 
         function updateCount() {
           current += increment;
