@@ -101,6 +101,22 @@
           font-size: 18px;
           line-height: 1.6em;
         }
+        #name {
+            min-width: 0; /* Allow the name to shrink on small screens */
+          }
+
+          .imageContainer {
+            position: static; /* Normal flow on mobile */
+            flex: 0 0 auto; /* Do not grow, do not shrink, based on content size */
+          }
+      }
+
+      @media (min-width: 768px) {
+          .imageContainer {
+                position: absolute; /* Position absolutely on desktop */
+                right: 0; /* Align to the right side within the #namepic container */
+                top: 0; /* Align to the top of the #namepic container */
+          }
       }
 
       .container {
@@ -163,11 +179,74 @@
         style: italic;
         font-size: 12px;
       }
+
+
+      #namepic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Ensures relative positioning for absolute children */
+    max-width: 900px;
+}
+
+#name {
+    color: white; /* Text color for name */
+}
+
+#imageDropdown {
+    position: relative; /* Sets a positioning context for the dropdown */
+}
+
+#imageDropdown button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: crosshair;
+}
+
+#imageContainer {
+    display: none;
+    position: absolute; /* Keeps the dropdown from affecting other layout elements */
+    width: 100%; /* Ensures the dropdown is the same width as the button */
+    top: 100%; /* Positions it right below the button */
+    left: 0; /* Aligns with the left edge of the button */
+    z-index: 1; /* Ensures it appears above other content */
+}
+
+    #imageContainer img {
+        width: 200px;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+    }
+
+@media (max-width: 1000px) {
+    #namepic {
+        flex-direction: column;
+        align-items: flex-start; /* Aligns items to the start instead of center */
+    }
+
+    #imageContainer {
+        position: static; /* Allows natural document flow in mobile view */
+        width: auto; /* Adjusts width to default block level */
+    }
+}
+
+
     </style>
   </head>
   <body>
-    <div id="invertedcursor"></div> {% include setcolors.html %} <div style="color: white;">
+    <div id="invertedcursor"></div> {% include setcolors.html %} 
+    <div id="namepic">
+    <div id="name" style="color: white;">
       <b>Alessandro Ferrari</b>
+    </div>
+    <div id="imageDropdown" class="dropdown">
+    <span onclick="toggleImage()">+ my_picture.png</span>
+    <div id="imageContainer" class="imageContainer">
+        <img src="assets/img/headshot-removebg-preview.webp" alt="My Picture">
+    </div>
+    </div>
     </div>
     <p>Computer Science // Biology Student @ <span style="color: white;">
         <span class="code" data-string="Georgia Tech"></span>
@@ -189,7 +268,7 @@
     <ul>
       <li>
         <a href="https://www.maverickbiometals.com/">Maverick Biometals</a>
-        <span style="color: white;">(YC S <span class="animated-number" data-target="22">0</span>) </span> — <i>making enzymes to mine metals.</i>
+        <span style="color: white;">(YC S<span class="animated-number" data-target="22">0</span>) </span> — <i>making enzymes to mine metals.</i>
       </li>
       <li>
         <a href="https://www.biocentis.com/">Biocentis</a> — <i>manufacturing pests instead of pesticides.</i>
@@ -491,5 +570,21 @@
     window.onload = function() {
       window.signature.animate();
     };
+  </script>
+  <script>
+      // image dropdown
+      function toggleImage() {
+          var imageContainer = document.getElementById("imageContainer");
+          var button = document.querySelector("#imageDropdown span");
+
+          // Check if the display style is either empty or none to handle initial state
+          if (imageContainer.style.display === "" || imageContainer.style.display === "none") {
+              imageContainer.style.display = "block";
+              button.textContent = '- my_picture.png';
+          } else {
+              imageContainer.style.display = "none";
+              button.textContent = '+ my_picture.png';
+          }
+      }
   </script>
 </html>
