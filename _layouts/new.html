@@ -601,8 +601,8 @@
   document.addEventListener("DOMContentLoaded", function() {
   const fileContents = {
     "main.py": "def hello_world():\n    print(\"Hello, world!\")\nhello_world()",
-    "main.rs": "pub fn play(&mut self, speed: u64) {\n\tlet cycle_wait_time = time::Duration::from_millis(speed);\n\tloop {\n\t\tself.Cycle();\n\t\tself.pretty_print_video();\n\t\tthread::sleep(cycle_wait_time);\n\t}\n}",
     "dna.fasta": "ACTGATCGATTGAGCTCTAGCGTGCTAGCTAGCTAGCTTGAC\n",
+    "main.rs": "pub fn play(&mut self, speed: u64) {\n\tlet cycle_wait_time = time::Duration::from_millis(speed);\n\tloop {\n\t\tself.Cycle();\n\t\tself.pretty_print_video();\n\t\tthread::sleep(cycle_wait_time);\n\t}\n}",
     "protein.fasta": "MVKVYAPASSANMSVGFDVLGAAVTPVDGALLGDVVTVEAAETFSLNNLGQKQLNVKMAL\n"
   };
 
@@ -635,7 +635,7 @@
 
   function showNextCommand() {
     const fileName = fileNames[currentFileIndex];
-    const command = `[ferry@device]$ cat ./${fileName}\n`;
+    const command = `[ferry@alessandroferrari.live]$ cat ./${fileName}\n`;
     typeText(command, 0, showFileContent);
   }
 
