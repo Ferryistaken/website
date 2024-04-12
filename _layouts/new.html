@@ -12,11 +12,22 @@
     {% endif %}
     <title>Alessandro Ferrari</title>
     <style>
-    @media (max-width: 1919px) {
-      #fakeTerminal {
-        display: none;
-      }
+    @media (max-width: 1700px) {
+        #faketerminal {
+            display: none;
+        }
     }
+
+        #faketerminal::after {
+            content: '█';
+            animation: blink 1s step-start infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
 
       html {
         cursor: none;
@@ -30,7 +41,7 @@
         color: #fef1eb;
         font-family: 'Domine', Serif, monospace;
         padding: 20px;
-        font-size: 21px;
+        font-size: 16px;
         line-height: 1.6em;
       }
 
@@ -137,7 +148,6 @@
 
       .links {
         flex: 1 1 300px;
-        font-size: 20px;
       }
 
       .signature {
@@ -443,68 +453,70 @@
       </div>
     </div>
 
-    <div id="fakeTerminal" style="position: absolute; top: 40%; right: 10%; font-family: 'Monaco', 'Courier New', monospace; font-size: 20px; color: #fef1eb; white-space: pre-wrap; overflow-wrap: break-word;"></div>
+    <div id="faketerminal" style="position: absolute; top: 33%; right: 10%; font-family: 'Monaco', 'Courier New', monospace; font-size: 16px; color: #fef1eb; white-space: pre-wrap; overflow-wrap: break-word;"></div>
 
 
   </body>
   <script>
+      // custom mouse
     document.addEventListener('mousemove', function(e) {
       document.documentElement.style.setProperty('--x', (e.clientX + window.scrollX) + 'px');
       document.documentElement.style.setProperty('--y', (e.clientY + window.scrollY) + 'px');
     });
   </script>
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var target = document.querySelector('.code');
-      var toString = target.getAttribute('data-string');
-      var OGarray = toString.split('');
-      var genNum;
-      var counter = 0;
-      var obfuscated = 1;
-      var interval;
+  function decryptionEffect() {
+    const target = document.querySelector('.code');
+    const finalText = target.getAttribute('data-string');
+    let currentIndex = 0;
 
-      function getRandom(len) {
-        return new Array(len + 1).join('2');
-      }
+    // Function to generate random text of length equal to finalText
+    let randomText = (length) => Array.from({ length }, () => String.fromCharCode(Math.random() * (126 - 33) + 33)).join('');
 
-      function Gen() {
-        var length = toString.length;
-        genNum = getRandom(length);
-        target.innerHTML = genNum;
-      }
-
-      function parser(NUarray) {
-        NUarray.forEach(function(value, index) {
-          var change;
-          if (value === '0' || value === OGarray[index] || isNaN(value)) {
-            NUarray[index] = OGarray[index];
-          } else {
-            change = Math.round(Math.random() * 9).toString();
-            NUarray[index] = change;
-          }
-        });
-        if (NUarray.join('') === OGarray.join('') || counter >= 50) {
-          clearInterval(interval);
-          NUarray = OGarray.slice(); // Ensure the final output is correct
+    // Initial "decryption" animation
+    let decryptInterval = setInterval(() => {
+        if (currentIndex < finalText.length) {
+            // Update only up to currentIndex with finalText, rest remains random
+            let text = randomText(finalText.length);
+            target.textContent = finalText.substring(0, currentIndex) + text.substring(currentIndex);
+            currentIndex++;
+        } else {
+            clearInterval(decryptInterval);
+            // Ensure the final text is exactly "Georgia Tech"
+            target.textContent = finalText;
+            periodicRandomEffect();
         }
-        counter++;
-        return NUarray.join("");
-      }
+    }, 100); // Adjust time as necessary for the decryption effect speed
 
-      function Genletters(stringToChange) {
-        var string = stringToChange.toString().split('');
-        return genNum = parser(string);
-      }
+    // Function to handle periodic random character animation
+    function periodicRandomEffect() {
+        function randomizeEffect() {
+            let randomIndex = Math.floor(Math.random() * finalText.length);
+            let originalChar = finalText[randomIndex];
+            let effectDuration = Math.random() * 1200 + 500; // Duration between 0.5 (500 ms) and 1.7 seconds (1700 ms)
+            let effectInterval = setInterval(() => {
+                target.textContent = target.textContent.substring(0, randomIndex) +
+                                     String.fromCharCode(Math.random() * (126 - 33) + 33) +
+                                     target.textContent.substring(randomIndex + 1);
+            }, 100); // Speed of "encrypt-decrypt" effect
 
-      function runThis() {
-        Genletters(genNum);
-        target.innerHTML = genNum;
-      }
-      Gen();
-      interval = setInterval(runThis, 20);
-    });
-  </script>
+            setTimeout(() => {
+                clearInterval(effectInterval);
+                target.textContent = target.textContent.substring(0, randomIndex) +
+                                     originalChar +
+                                     target.textContent.substring(randomIndex + 1);
+                setTimeout(randomizeEffect, Math.random() * 4000 + 1000); // Next effect after a random time between 1 and 5 seconds
+            }, effectDuration);
+        }
+        randomizeEffect();
+    }
+}
+
+// Run the function when the document is ready
+document.addEventListener('DOMContentLoaded', decryptionEffect);
+</script>
   <script>
+      // number animation
     document.addEventListener("DOMContentLoaded", function() {
       var animatedNumbers = document.querySelectorAll('.animated-number');
       animatedNumbers.forEach(function(elem) {
@@ -530,7 +542,6 @@
   </script>
   <script>
       // signature animation
-      // TODO: export signature without merging paths in gimp to animate them one by one
     window.signature = {
       initialize: function() {
         var signatures = document.querySelectorAll('.signature svg');
@@ -601,12 +612,14 @@
   document.addEventListener("DOMContentLoaded", function() {
   const fileContents = {
     "main.py": "def hello_world():\n    print(\"Hello, world!\")\nhello_world()",
-    "dna.fasta": "ACTGATCGATTGAGCTCTAGCGTGCTAGCTAGCTAGCTTGAC\n",
+    "dna.fasta": "ACTGATCGATTGAGCTCTAGCGTGCTAGCTAGCTAGCTTGAC",
     "main.rs": "pub fn play(&mut self, speed: u64) {\n\tlet cycle_wait_time = time::Duration::from_millis(speed);\n\tloop {\n\t\tself.Cycle();\n\t\tself.pretty_print_video();\n\t\tthread::sleep(cycle_wait_time);\n\t}\n}",
-    "protein.fasta": "MVKVYAPASSANMSVGFDVLGAAVTPVDGALLGDVVTVEAAETFSLNNLGQKQLNVKMAL\n"
+    "protein.fasta": "MVKVYAPASSANMSVGFDVLGAAVTPVDGALLGDVVTVEAAETFSLNNLGQKQLNVKMAL"
   };
 
-  const terminalDiv = document.getElementById("fakeTerminal");
+      const prompt = `[ferry@alessandroferrari.live]$ `;
+
+  const terminalDiv = document.getElementById("faketerminal");
   let currentFileIndex = 0;
   const fileNames = Object.keys(fileContents);
 
@@ -619,23 +632,35 @@
     }
   }
 
+function printText(text) {
+    terminalDiv.textContent += text;
+  }
+
   function showFileContent() {
     const fileName = fileNames[currentFileIndex];
     const content = fileContents[fileName];
-    typeText(content, 0, cycleCommand);
+    typeText(content, 0, function() {
+      setTimeout(cycleCommand, 1000); // Wait 1 second before typing the clear command
+      printText("\n");
+      printText(prompt);
+    });
   }
 
   function cycleCommand() {
-    setTimeout(() => {
-      terminalDiv.textContent = '';
-      currentFileIndex = (currentFileIndex + 1) % fileNames.length;
-      showNextCommand();
-    }, 2000); // Wait before clearing and showing next command
+    const clearCommand = " clear\n";
+    typeText(clearCommand,0, function() {
+      setTimeout(() => {
+        terminalDiv.textContent = '';
+        currentFileIndex = (currentFileIndex + 1) % fileNames.length;
+        showNextCommand();
+      }, 500); // Wait a little after "clear" before clearing the div
+    });
   }
 
   function showNextCommand() {
     const fileName = fileNames[currentFileIndex];
-    const command = `[ferry@alessandroferrari.live]$ cat ./${fileName}\n`;
+    const command = `cat ./${fileName}\n`;
+      printText(prompt);
     typeText(command, 0, showFileContent);
   }
 
