@@ -38,6 +38,10 @@ collections:
     output: true
   work_experience:
     output: true
+  mail:
+    output: true
+    permalink: /:collection/:name/
+
 
 
 # Markdown settings
