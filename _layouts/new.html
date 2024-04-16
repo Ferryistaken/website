@@ -18,11 +18,18 @@
     {% endif %}
     <title>Alessandro Ferrari</title>
     <style>
-    @media (max-width: 1700px) {
+    @media (max-width: 1899px) {
         #faketerminal {
             display: none;
         }
     }
+
+    @media (min-width: 1900px) {
+        #faketerminal {
+            display: block;
+        }
+    }
+
 
         #faketerminal::after {
             content: '█';
@@ -620,11 +627,11 @@ document.addEventListener('DOMContentLoaded', decryptionEffect);
   <script>
   document.addEventListener("DOMContentLoaded", function() {
   const fileContents = {
+      "invertedmouse.js": "document.addEventListener('mousemove', function(e) {\n\tdocument.documentElement.style.setProperty(\n\t\t'--x', \n\t\t(e.clientX + window.scrollX) + 'px');\n\tdocument.documentElement.style.setProperty(\n\t\t'--y', \n\t\t(e.clientY + window.scrollY) + 'px');\n});",
     "main.py": "def hello_world():\n    print(\"Hello, world!\")\nhello_world()",
     "dna.fasta": ">sequence A\nggtaagtcctctagtacaaacacccccaatattgtgatataattaaaattatattcatat\ntctgttgccagaaaaaacacttttaggctatattagagccatcttctttgaagcgttgtc",
     "main.rs": "pub fn play(&mut self, speed: u64) {\n\tlet cycle_wait_time = time::Duration::from_millis(speed);\n\tloop {\n\t\tself.Cycle();\n\t\tself.pretty_print_video();\n\t\tthread::sleep(cycle_wait_time);\n\t}\n}",
-    "protein.fasta": ">sp|P31645|SC6A4_HUMAN Sodium-dependent serotonin transporter OX=9606\nMETTPLNSQKQLSACEDGEDCQENGVLQKVVPTPGDKVESGQISNGYSAVPSPGAGDDTR\nHSIPATTTTLVAELHQGERETWGKKVDFLLSVIGYAVDLGNVWRFPYICYQNGGGAFLLP\nYTIMAIFGGIPLFYMELALGQYHRNGCISIWRKICPIFKGIGYAICIIAFYIASYYNTIM\nAWALYYLISSFTDQLPWTSCKNSWNTGNCTNYFSEDNITWTLHSTSPAEEFYTRHVLQIH\nRSKGLQDLGGISWQLALCIMLIFTVIYFSIWKGVKTSGKVVWVTATFPYIILSVLLVRGA\nTLPGAWRGVLFYLKPNWQKLLETGVWIDAAAQIFFSLGPGFGVLLAFASYNKFNNNCYQD\nALVTSVVNCMTSFVSGFVIFTVLGYMAEMRNEDVSEVAKDAGPSLLFITYAEAIANMPAS\nTFFAIIFFLMLITLGLDSTFAGLEGVITAVLDEFPHVWAKRRERFVLAVVITCFFGSLVT\nLTFGGAYVVKLLEEYATGPAVLTVALIEAVAVSWFYGITQFCRDVKEMLGFSPGWFWRIC\nWVAISPLFLLFIICSFLMSPPQLRLFQYNYPYWSIILGYCIGTSSFICIPTYIAYRLIIT\nPGTFKERIIKSITPETPTEIPCGDIRLNAV",
-      "invertedmouse.js": "document.addEventListener('mousemove', function(e) {\n\tdocument.documentElement.style.setProperty('--x', (e.clientX + window.scrollX) + 'px');\n\tdocument.documentElement.style.setProperty('--y', (e.clientY + window.scrollY) + 'px');\n});"
+    "protein.fasta": ">sp|P31645|SC6A4_HUMAN Sodium-dependent serotonin transporter\nMETTPLNSQKQLSACEDGEDCQENGVLQKVVPTPGDKVESGQISNGYSAVPSPGAGDDTR\nHSIPATTTTLVAELHQGERETWGKKVDFLLSVIGYAVDLGNVWRFPYICYQNGGGAFLLP\nYTIMAIFGGIPLFYMELALGQYHRNGCISIWRKICPIFKGIGYAICIIAFYIASYYNTIM\nAWALYYLISSFTDQLPWTSCKNSWNTGNCTNYFSEDNITWTLHSTSPAEEFYTRHVLQIH\nRSKGLQDLGGISWQLALCIMLIFTVIYFSIWKGVKTSGKVVWVTATFPYIILSVLLVRGA\nTLPGAWRGVLFYLKPNWQKLLETGVWIDAAAQIFFSLGPGFGVLLAFASYNKFNNNCYQD\nALVTSVVNCMTSFVSGFVIFTVLGYMAEMRNEDVSEVAKDAGPSLLFITYAEAIANMPAS\nTFFAIIFFLMLITLGLDSTFAGLEGVITAVLDEFPHVWAKRRERFVLAVVITCFFGSLVT\nLTFGGAYVVKLLEEYATGPAVLTVALIEAVAVSWFYGITQFCRDVKEMLGFSPGWFWRIC\nWVAISPLFLLFIICSFLMSPPQLRLFQYNYPYWSIILGYCIGTSSFICIPTYIAYRLIIT\nPGTFKERIIKSITPETPTEIPCGDIRLNAV",
   };
 
       const prompt = `[ferry@alessandroferrari.live]$ `;
