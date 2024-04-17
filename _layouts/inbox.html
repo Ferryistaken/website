@@ -54,7 +54,7 @@
         <a href="{{ '/' }}">../</a>
         {% for post in site.mail %}
             <li>
-                <div><a href="{{ post.url }}">{{ post.title }}</a></div>
+                <div><a href="{{ post.url }}">{{ post.subject }}</a></div>
                 <div>{{ post.date | date: "%Y-%m-%d %H:%M" }}</div>
                 <div>{{ post.content | number_of_words }}</div>
             </li>

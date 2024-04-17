@@ -5,7 +5,7 @@ layout: null
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ page.title }}</title>
+    <title>{{ page.subject }}</title>
     <style>
         body {
             font-family: 'Courier New', Courier, monospace;
@@ -22,6 +22,8 @@ layout: null
 </head>
 <body>
     {% include setcolors.html %}
+    <div>[ferry@alessandroferrari.live]$ cat /var/spool/mail/ferry/{{ page.title | downcase }}.md</div>
+    <br>
     <div class="email-header">
         <div><b>From:</b> {{ page.from }}</div>
         <div><b>Date:</b> {{ page.date | date: "%Y-%m-%d %H:%M:%S" }}</div>
@@ -30,6 +32,7 @@ layout: null
     </div>
     <hr>
     <pre id="emailContent" class="email-content">{{ content }}</pre>
+    <a style="text-decoration: none; color: inherit;" href="{{ '/inbox' }}">[ferry@alessandroferrari.live]$ <span style="text-decoration: underline;">clear</span></a>{% include cursor.html %}
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {

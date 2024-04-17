@@ -1,2 +1,7 @@
 User-agent: *
+
+Disallow: /mail/
+
 Sitemap: https://alessandroferrari.live/sitemap.xml
+
+Disallow: /mail/
