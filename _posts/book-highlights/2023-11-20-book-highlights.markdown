@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "📖 Embedding book highlights onto a vector space"
+title: "Embedding book highlights onto a vector space"
 date: "2023-11-20 11:57:43 +0200"
 tags: [ai]
 description: Discover how to transform book highlights into a searchable vector space using serverless technology for an innovative, cost-effective reading experience.

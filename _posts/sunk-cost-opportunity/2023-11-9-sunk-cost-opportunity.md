@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "💡The idea of \"Sunk Cost Opportunity\"."
+title: "The idea of \"Sunk Cost Opportunity\"."
 date: "2023-11-9 19:05:00"
 tags: [writing]
 description: My thoughts on creating a personal brand and the idea of "Sunk Cost Opportunity".

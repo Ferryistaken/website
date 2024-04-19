@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "🧬How to Quality Control RNA from ArchR objects"
+title: "How to Quality Control RNA from ArchR objects"
 date: "2023-09-25 10:20:17 +0200"
 tags: [bioinformatics, single-cell, scRNA, scATAC, archr, seurat, genomics]
 description: Guide on how to do RNA quality control an ArchR object.

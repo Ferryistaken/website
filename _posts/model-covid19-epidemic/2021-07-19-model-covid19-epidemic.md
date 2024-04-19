@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "🦠Modeling the Covid-19 Pandemic using R and Jupyter"
+title: "Modeling the Covid-19 Pandemic using R and Jupyter"
 tags: [data, coding, ai]
 date: 2021-07-19 14:54 +0000
 usemathjax: true

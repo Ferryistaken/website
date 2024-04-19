@@ -4,73 +4,18 @@ layout: compress
 
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
-
 
 {% seo %}
 {% include header.html %}
 
-<style>
-body {
-    background-color: #008080;
-}
-/* Basic styling for the menu */
-#menu {
-  font-family: 'Domine', Serif, monospace;
-  font-size: 16px;
-  padding: 20px;
-  z-index: 100;
-  margin-right: 50px; /* Right padding */
-  width: 120px;
-  color: rgb(194, 246, 255);
-  background-color: rgb(0, 100, 230);
-}
 
-#menu a {
-  text-decoration: none;
-  color: rgb(194, 246, 255);
-  padding: 10px;
-  display: block; /* Make links block to stack vertically */
-}
-
-/* Positioning for larger screens */
-@media (min-width: 1080px) {
-  #menu {
-    position: fixed;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    border-left: 1px solid #ccc;
-  }
-}
-
-/* Positioning for smaller screens */
-@media (max-width: 1080px) {
-  #menu {
-      display: none;
-  }
-}
-</style>
-
+<body data-theme="{{ site.mode }}">
 <script src="/assets/js/lazysizes.min.js" async=""></script>
-<div class="window" style="margin: 32px; width: 80%; font-size: 16px; background-color: #fff;">
-    <div class="title-bar">
-        <div class="title-bar-text">
-            {{ page.title }}
-        </div>
-          <div onclick="location.href='/filemanager'" class="title-bar-controls">
-            <button aria-label="Close"></button>
-          </div>
-    </div>
+  {% include navbar.html %}
   <div class="wrapper post">
     <main class="page-content" aria-label="Content">
       <article itemscope itemtype="https://schema.org/BlogPosting">
 
-        <div id="menu">
-          <a href="/">home</a>
-          <a href="/filemanager">blog</a>
-        </div>
         <header class="header">
           {% if page.tags and page.tags != empty %}
           <div class="tags">
@@ -140,6 +85,6 @@ body {
 
     {% include footer.html %}
   </div>
-</div>
 </body>
+
 </html>

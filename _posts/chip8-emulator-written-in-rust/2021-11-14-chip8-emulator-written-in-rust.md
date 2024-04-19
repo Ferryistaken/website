@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "🎮 Building a CHIP-8 Emulator in Rust"
+title: "Building a CHIP-8 Emulator in Rust"
 tags: [coding, rust, software, opensource]
 date: 2023-08-15 18:53 -0400
 usemathjax: true
