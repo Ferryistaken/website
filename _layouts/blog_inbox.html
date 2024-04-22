@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+    body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            background-color: #fbf8f2;
+        }
+        #inbox {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        ul {
+            border-top: 1px solid #000;
+            list-style: none;
+            padding: 0;
+            padding-top: 20px;
+            margin: 0;
+            min-width: 700px; /* Ensures the list is at least 700px wide */
+            max-width: 1200px;
+        }
+        li {
+            padding: 7px 0;
+            display: flex;
+        }
+        li > div {
+            flex-grow: 1;
+            white-space: nowrap;
+            padding: 0 10px; /* Adds padding to each column */
+        }
+        li > div:nth-child(1) { /* Email name */
+            flex-basis: 50%; /* Sets a basis for growing */
+            text-align: left; /* Ensures text alignment is consistent */
+        }
+        li > div:nth-child(2) { /* Date */
+            flex-basis: 25%; /* Adjusts the basis for date column */
+            text-align: center; /* Centers the date text */
+        }
+        li > div:nth-child(3) { /* Bytes */
+            flex-basis: 25%; /* Adjusts the basis for bytes column */
+            text-align: right; /* Right aligns the byte count */
+        }
+        a:hover {
+            text-decoration: none;
+            color: #FFD74B;
+        }
+        a, h1 {
+            color: #0073E6;
+        }
+#menu {
+            width: 150px;
+            margin-top: 50px;
+            padding: 10px;
+            border: 1px solid #0064e6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            left: 10px;
+        }
+        #menu a {
+            color: #0064e6;
+            text-align: center;
+            padding: 10px;
+            display: block;
+            width: 100%;
+            text-decoration: none;
+        }
+        #menu a:hover {
+            color: #FFD74B;
+        }
+    </style>
+</head>
+<body>
+<div id="inbox">
+    <h1>Index of /home/ferry/Documents/blog</h1>
+    <ul>
+        <li><div><a href="{{ '/' }}">../</a></div></li>
+        {% for post in site.posts %}
+        {% unless post.tags contains 'noshow' %}
+            <li>
+                <div><a href="{{ post.url }}">{{ post.title }}</a></div>
+                <div>{{ post.date | date: "%Y-%m-%d %H:%M" }}</div>
+                <div>{{ post.content | number_of_words }}</div>
+            </li>
+        {% endunless %}
+        {% endfor %}
+    </ul>
+    <div id="menu">
+      <a href="/">home</a>
+      <a href="/blog">blog</a>
+    </div>
+</div>
+</body>
+</html>

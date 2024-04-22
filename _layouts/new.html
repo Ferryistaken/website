@@ -18,6 +18,30 @@
     {% endif %}
     <title>Alessandro Ferrari</title>
     <style>
+    @media (max-width: 1899px) {
+        #faketerminal {
+            display: none;
+        }
+    }
+
+    @media (min-width: 1900px) {
+        #faketerminal {
+            display: block;
+        }
+    }
+
+
+        #faketerminal::after {
+            content: '█';
+            animation: blink 1s step-start infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
       html {
         cursor: none;
       }
@@ -290,7 +314,7 @@
       <div class="links">
         <ul>
           <li>
-            <a href="/filemanager">blog</a>
+            <a href="/blog">blog</a>
           </li>
           <li>
             <a href="https://books.alessandroferrari.live">books</a>

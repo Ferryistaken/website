@@ -1,0 +1,137 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title | default: "Your Site Title" }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+  {% if page.usemathjax %}
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+        });
+      </script>
+      <script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    {% endif %}
+  <style>
+html, body { 
+    background: #fbf8f2;
+padding-bottom: 200px;
+}
+    html {
+        height: 100%;
+        background: #fbf8f2;
+    }
+    a, h1, h2, h3, h4, h5 {
+        color: #0073E6;
+        text-decoration: none;
+        font-family: 'Domine', monospace;
+    }
+    body {
+      color: black;
+      font-family: sans-serif;
+      line-height: 1.4;
+      padding: 20px;
+      margin: 0;
+      min-height: 100%;
+      overflow-wrap: break-word;
+      max-width: 1000px;
+    }
+    .post-meta { text-align: right; }
+    h2, h3, h4, h5, h6 { margin-top: 3rem; }
+    hr { margin: 2rem 0; }
+    p { margin: 1rem 0; }
+    li { margin: 0.4rem 0; }
+    *:target { background: yellow; }
+    hr {
+      text-align: center;
+      border: 0;
+      content: '/////';
+    }
+    table { width: 100%; }
+    table, th, td {
+      border: thin solid black;
+      border-collapse: collapse;
+      padding: 0.4rem;
+    }
+    code {
+      color: #FFD74B;
+      background: black;
+      tab-size: 4px;
+      white-space: pre-wrap;
+      padding: 0px;
+    }
+    div.highlighter-rouge code {
+      display: block;
+      padding: 1rem;
+    }
+    blockquote {
+      font-style: italic;
+      border: thin solid black;
+      padding: 1rem;
+    }
+    blockquote p { margin: 0; }
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+    table {
+        border: 1px solid #0064e6;
+    }
+
+    table th, table td {
+        border: 1px solid #0064e6;
+    }
+    #menu {
+      position: fixed;
+      right: 20px;
+      top: 45%;
+      border: 1px solid #0064e6;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      transition: top 0.3s;
+    }
+    #menu a {
+      color: #0064e6;
+      padding: 20px 45px;
+    }
+    #menu a:hover {
+            color: #FFD74B;
+      padding: 20px 45px;
+    }
+    @media (max-width: 1250px) {
+      #menu {
+        position: static;
+        width: 150px;
+        height: 100px;
+        margin: 20px auto 20px; /* Centers the menu */
+        display: block;
+        margin-bottom: 50px;
+      }
+      #menu a {
+        display: block; /* Ensures links take full width of the menu */
+        text-align: center; /* Centers the text */
+        padding: 10px;
+        margin: 5px 0; /* Adds some space between links */
+      }
+    }
+  </style>
+</head>
+<body>
+    <div id="menu">
+      <a href="/">home</a>
+      <a href="/blog">blog</a>
+    </div>
+    <h1>{{ page.title }}</h1>
+    {{ page.content }}
+    <br>
+    <br>
+    <a href="/blog" style="text-decoration: underline;">back</a>
+</body>
+</html>
+
