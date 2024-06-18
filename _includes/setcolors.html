@@ -36,6 +36,22 @@
             document.querySelectorAll('svg path').forEach(path => {
                 path.style.fill = '#ff0000'; // or 'red'
             });
+            document.querySelectorAll('.i').forEach(element => {
+          // Apply the main styles to the element
+          element.style.color = 'red';
+          element.style.position = 'relative';
+          
+          // Create a pseudo-element effect for ':before'
+          // This is a workaround as JavaScript doesn't directly support pseudo-elements
+          // Create a span to mimic the pseudo-element
+          const beforeElement = document.createElement('span');
+          beforeElement.textContent = 'ı';
+          beforeElement.style.position = 'absolute';
+          beforeElement.style.color = 'black';
+          
+          // Insert the span before the element's existing content
+          element.insertBefore(beforeElement, element.firstChild);
+        });
         } else {
             // For other color schemes, derive and apply link color from foreground
             const linkColor = darkenColor(chosenScheme.fg);
