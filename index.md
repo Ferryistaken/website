@@ -2,7 +2,8 @@
 layout: new
 ---
 
-<div style="color: white;"><b>Alessandro Ferrari</b></div>
+<div style="color: white; font-family: 'Times New Roman', serif; font-size: 96px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+</div>
 
 Computer Science // Biology Student @ Georgia Tech.
 

@@ -12,12 +12,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
 
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+    </style>
+
     <meta charset="UTF-8">
     {% if site.google_analytics and jekyll.environment == 'production' %}
     {% include analytics.html %}
     {% endif %}
     <title>Alessandro Ferrari</title>
     <style>
+    @font-face {
+        font-family: "Junicode";
+        src: url("../assets/Junicode-RegularCondensed.ttf");
+    }
     @media (max-width: 1899px) {
         #faketerminal {
             display: none;
@@ -52,7 +60,7 @@
         margin-right: 80px;
         background: #fe793d;
         color: #fef1eb;
-        font-family: 'Domine', Serif, monospace;
+        font-family: 'Fira Code', monospace;
         padding: 20px;
         font-size: 16px;
         line-height: 1.6em;
@@ -266,9 +274,20 @@
   <body>
     <div id="invertedcursor"></div> {% include setcolors.html %} 
     <div id="namepic">
-    <div id="name" style="color: white;">
-      <b>Alessandro Ferrari</b>
+    <div style="
+        font-family: Junicode, monospace;
+        font-size: 120px; /* Adjust size as needed for your design */
+        font-weight: 100; /* Bold for a strong presence */
+        letter-spacing: -0.02em; /* Slightly tighten the spacing for elegance */
+        line-height: 1.3;
+        text-align: center; /* Center-align for a balanced appearance */
+        padding: 20px 0; /* Vertical padding for spacing */
+        width: fit-content; /* Ensure the width adjusts to the content */
+        border-radius: 8px; /* Rounded corners for a modern touch */
+    ">
+        Alessandro Ferrari
     </div>
+
     <div id="imageDropdown" class="dropdown">
     <span onclick="toggleImage()">+ my_picture.png</span>
     <div id="imageContainer" class="imageContainer">
@@ -295,7 +314,7 @@
     <ul>
       <li>
         <a href="https://www.maverickbiometals.com/">Maverick Biometals</a>
-        <span style="color: white;">(YC S<span class="animated-number" data-target="22">0</span>) </span> — <i>making enzymes to mine metals.</i>
+        <span>(YC S<span class="animated-number" data-target="22">0</span>) </span> — <i>making enzymes to mine metals.</i>
       </li>
       <li>
         <a href="https://www.biocentis.com/">Biocentis</a> — <i>manufacturing pests instead of pesticides.</i>
@@ -321,9 +340,6 @@
           </li>
           <li>
             <a href="https://contact.alessandroferrari.live">contact</a>
-          </li>
-          <li>
-            <a href="https://message.alessandroferrari.live">message</a>
           </li>
           <!-- <li> <a href="{{ '/inbox' }}">inbox</a> </li> -->
         </ul>

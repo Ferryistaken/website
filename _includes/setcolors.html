@@ -1,36 +1,52 @@
 <script>
     function applyColorScheme() {
-    // Define known color combinations
-    const colorSchemes = [
-        { bg: 'rgb(0, 100, 230)', fg: 'rgb(194, 246, 255)' },
-        { bg: '#e66f00', fg: '#fffbf2' },
-        { bg: '#14773d', fg: '#ebeaa1' }
-    ];
+        // Define known color combinations
+        const colorSchemes = [
+            { bg: 'rgb(0, 100, 230)', fg: 'rgb(194, 246, 255)' },
+            { bg: '#e66f00', fg: '#fffbf2' },
+            { bg: '#14773d', fg: '#ebeaa1' },
+            { bg: '#fff', fg: '#202423' }
+        ];
 
-    // Function to make a color slightly darker
-    function darkenColor(rgb) {
-        let [r, g, b] = rgb.match(/\d+/g).map(Number);
-        r = Math.max(0, r - 30);
-        g = Math.max(0, g - 30);
-        b = Math.max(0, b - 30);
-        return `rgb(${r}, ${g}, ${b})`;
+        // Function to make a color slightly darker
+        function darkenColor(rgb) {
+            let [r, g, b] = rgb.match(/\d+/g).map(Number);
+            r = Math.max(0, r - 30);
+            g = Math.max(0, g - 30);
+            b = Math.max(0, b - 30);
+            return `rgb(${r}, ${g}, ${b})`;
+        }
+
+        // Select a random color scheme
+        const chosenScheme = colorSchemes[Math.floor(Math.random() * colorSchemes.length)];
+
+        // Apply the background and foreground colors
+        document.body.style.backgroundColor = chosenScheme.bg;
+        document.body.style.color = chosenScheme.fg;
+
+        // Check if the chosen scheme is white background and black foreground
+        if (chosenScheme.bg === '#fff') {
+            // Set link color to #e9251e for this specific case
+            document.querySelectorAll('a').forEach(link => {
+                link.style.color = '#e9251e';
+            });
+            document.querySelectorAll('.code').forEach(codeElement => {
+                codeElement.style.color = '#000'; // or 'black'
+            });
+            document.querySelectorAll('svg path').forEach(path => {
+                path.style.fill = '#ff0000'; // or 'red'
+            });
+        } else {
+            // For other color schemes, derive and apply link color from foreground
+            const linkColor = darkenColor(chosenScheme.fg);
+            document.querySelectorAll('a').forEach(link => {
+                link.style.color = linkColor;
+            });
+        }
     }
 
-    // Select a random color scheme
-    const chosenScheme = colorSchemes[Math.floor(Math.random() * colorSchemes.length)];
-
-    // Apply the background and foreground colors
-    document.body.style.backgroundColor = chosenScheme.bg;
-    document.body.style.color = chosenScheme.fg;
-
-    // Derive and apply link color from foreground
-    const linkColor = darkenColor(chosenScheme.fg);
-    document.querySelectorAll('a').forEach(link => {
-        link.style.color = linkColor;
+    document.addEventListener('DOMContentLoaded', function() {
+        applyColorScheme();
     });
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    applyColorScheme();
-});
 </script>
+
