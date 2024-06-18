@@ -126,12 +126,14 @@
 
         html {
           cursor: auto;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+
         }
 
         body {
           margin-top: 120px;
           margin-left: 3px;
-          margin-right: 0px;
+          margin-right: 3px;
           background: #fe793d;
           color: #fef1eb;
           font-family: 'Domine', Serif, monospace;
@@ -139,9 +141,11 @@
           font-size: 18px;
           line-height: 1.6em;
         }
-        #name {
-            min-width: 0; /* Allow the name to shrink on small screens */
-          }
+            #name {
+        font-size: 120px;
+        width: fit-content;
+    }
+
 
           .imageContainer {
             position: static; /* Normal flow on mobile */
