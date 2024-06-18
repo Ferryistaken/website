@@ -127,25 +127,28 @@
 
         html {
           cursor: auto;
-            overflow-x: hidden; /* Prevent horizontal scrolling */
-
+          overflow-x: hidden; /* Prevent horizontal scrolling */
+          margin-right: 0;
+          padding: 0;
         }
 
         body {
           margin-top: 120px;
           margin-left: 3px;
-          margin-right: 3px;
+          margin-right: 0px;
+          padding: 0;
           background: #fe793d;
           color: #fef1eb;
-          font-family: 'Domine', Serif, monospace;
+          font-family: 'Fira Code', monospace;
           padding: 20px;
           font-size: 18px;
           line-height: 1.6em;
         }
-            #name {
-        font-size: 120px;
-        width: fit-content;
-    }
+        #name {
+            padding-top: 60vh;
+            font-size: 120px;
+            width: fit-content;
+        }
 
 
           .imageContainer {
@@ -232,10 +235,6 @@
     max-width: 900px;
 }
 
-#name {
-    color: white; /* Text color for name */
-}
-
 #imageDropdown {
     position: relative; /* Sets a positioning context for the dropdown */
 }
@@ -279,14 +278,13 @@
   <body>
     <div id="invertedcursor"></div> {% include setcolors.html %} 
     <div id="namepic">
-    <div style="
+    <div id="name" style="
         font-family: Junicode, monospace;
         font-size: 120px; /* Adjust size as needed for your design */
         font-weight: 100; /* Bold for a strong presence */
         letter-spacing: -0.02em; /* Slightly tighten the spacing for elegance */
         line-height: 1.3;
         text-align: center; /* Center-align for a balanced appearance */
-        padding: 20px 0; /* Vertical padding for spacing */
         width: fit-content; /* Ensure the width adjusts to the content */
         border-radius: 8px; /* Rounded corners for a modern touch */
     ">
@@ -301,8 +299,7 @@
     </div>
     </div>
     <p>Computer Science // Biology Student @ <span style="color: white;">
-        <span class="code" data-string="Georgia Tech"></span>
-      </span>. </p>
+        <span class="code" data-string="Georgia Tech"></span></span>. </p>
     <p>Single Cell // Machine Learning Researcher @ the <a style="font-family: 'Jersey 20', sans-serif; text-decoration: none; font-size: 21px;" href="https://ggibsongt.wixsite.com/gibsongatech">Gibson Lab</a>. </p> <br>
     <p>✉️ <a href="mailto:alessandroferrari@gatech.edu">alessandroferrari@gatech.edu</a>
       <br> 👨‍💻 <a href="https://github.com/Ferryistaken">github.com/Ferryistaken</a>
