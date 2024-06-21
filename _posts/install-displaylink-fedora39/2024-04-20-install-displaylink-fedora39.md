@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to install the Displaylink drivers on Fedora 39"
+title: "How to install the Displaylink drivers on Fedora 40"
 date: "2024-04-20 11:59:13 +0200"
 tags: [linux, os, hardware]
 ---
@@ -38,7 +38,7 @@ Now, download the right displaylink RPM version from [the displaylink github](ht
 Both the built and src rpm should work, but this guide is going to use the `x86_64` version.
 
 ```
-sudo dnf install '/path/to/rpm/fedora-39-displaylink-1.14.4-1.github_evdi.x86_64.rpm
+sudo dnf install '/path/to/rpm/fedora-40-displaylink-1.14.4-1.github_evdi.x86_64.rpm
 ```
 
 Finally reboot. Now displaylink should work. This guide works for Fedora 38, 39, and possibly any new version, given that you pull the latest evdi version, and download the correct displaylink driver rpm.
