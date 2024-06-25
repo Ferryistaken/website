@@ -5,6 +5,8 @@ layout: new
 <div style="color: white; font-family: 'Times New Roman', serif; font-size: 96px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
 </div>
 
+Machine Learning Engineer at [Maverick Biometals](https://www.maverickbiometals.com/)
+
 Computer Science // Biology Student @ Georgia Tech.
 
 Single Cell // Machine Learning Researcher @ the [Gibson Lab](https://ggibsongt.wixsite.com/gibsongatech).
