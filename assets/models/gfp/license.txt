@@ -1,0 +1,11 @@
+Model Information:
+* title:	GFP - Green Fluorescent Protein
+* source:	https://sketchfab.com/3d-models/gfp-green-fluorescent-protein-9643d8a3f1df45548cd588d2f7034065
+* author:	Holoxica (https://sketchfab.com/holoxica)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "GFP - Green Fluorescent Protein" (https://sketchfab.com/3d-models/gfp-green-fluorescent-protein-9643d8a3f1df45548cd588d2f7034065) by Holoxica (https://sketchfab.com/holoxica) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

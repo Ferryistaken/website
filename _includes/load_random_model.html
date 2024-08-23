@@ -1,0 +1,7 @@
+<!-- _includes/load_random_model.html -->
+{% assign model_paths = include.model_paths | split: "," %}
+{% assign random_index = site.time | date: "%N" | modulo: model_paths.size %}
+{% assign selected_model = model_paths[random_index] | strip %}
+
+{% include load_model.html gltf_path=selected_model scale=include.scale %}
+

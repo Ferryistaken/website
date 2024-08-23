@@ -26,13 +26,13 @@
     }
 
     @media (max-width: 1899px) {
-        #faketerminal {
+        #faketerminal, #vanish {
             display: none;
         }
     }
 
     @media (min-width: 1900px) {
-        #faketerminal {
+        #faketerminal, #vanish {
             display: block;
         }
     }
@@ -343,6 +343,9 @@
           <li>
             <a href="https://contact.alessandroferrari.live">contact</a>
           </li>
+          <li>
+            <a href="https://music.alessandroferrari.live">music</a>
+          </li>
           <!-- <li> <a href="{{ '/inbox' }}">inbox</a> </li> -->
         </ul>
         <br>
@@ -488,8 +491,13 @@
       </div>
     </div>
 
+
     <div id="faketerminal" style="position: absolute; top: 33%; right: 10%; font-family: 'Monaco', 'Courier New', monospace; font-size: 16px; color: #fef1eb; white-space: pre-wrap; overflow-wrap: break-word;"></div>
 
+    <div id="vanish" style="position: absolute; top: 33%; right: -24%; font-family: 'Monaco', 'Courier New', monospace; font-size: 16px; color: #fef1eb; white-space: pre-wrap; overflow-wrap: break-word;">
+        {% include load_model.html gltf_path="/assets/models/human_dna/scene.gltf" scale="0.03" %}
+
+    </div>
 
   </body>
   <script>
