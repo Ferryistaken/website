@@ -5,6 +5,7 @@
 <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/utils/BufferGeometryUtils.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/modifiers/SimplifyModifier.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -15,6 +16,17 @@
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setClearColor(0x000000, 0); // The second parameter (0) sets the transparency of the clear color
         document.getElementById('model-container').appendChild(renderer.domElement);
+
+        // Orbit Controls
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true; // Smoothes the movement
+        controls.dampingFactor = 0.05;
+        controls.screenSpacePanning = false;
+        controls.maxPolarAngle = Math.PI / 2;
+        controls.enableZoom = false; // Disable zoom to ensure scrolling only affects the page
+
+        let isUserInteracting = false;
+        let interactionTimeout;
 
         // Lighting
         const light = new THREE.DirectionalLight(0xffffff, 1);
@@ -49,23 +61,32 @@
                 camera.position.z = 5;
 
                 // Animation loop
-                let lastTime = 0;
-                const fps = 12; // Set your desired frame rate
-
-                function animate(time) {
-                    if (time - lastTime >= 1000 / fps) {
-                        lastTime = time;
-                        // Rotate the model
-                        if (model) {
-                            model.rotation.y += 0.01;
-                        }
-
-                        // Render the scene
-                        renderer.render(scene, camera);
-                    }
+                function animate() {
                     requestAnimationFrame(animate);
+
+                    // Rotate model only if user is not interacting
+                    if (!isUserInteracting && model) {
+                        model.rotation.y += 0.01;
+                    }
+
+                    controls.update(); // Required for controls.enableDamping
+                    renderer.render(scene, camera);
                 }
-                requestAnimationFrame(animate);
+                animate();
+
+                // Detect when user starts interacting
+                controls.addEventListener('start', function () {
+                    isUserInteracting = true;
+                    clearTimeout(interactionTimeout);
+                });
+
+                // Detect when user stops interacting, then resume animation after a delay
+                controls.addEventListener('end', function () {
+                    clearTimeout(interactionTimeout);
+                    interactionTimeout = setTimeout(function () {
+                        isUserInteracting = false;
+                    }, 2000); // Adjust the delay as needed (2 seconds here)
+                });
             } catch (error) {
                 console.error('An error happened during model loading:', error);
             }
