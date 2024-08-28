@@ -33,18 +33,23 @@
         light.position.set(1, 1, 1).normalize();
         scene.add(light);
 
-        // Load the 3D model (GLTF format) asynchronously
-        async function loadModel() {
+        // Load the 3D model (GLTF format) asynchronously when the browser is idle
+        function loadModel() {
             const loader = new THREE.GLTFLoader();
-            try {
-                const gltf = await loader.loadAsync('{{ include.gltf_path }}');
+            const gltfPaths = '{{ include.gltf_paths }}'.split(',');
+
+            // Select a random path from the array
+            const randomIndex = Math.floor(Math.random() * gltfPaths.length);
+            const selectedGltfPath = gltfPaths[randomIndex].trim();
+
+            loader.load(selectedGltfPath, function (gltf) {
                 let model = gltf.scene;
 
                 // Simplify the geometry
                 model.traverse(function(child) {
                     if (child.isMesh) {
                         const modifier = new THREE.SimplifyModifier();
-                        const simplifiedGeometry = modifier.modify(child.geometry, Math.floor(child.geometry.attributes.position.count * 0.6));
+                        const simplifiedGeometry = modifier.modify(child.geometry, Math.floor(child.geometry.attributes.position.count * 0.3));
                         child.geometry = simplifiedGeometry;
                         child.material = new THREE.MeshBasicMaterial({ color: 0xaaeeFF, wireframe: true });
                     }
@@ -87,12 +92,18 @@
                         isUserInteracting = false;
                     }, 2000); // Adjust the delay as needed (2 seconds here)
                 });
-            } catch (error) {
+            }, undefined, function (error) {
                 console.error('An error happened during model loading:', error);
-            }
+            });
         }
 
-        loadModel();
+        // Use requestIdleCallback to load the model without blocking the main thread
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(loadModel);
+        } else {
+            // Fallback if requestIdleCallback is not supported
+            setTimeout(loadModel, 200);
+        }
 
         // Handle window resize
         let resizeTimeout;

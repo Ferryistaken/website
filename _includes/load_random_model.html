@@ -1,7 +1,39 @@
-<!-- _includes/load_random_model.html -->
-{% assign model_paths = include.model_paths | split: "," %}
-{% assign random_index = site.time | date: "%N" | modulo: model_paths.size %}
-{% assign selected_model = model_paths[random_index] | strip %}
+<script>
+  // Array of GLTF paths
+  var gltfPaths = [
+    "{{ include.gltf_paths | split: ',' | join: '","' }}"
+  ];
 
-{% include load_model.html gltf_path=selected_model scale=include.scale %}
+  // Get the last digit of the current second
+  var currentTime = new Date();
+  var lastDigit = currentTime.getSeconds() % 10;
+
+  // Calculate the index using the last digit and modulo with array length
+  var index = lastDigit % gltfPaths.length;
+
+  // Select the GLTF path
+  var selectedGltfPath = gltfPaths[index];
+
+  // Debug information (you can remove this after testing)
+  console.log("Current Time (Seconds):", currentTime.getSeconds());
+  console.log("Last Digit:", lastDigit);
+  console.log("Index:", index);
+  console.log("Selected GLTF Path:", selectedGltfPath);
+
+  // Now you can dynamically include the selected model using JavaScript
+  // Assuming you have a function or method to load the model, you would call it here
+  loadModel(selectedGltfPath, {{ include.scale }});
+
+  // Example function to load the model (adjust this according to your three.js implementation)
+  function loadModel(path, scale) {
+    // Your three.js code to load the GLTF model
+    // Example:
+    var loader = new THREE.GLTFLoader();
+    loader.load(path, function (gltf) {
+      var model = gltf.scene;
+      model.scale.set(scale, scale, scale);
+      scene.add(model);
+    });
+  }
+</script>
 
