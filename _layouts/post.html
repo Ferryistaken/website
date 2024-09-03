@@ -1,3 +1,222 @@
----
-layout: white_post
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
+    <title>{{ page.title }} | {{ site.title }}</title>
+
+    <!-- Font and style links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+        @font-face {
+            font-family: "Junicode";
+            src: url("../assets/Junicode-RegularCondensed.ttf");
+        }
+
+        /* General styles */
+        html, body {
+            margin: 0;
+            cursor: none;
+            padding: 0;
+            background: #fff;
+            color: #202423;
+            font-family: 'Fira Code', monospace;
+            font-size: 16px;
+            line-height: 1.6em;
+        }
+
+        a:link, a:visited {
+            color: inherit;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '*';
+            position: absolute;
+            left: 0;
+            top: 6px;
+        }
+
+        /* Inverted cursor styles */
+        #invertedcursor {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background: #fff;
+            border-radius: 50%;
+            top: var(--y, 0);
+            left: var(--x, 0);
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            mix-blend-mode: difference;
+            transition: transform .2s;
+            pointer-events: none;
+        }
+
+        /* Code block styling */
+        pre {
+            background: #2d2d2d;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Fira Code', monospace;
+            color: #f8f8f2;
+        }
+
+        /* Syntax highlighting */
+        .hljs {
+            background: #2d2d2d;
+            color: #f8f8f2;
+        }
+
+        .hljs-keyword,
+        .hljs-selector-tag,
+        .hljs-literal,
+        .hljs-section,
+        .hljs-link {
+            color: #ff79c6;
+        }
+
+        .hljs-function,
+        .hljs-title,
+        .hljs-name {
+            color: #50fa7b;
+        }
+
+        .hljs-comment {
+            color: #6272a4;
+        }
+
+        .hljs-string,
+        .hljs-meta,
+        .hljs-regexp,
+        .hljs-subst,
+        .hljs-symbol,
+        .hljs-variable,
+        .hljs-template-variable {
+            color: #f1fa8c;
+        }
+
+        .hljs-attr,
+        .hljs-attribute,
+        .hljs-class .hljs-title {
+            color: #8be9fd;
+        }
+
+        /* Header and Footer */
+        .page-links, footer {
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .page-links {
+            background: #fff;
+            color: #202423;
+        }
+
+        footer {
+            background: #fff;
+            color: #000;
+        }
+
+        .page-links a,
+        footer a,
+        .page-links a:visited,
+        footer a:visited {
+            color: #000;
+            text-decoration: none;
+        }
+        
+
+        .page-links span, footer span {
+            margin: 0 10px;
+        }
+
+        /* Content Styling */
+        .content-container {
+            margin: 120px 80px 20px 80px;
+        }
+
+        /* Limit width on large screens */
+        @media (min-width: 1200px) {
+            .content-container {
+                max-width: 60%;
+                margin: 120px auto 20px auto;
+            }
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .content-container {
+                margin: 120px 3px 20px 3px;
+                font-size: 18px;
+            }
+        }
+
+        h1 {
+            font-size: 2.5em; /* Bigger title */
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="invertedcursor"></div>
+    {% include setcolors.html %}
+
+    <!-- Header with navigation links -->
+    <div class="page-links">
+        <a href="{{ site.url }}">Home</a> | <a href="{{ site.url }}/blog">Blog</a> | <a href="{{ site.url }}/about">About</a> | <a href="{{ site.url }}/contact">Contact</a> | © {{ "now" | date: "%Y" }} {{ site.title }}
+    </div>
+
+    <!-- Main content for posts -->
+    <div class="content-container">
+        <h1>{{ page.title }}</h1>
+        <p><strong>Published:</strong> {{ page.date | date: "%B %d, %Y" }}</p>
+        <div>
+            {{ content }}
+        </div>
+    </div>
+
+    <!-- Footer with the same navigation links -->
+    <footer>
+        <a href="{{ site.url }}">Home</a> | <a href="{{ site.url }}/blog">Blog</a> | <a href="{{ site.url }}/about">About</a> | <a href="{{ site.url }}/contact">Contact</a> | © {{ "now" | date: "%Y" }} {{ site.title }}
+    </footer>
+
+    <!-- Custom scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+
+        // Custom cursor script
+        document.addEventListener('mousemove', function(e) {
+            document.documentElement.style.setProperty('--x', (e.clientX + window.scrollX) + 'px');
+            document.documentElement.style.setProperty('--y', (e.clientY + window.scrollY) + 'px');
+        });
+    </script>
+</body>
+</html>
+
