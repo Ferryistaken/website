@@ -27,6 +27,8 @@ Single Cell // Machine Learning Researcher @ the [Gibson Lab](https://ggibsongt.
 
 <div style="color: white;"><b>Work.</b></div>
 
+\* [BigHat Biosciences](https://bighatbio.com/) (8VC Fellow) --  *powering the next generation of "dark laboratories".*
+
 \* [Maverick Biometals](https://www.maverickbiometals.com/) (YC S22) --  *making enzymes to mine metals.*
 
 \* [Biocentis](https://www.biocentis.com/) -- *manufacturing pests instead of pesticides.*
@@ -35,5 +37,4 @@ Single Cell // Machine Learning Researcher @ the [Gibson Lab](https://ggibsongt.
 
 \* [Rocky Linux](https://rockylinux.org/) -- *a platform for the open source community.*
 
-\* [WestSideEats](https://westsideeats.com/About) -- *shredding food delivery costs.*
 {% include cursor.html %}
