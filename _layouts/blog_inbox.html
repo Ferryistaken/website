@@ -1,88 +1,97 @@
----
-layout: default-noauth
----
-<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
-@font-face {
-    font-family: "Junicode";
-    src: url("../assets/Junicode-RegularCondensed.ttf");
-}
-body {
-    font-family: 'Fira Code', monospace;
-    margin: 0;
-    padding: 20px;
-    background-color: #fff;
-    color: #202423;
-}
-h1, #title {
-    font-family: Junicode, serif;
-    font-size: 90px;
-    color: #202423;
-}
-#inbox {
-    margin-left: 30px;
-    margin-right: 30px;
-}
-.i {
-    color: red;
-    position: relative;
-}
-.i:before {
-    content: "ı";
-    position: absolute;
-    color: black;
-}
-ul {
-    list-style: none;
-    padding: 0;
-    padding-top: 20px;
-    margin: 0;
-    min-width: 700px;
-    max-width: 1200px;
-}
-li {
-    padding: 7px 0;
-    display: flex;
-}
-li > div {
-    flex-grow: 1;
-    white-space: nowrap;
-}
-li > div:nth-child(1) {
-    flex-basis: 50%;
-    text-align: left;
-}
-li > div:nth-child(2) {
-    flex-basis: 25%;
-    text-align: center;
-}
-li > div:nth-child(3) {
-    flex-basis: 25%;
-    text-align: right;
-}
-a {
-    color: #202423;
-    text-decoration: none;
-}
-a:visited {
-    color: #e9251e;
-}
-a:hover {
-    text-decoration: underline;
-}
-#menu {
-    width: 150px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-}
-#menu a {
-    display: block;
-    width: 100%;
-    text-decoration: none;
-}
-</style>
+    @font-face {
+        font-family: "Junicode";
+        src: url("../assets/Junicode-RegularCondensed.ttf");
+    }
+    body {
+            font-family: 'Fira Code', monospace;
+            margin: 0;
+            padding: 20px;
+            background-color: #fff;
+            color: #202423;
+        }
+    h1, #title {
+            font-family: Junicode, serif;
+            font-size: 90px;
+            color: #202423;
+    }
+        #inbox {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
 
+        .i {
+            color: red;
+            position: relative;
+        }
+        .i:before
+            {
+            content: "ı";
+            position: absolute;
+            color: black;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            padding-top: 20px;
+            margin: 0;
+            min-width: 700px; /* Ensures the list is at least 700px wide */
+            max-width: 1200px;
+        }
+        li {
+            padding: 7px 0;
+            display: flex;
+        }
+        li > div {
+            flex-grow: 1;
+            white-space: nowrap;
+        }
+        li > div:nth-child(1) { /* Email name */
+            flex-basis: 50%; /* Sets a basis for growing */
+            text-align: left; /* Ensures text alignment is consistent */
+        }
+        li > div:nth-child(2) { /* Date */
+            flex-basis: 25%; /* Adjusts the basis for date column */
+            text-align: center; /* Centers the date text */
+        }
+        li > div:nth-child(3) { /* Bytes */
+            flex-basis: 25%; /* Adjusts the basis for bytes column */
+            text-align: right; /* Right aligns the byte count */
+        }
+
+        a {
+            color: #202423;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #e9251e;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #menu {
+            width: 150px;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+        }
+        #menu a {
+            display: block;
+            width: 100%;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
 <div id="inbox">
     <h1><a id="title" href={{ site.url }}>Alessandro Ferrar<span class="i">i</span></a> — blog</h1>
     <ul>
@@ -102,3 +111,5 @@ a:hover {
       <a href="/blog">blog</a>
     </div>
 </div>
+</body>
+</html>
