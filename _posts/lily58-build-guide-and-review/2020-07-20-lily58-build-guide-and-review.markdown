@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "⌨️ Lily58 Pro build log and review"
+title: "Lily58 Pro build log and review"
 date: "2020-07-20 18:36:13 -0400"
 tags: [hardware, keyboard, soldering]
 description: This is a build log of the lily58 Pro split ergo keyboard
