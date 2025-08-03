@@ -1,49 +1,40 @@
 ---
-layout: null
+layout: default-noauth
 ---
+<style>
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: #000000;
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+.email-content {
+    white-space: pre-wrap;
+}
+</style>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>{{ page.subject }}</title>
-    <style>
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 16px;
-            color: #000000;
-            background-color: #fff;
-            margin: 0;
-            padding: 20px;
-        }
-        .email-content {
-            white-space: pre-wrap; /* maintains whitespace */
-        }
-    </style>
-</head>
-<body>
-    {% include setcolors.html %}
-    <div>[ferry@alessandroferrari.live]$ cat /var/spool/mail/ferry/{{ page.title | downcase }}.md</div>
-    <br>
-    <div class="email-header">
-        <div><b>From:</b> {{ page.from }}</div>
-        <div><b>Date:</b> {{ page.date | date: "%Y-%m-%d %H:%M:%S" }}</div>
-        <div><b>To:</b> {{ page.to }}</div>
-        <div><b>Subject:</b> {{ page.subject }}</div>
-    </div>
-    <hr>
-    <pre id="emailContent" class="email-content">{{ content }}</pre>
-    <a style="text-decoration: none; color: inherit;" href="{{ '/inbox' }}">[ferry@alessandroferrari.live]$ <span style="text-decoration: underline;">clear</span></a>{% include cursor.html %}
+{% include setcolors.html %}
+<div>[ferry@alessandroferrari.live]$ cat /var/spool/mail/ferry/{{ page.title | downcase }}.md</div>
+<br>
+<div class="email-header">
+    <div><b>From:</b> {{ page.from }}</div>
+    <div><b>Date:</b> {{ page.date | date: "%Y-%m-%d %H:%M:%S" }}</div>
+    <div><b>To:</b> {{ page.to }}</div>
+    <div><b>Subject:</b> {{ page.subject }}</div>
+</div>
+<hr>
+<pre id="emailContent" class="email-content">{{ content }}</pre>
+<a style="text-decoration: none; color: inherit;" href="{{ '/inbox' }}">[ferry@alessandroferrari.live]$ <span style="text-decoration: underline;">clear</span></a>{% include cursor.html %}
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var contentElement = document.getElementById('emailContent');
-            var contentText = contentElement.textContent;
-            var modifiedText = contentText.split('\n').map(function(line) {
-                return "> " + line;
-            }).join('\n');
-            contentElement.textContent = modifiedText;
-        });
-    </script>
-</body>
-</html>
-
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var contentElement = document.getElementById('emailContent');
+        var contentText = contentElement.textContent;
+        var modifiedText = contentText.split('\n').map(function(line) {
+            return "> " + line;
+        }).join('\n');
+        contentElement.textContent = modifiedText;
+    });
+</script>

@@ -1,57 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inbox</title>
-    <style>
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            margin: 0;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        #inbox {
-            margin-left: 30px;
-            margin-right: 30px;
-        }
-        ul {
-            border-top: 1px solid #000;
-            list-style: none;
-            padding: 0;
-            padding-top: 20px;
-            margin: 0px;
-            min-width: 500px; /* Ensures the list is at least 700px wide */
-            max-width: 750px;
-        }
-        li {
-            padding: 7px 0;
-            display: flex;
-        }
-        li > div {
-            flex-grow: 1;
-            white-space: nowrap;
-        }
-        li > div:nth-child(1) { /* Email name */
-            min-width: 300px; /* Adjust based on longest email name or desired spacing */
-        }
-        li > div:nth-child(2) { /* Date */
-            min-width: 200px; /* Ensure date is properly spaced */
-        }
-        li > div:nth-child(3) { /* Bytes */
-            min-width: 100px;
-            text-align: right;
-        }
-        a:hover {
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
+---
+layout: default-noauth
+---
+<style>
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+#inbox {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+ul {
+    border-top: 1px solid #000;
+    list-style: none;
+    padding: 0;
+    padding-top: 20px;
+    margin: 0px;
+    min-width: 500px;
+    max-width: 750px;
+}
+li {
+    padding: 7px 0;
+    display: flex;
+}
+li > div {
+    flex-grow: 1;
+    white-space: nowrap;
+}
+li > div:nth-child(1) {
+    min-width: 300px;
+}
+li > div:nth-child(2) {
+    min-width: 200px;
+}
+li > div:nth-child(3) {
+    min-width: 100px;
+    text-align: right;
+}
+a:hover {
+    text-decoration: none;
+}
+</style>
+
 <div id="inbox">
     <h1>Index of /var/spool/mail/ferry</h1>
     <ul>
-        <a href="{{ '/' }}">../</a>
+        <li><div><a href="{{ '/' }}">../</a></div></li>
         {% for post in site.mail %}
             <li>
                 <div><a href="{{ post.url }}">{{ post.subject }}</a></div>
@@ -61,5 +57,3 @@
         {% endfor %}
     </ul>
 </div>
-</body>
-</html>
