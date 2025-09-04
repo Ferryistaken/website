@@ -42,3 +42,23 @@ body[data-theme="dark"] {
         align-items: center;
     }
 }
+
+.user-stats {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 6px 10px;
+    background-color: $white;
+    border: 1px solid $light;
+    border-radius: 4px;
+    font-size: $small-font-size;
+    color: $gray;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+body[data-theme="dark"] .user-stats {
+    background-color: $dark-black;
+    border-color: $dark-light;
+    color: $dark-gray;
+}
