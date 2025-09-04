@@ -7,4 +7,30 @@
 
   gtag('config', 'G-86MD3VSW50');
 </script>
+<script>
+  var t = setInterval(function () {
+    if (window.goatcounter && window.goatcounter.visit_count) {
+      clearInterval(t);
+      var now = new Date();
+      var end = now.toISOString().slice(0, 10);
+      var start = new Date(now.getTime() - 24 * 60 * 60 * 1000)
+        .toISOString()
+        .slice(0, 10);
+      window.goatcounter.visit_count({
+        append: 'body',
+        start: start,
+        end: end,
+        no_branding: true,
+        attr: { id: 'page-view-counter' }
+      });
+      var labelTimer = setInterval(function () {
+        var label = document.querySelector('#page-view-counter #gcvc-for');
+        if (label) {
+          label.textContent = 'Views past 24h';
+          clearInterval(labelTimer);
+        }
+      }, 100);
+    }
+  }, 100);
+</script>
 <script data-goatcounter="https://ferry.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
