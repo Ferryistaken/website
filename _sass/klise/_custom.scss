@@ -40,10 +40,6 @@ body[data-theme="dark"] {
     font-size: $small-font-size;
     border-radius: 4px;
     z-index: 1000;
-    width: auto !important;
-    height: auto !important;
-    display: flex;
-    gap: 4px;
 }
 
 body[data-theme="dark"] #page-view-counter {

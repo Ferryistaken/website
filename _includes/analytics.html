@@ -9,27 +9,23 @@
 </script>
 <script>
   var t = setInterval(function () {
-    if (window.goatcounter && window.goatcounter.visit_count) {
+    if (window.goatcounter && window.goatcounter.get_data) {
       clearInterval(t);
-      var now = new Date();
-      var end = now.toISOString().slice(0, 10);
-      var start = new Date(now.getTime() - 24 * 60 * 60 * 1000)
-        .toISOString()
-        .slice(0, 10);
-      window.goatcounter.visit_count({
-        append: 'body',
-        start: start,
-        end: end,
-        no_branding: true,
-        attr: { id: 'page-view-counter' }
-      });
-      var labelTimer = setInterval(function () {
-        var label = document.querySelector('#page-view-counter #gcvc-for');
-        if (label) {
-          label.textContent = 'Views past 24h';
-          clearInterval(labelTimer);
-        }
-      }, 100);
+      var path = window.goatcounter.get_data().p;
+      var url =
+        'https://ferry.goatcounter.com/counter/' +
+        encodeURIComponent(path) +
+        '.json?start=day';
+      fetch(url)
+        .then(function (resp) {
+          return resp.json();
+        })
+        .then(function (data) {
+          var box = document.createElement('div');
+          box.id = 'page-view-counter';
+          box.textContent = 'users in the past 24h: ' + data.count;
+          document.body.appendChild(box);
+        });
     }
   }, 100);
 </script>
