@@ -29,25 +29,6 @@ body[data-theme="dark"] {
     }
 }
 
-#page-view-counter {
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    padding: 0.25rem 0.5rem;
-    background-color: $white;
-    border: 1px solid $light;
-    color: $text-base-color;
-    font-size: $small-font-size;
-    border-radius: 4px;
-    z-index: 1000;
-}
-
-body[data-theme="dark"] #page-view-counter {
-    background-color: $dark-black;
-    border-color: $dark-light;
-    color: $dark-white;
-}
-
 @media screen and (max-width: 768px) {
     .social-links {
         flex-direction: column;
