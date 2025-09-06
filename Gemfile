@@ -9,6 +9,9 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 4.3.2"
+gem 'csv'     # required now on Ruby 3.4+
+gem 'logger'  # optional, silences the Ruby 3.5 deprecation warning
+gem 'base64'
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 
@@ -22,7 +25,6 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jekyll-compose'
   gem 'jekyll-postfiles'
-  gem 'jekyll-sass-converter'
   gem 'jekyll-toc'
   gem 'jekyll-seo-tag'
   gem 'jekyll-twitter-plugin'

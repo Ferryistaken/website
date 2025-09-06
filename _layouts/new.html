@@ -332,7 +332,6 @@
       </li>
     </ul>
     <br>
-    <br>
     <div style="color: white;">
       <b>Publications.</b>
     </div>
@@ -344,23 +343,19 @@
       </li>
     </ul>
     <div class="container">
-      <div class="links">
-        <ul>
-          <li>
-            <a href="/blog">blog</a>
-          </li>
-          <li>
-            <a href="https://books.alessandroferrari.live">books</a>
-          </li>
-          <li>
-            <a href="https://contact.alessandroferrari.live">contact</a>
-          </li>
-          <!-- <li> <a href="{{ '/inbox' }}">inbox</a> </li> -->
-        </ul>
-        <br>
-        <br>
-        <span id="copyright">© {{ "now" | date: "%Y" }} {{ site.title }}</span>
-      </div>
+  <div class="links">
+    <ul>
+      <li><a href="/blog">blog</a></li>
+      <li><a href="https://books.alessandroferrari.live">books</a></li>
+      <li><a href="https://contact.alessandroferrari.live">contact</a></li>
+      <!-- <li> <a href="{{ '/inbox' }}">inbox</a> </li> -->
+    </ul>
+
+    <br>
+    
+    <span id="copyright">{% include page-view-counter.html %} <br> © {{ "now" | date: "%Y" }} {{ site.title }}</span>
+  </div>
+
       <div class="signature">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 281 243">
           <path id="path1" fill="none" stroke="white" stroke-width="2" d="M 105.59,242.07
@@ -498,6 +493,7 @@
         </svg>
         <button id="button-signature"></button>
       </div>
+</div>
     </div>
 
 
@@ -659,6 +655,8 @@ document.addEventListener('DOMContentLoaded', decryptionEffect);
           }
       }
   </script>
+<!--
+
 #   <script>
 #   document.addEventListener("DOMContentLoaded", function() {
 #   const fileContents = {
@@ -719,4 +717,5 @@ document.addEventListener('DOMContentLoaded', decryptionEffect);
 #   showNextCommand();
 # });
 # </script>
+---->
 </html>

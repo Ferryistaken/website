@@ -1,0 +1,33 @@
+<span id="page-view-counter">users in the past 24h: ...</span>
+<script>
+  var t = setInterval(function () {
+    if (window.goatcounter && window.goatcounter.get_data) {
+      clearInterval(t);
+      var path = window.goatcounter.get_data().p;
+      var dayAgo = new Date(Date.now() - 24 * 60 * 60 * 1000);
+      var start = dayAgo.toISOString().slice(0, 10);
+      var url =
+        'https://ferry.goatcounter.com/counter/' +
+        encodeURIComponent(path) +
+        '.json?start=' +
+        start;
+      fetch(url)
+        .then(function (resp) {
+          if (!resp.ok) throw new Error(resp.status);
+          return resp.json();
+        })
+        .then(function (data) {
+          var el = document.getElementById('page-view-counter');
+          if (el) {
+            el.textContent = 'users in the past 24h: ' + data.count;
+          }
+        })
+        .catch(function () {
+          var el = document.getElementById('page-view-counter');
+          if (el) {
+            el.textContent = 'users in the past 24h: 0';
+          }
+        });
+    }
+  }, 100);
+</script>
