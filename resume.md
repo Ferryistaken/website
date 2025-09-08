@@ -1,9 +1,16 @@
 ---
-permalink: /resume/
-layout: page
-title: "My Resume"
+permalink: /resume
+redirect_to: /assets/af-resume.pdf
 ---
 
-[Download a copy](/assets/af-resume.pdf)
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=/assets/af-resume.pdf" />
+    <link rel="canonical" href="/assets/af-resume.pdf" />
+  </head>
+  <body>
+    <p>If you are not redirected, <a href="/assets/af-resume.pdf">click here</a>.</p>
+  </body>
+</html>
 
-<object data="/assets/af-resume.pdf" width="100%" height="1000" type='application/pdf'>
