@@ -215,6 +215,7 @@
     {% if page.subline %}<p class="subline">{{ page.subline }}</p>{% endif %}
 
     <div>
+      {% include toc.html html=content %}
       {{ content }}
     </div>
   </div>
