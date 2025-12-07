@@ -775,3 +775,7 @@ This server returns a simple message when a GET request is sent, and shuts down 
 The code is accessible at [github.com/Ferryistaken/xv6-public](https://github.com/Ferryistaken/xv6-public), and a full patch is pasted below.
 
 [⤓ patch.diff](/assets/posts/xv6-networking/patch.diff)
+
+### Thanks & Acknowledgements
+
+Special thanks to my *CS3210: Design of Operating Systems* professor [Michael Specter](https://mikespecter.com/), [this](https://xiayingp.gitbook.io/build_a_os) OS guide, and the [smoltcp](https://github.com/smoltcp-rs/smoltcp) dev team.
