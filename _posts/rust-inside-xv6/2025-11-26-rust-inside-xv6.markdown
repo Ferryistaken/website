@@ -74,6 +74,8 @@ linker = "gcc"
 rustflags = [
   "-C", "relocation-model=static",
   "-C", "link-arg=-m32",
+  "-C", "target-feature=-mmx,-sse,-sse2,-sse3,-ssse3,-sse4.1,-sse4.2,-avx,-avx2",
+  "-C", "soft-float",
 ]
 ```
 This will make cargo to emit a .a file suitable for linking with the xv6 kernel.
