@@ -32,6 +32,10 @@ permalink: /:title/
 google_analytics: UA-120232408-2
 fb_appid:
 
+# Plausible Analytics configuration
+plausible_domain: alessandroferrari.live
+plausible_api_key:
+
 # Collection setting
 collections:
   posts:
