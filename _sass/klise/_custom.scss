@@ -1,44 +1,5 @@
-.portfolio-blob {
-    background-color: $blob-light;
-}
-
-.portfolio-svg {
-    fill: $blob-light;
-}
-
-.social-links {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 25%;
-    margin-left: 0;
-}
-
 body[data-theme] {
     padding: 0;
     margin: 0;
     background-color: transparent;
-}
-
-body[data-theme="dark"] {
-    .portfolio-blob {
-        background-color: $blob-dark;
-    }
-
-    .portfolio-svg {
-        fill: $blob-dark;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .social-links {
-        flex-direction: column;
-        margin-right: 0;
-        margin-left: 0;
-        align-items: flex-start;
-    }
-
-    #portfolio-intro {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
 }
